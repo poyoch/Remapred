@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - REMAPRED</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#f97316'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="img/R png.png">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 transition-shadow duration-300 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <img class="h-16 w-auto" src="img/logo grande png.png" alt="REMAPRED Logo">
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Inicio</a>
+                    <a href="productos.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Productos</a>
+                    <a href="servicios.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Servicios</a>
+                    <a href="nosotros.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Sobre Nosotros</a>
+                    <a href="contacto.html" class="bg-accent text-white px-5 py-2.5 rounded-md hover:bg-orange-600 transition-colors font-medium hover-lift">Contacto</a>
+                    <div class="relative group">
+                        <div class="flex items-center text-slate-600 cursor-pointer hover:text-primary transition-colors">
+                            ES <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                        </div>
+                        <div class="absolute right-0 mt-0 w-24 bg-white border border-slate-100 rounded-md shadow-lg hidden group-hover:block z-50">
+                            <a href="politica-privacidad-en.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-accent">EN</a>
+                            <a href="politica-privacidad.html" class="block px-4 py-2 text-sm text-accent hover:bg-slate-50">ES</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Inicio</a>
+                <a href="productos.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Productos</a>
+                <a href="servicios.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Servicios</a>
+                <a href="nosotros.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Sobre Nosotros</a>
+                <a href="contacto.html" class="block px-3 py-2 rounded-md text-base font-medium text-accent font-bold">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-10 rounded-xl shadow-md border border-slate-100">
+                <h1 class="text-3xl font-bold text-primary mb-8 border-b pb-4">Política de Privacidad</h1>
+                
+                <div class="prose prose-slate max-w-none text-slate-600">
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">1. Recopilación de Información</h3>
+                    <p class="mb-4">Recopilamos información cuando usted se registra en nuestro sitio, completa un formulario de contacto o solicita una cotización. La información recopilada incluye su nombre, dirección de correo electrónico, empresa y número de teléfono.</p>
+                    
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">2. Uso de la Información</h3>
+                    <p class="mb-4">Cualquier información que recopilemos de usted puede ser utilizada para personalizar su experiencia, mejorar nuestro sitio web, mejorar el servicio al cliente y contactarlo vía correo electrónico respecto a sus consultas y cotizaciones.</p>
+                    
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">3. Privacidad del Comercio Electrónico</h3>
+                    <p class="mb-4">Somos los únicos propietarios de la información recopilada en este sitio. Su información de identificación personal no será vendida, intercambiada, transferida ni dada a ninguna otra empresa por ningún motivo, sin su consentimiento, excepto para cumplir con una solicitud y/o transacción, como enviar un pedido.</p>
+                    
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">4. Divulgación a Terceros</h3>
+                    <p class="mb-4">No vendemos, intercambiamos, ni transferimos de ningún otro modo a terceros externos su información de identificación personal. Esto no incluye a terceros de confianza que nos asisten en operar nuestro sitio web, dirigir nuestro negocio, o brindarle servicios a usted.</p>
+                    
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">5. Consentimiento</h3>
+                    <p class="mb-4">Al utilizar nuestro sitio, usted acepta nuestra política de privacidad web.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 text-slate-800 py-6 mt-12 flex-shrink-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center pb-8 border-b border-slate-200">
+                <div class="mb-6 md:mb-0">
+                    <img src="img/logo grande png.png" alt="REMAPRED Logo" class="h-16">
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 md:gap-10 text-sm text-slate-600">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-phone text-primary mr-2"></i>
+                        <div>
+                            <p>+51 987 654 321</p>
+</div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-envelope text-primary mr-2"></i>
+                        <p>ventas@remapred.com</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-location-dot text-primary mr-2"></i>
+                        <div>
+                            <p>Nela Molina,</p>
+                            <p>Lima</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex space-x-4 mt-6 md:mt-0">
+                    <a href="#" class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-accent transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-accent transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 text-xs text-slate-500">
+                <p>REMAPRED &copy; <span id="current-year"></span> Todos los derechos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="terminos-condiciones.html" class="hover:text-primary transition-colors">Términos y Condiciones</a>
+                    <a href="politica-privacidad.html" class="hover:text-primary transition-colors text-accent">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+

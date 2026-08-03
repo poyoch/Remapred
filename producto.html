@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Detalle de Producto - REMAPRED</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#f97316'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="img/R png.png">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 transition-shadow duration-300 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <img class="h-16 w-auto" src="img/logo grande png.png" alt="REMAPRED Logo">
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Inicio</a>
+                    <a href="productos.html" class="text-accent font-semibold hover:text-accent transition-colors">Productos</a>
+                    <a href="servicios.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Servicios</a>
+                    <a href="nosotros.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Sobre Nosotros</a>
+                    <a href="contacto.html" class="bg-accent text-white px-5 py-2.5 rounded-md hover:bg-orange-600 transition-colors font-medium hover-lift">Contacto</a>
+                    <div class="relative group">
+                        <div class="flex items-center text-slate-600 cursor-pointer hover:text-primary transition-colors">
+                            ES <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                        </div>
+                        <div class="absolute right-0 mt-0 w-24 bg-white border border-slate-100 rounded-md shadow-lg hidden group-hover:block z-50">
+                            <a href="producto-en.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-accent">EN</a>
+                            <a href="productos.html" class="block px-4 py-2 text-sm text-accent hover:bg-slate-50">ES</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Inicio</a>
+                <a href="productos.html" class="block px-3 py-2 rounded-md text-base font-medium text-accent bg-orange-50">Productos</a>
+                <a href="servicios.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Servicios</a>
+                <a href="nosotros.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Sobre Nosotros</a>
+                <a href="contacto.html" class="block px-3 py-2 rounded-md text-base font-medium text-accent font-bold">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow">
+        <div id="single-product-container" class="w-full bg-white rounded-xl border border-slate-200 shadow-sm p-8">
+    <!-- El producto se renderizarÃ¡ aquÃ­ vÃ­a render-producto.js -->
+    <div class="text-center py-12">
+        <i class="fa-solid fa-spinner fa-spin text-4xl text-accent mb-4"></i>
+        <p class="text-slate-600">Cargando producto...</p>
+    </div>
+</div>
+    </main>
+
+    <!-- Data Layer and Render Script -->
+    <script src="js/products.js"></script>
+    <script src="js/render-producto.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 text-slate-800 pt-10 pb-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center pb-8 border-b border-slate-200">
+                <div class="mb-6 md:mb-0">
+                    <img src="img/logo grande png.png" alt="REMAPRED Logo" class="h-16">
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-6 md:gap-10 text-sm text-slate-600">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-phone text-primary mr-2"></i>
+                        <div>
+                            <p>+51 987 654 321</p>
+</div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-envelope text-primary mr-2"></i>
+                        <p>ventas@remapred.com</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-location-dot text-primary mr-2"></i>
+                        <div>
+                            <p>Nela Molina,</p>
+                            <p>Lima</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4 mt-6 md:mt-0">
+                    <a href="#" class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-accent transition-colors">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-accent transition-colors">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 text-xs text-slate-500">
+                <p>REMAPRED &copy; <span id="current-year"></span> Todos los derechos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="terminos-condiciones.html" class="hover:text-primary transition-colors">Términos y Condiciones</a>
+                    <a href="politica-privacidad.html" class="hover:text-primary transition-colors">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/51987654321?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20cámaras%20termográficas" target="_blank" class="whatsapp-btn fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg z-50 hover:bg-[#1ebe57]">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+

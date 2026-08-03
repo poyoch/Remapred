@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones - REMAPRED</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#f97316'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="img/R png.png">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 transition-shadow duration-300 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <img class="h-16 w-auto" src="img/logo grande png.png" alt="REMAPRED Logo">
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Inicio</a>
+                    <a href="productos.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Productos</a>
+                    <a href="servicios.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Servicios</a>
+                    <a href="nosotros.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Sobre Nosotros</a>
+                    <a href="contacto.html" class="bg-accent text-white px-5 py-2.5 rounded-md hover:bg-orange-600 transition-colors font-medium hover-lift">Contacto</a>
+                    <div class="relative group">
+                        <div class="flex items-center text-slate-600 cursor-pointer hover:text-primary transition-colors">
+                            ES <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                        </div>
+                        <div class="absolute right-0 mt-0 w-24 bg-white border border-slate-100 rounded-md shadow-lg hidden group-hover:block z-50">
+                            <a href="terminos-condiciones-en.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-accent">EN</a>
+                            <a href="terminos-condiciones.html" class="block px-4 py-2 text-sm text-accent hover:bg-slate-50">ES</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Inicio</a>
+                <a href="productos.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Productos</a>
+                <a href="servicios.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Servicios</a>
+                <a href="nosotros.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Sobre Nosotros</a>
+                <a href="contacto.html" class="block px-3 py-2 rounded-md text-base font-medium text-accent font-bold">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-10 rounded-xl shadow-md border border-slate-100">
+                <h1 class="text-3xl font-bold text-primary mb-8 border-b pb-4">Términos y Condiciones</h1>
+                
+                <div class="prose prose-slate max-w-none text-slate-600">
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">1. Introducción</h3>
+                    <p class="mb-4">Bienvenido a REMAPRED. Al acceder y utilizar nuestro sitio web, usted acepta cumplir y estar sujeto a los siguientes términos y condiciones de uso.</p>
+                    
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">2. Uso del Sitio</h3>
+                    <p class="mb-4">El contenido de las páginas de este sitio web es para su información y uso general únicamente. Está sujeto a cambios sin previo aviso.</p>
+                    
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">3. Productos y Cotizaciones</h3>
+                    <p class="mb-4">Toda la información técnica y especificaciones de las cámaras termográficas están sujetas a disponibilidad. Las cotizaciones solicitadas a través del sitio web no constituyen una oferta vinculante hasta su confirmación por escrito por nuestro equipo de ventas.</p>
+                    
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">4. Propiedad Intelectual</h3>
+                    <p class="mb-4">Este sitio contiene material que es de nuestra propiedad o está bajo licencia nuestra. Este material incluye, pero no se limita a, el diseño, la presentación, el aspecto, la apariencia y los gráficos.</p>
+                    
+                    <h3 class="text-lg font-bold text-primary mt-6 mb-3">5. Ley Aplicable</h3>
+                    <p class="mb-4">Su uso de este sitio web y cualquier disputa que surja de dicho uso del sitio web está sujeto a las leyes de la República del Perú.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 text-slate-800 py-6 mt-12 flex-shrink-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center pb-8 border-b border-slate-200">
+                <div class="mb-6 md:mb-0">
+                    <img src="img/logo grande png.png" alt="REMAPRED Logo" class="h-16">
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 md:gap-10 text-sm text-slate-600">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-phone text-primary mr-2"></i>
+                        <div>
+                            <p>+51 987 654 321</p>
+</div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-envelope text-primary mr-2"></i>
+                        <p>ventas@remapred.com</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-location-dot text-primary mr-2"></i>
+                        <div>
+                            <p>Nela Molina,</p>
+                            <p>Lima</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex space-x-4 mt-6 md:mt-0">
+                    <a href="#" class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-accent transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-accent transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 text-xs text-slate-500">
+                <p>REMAPRED &copy; <span id="current-year"></span> Todos los derechos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="terminos-condiciones.html" class="hover:text-primary transition-colors text-accent">Términos y Condiciones</a>
+                    <a href="politica-privacidad.html" class="hover:text-primary transition-colors">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+

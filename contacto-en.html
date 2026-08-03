@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - REMAPRED</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#f97316'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="img/R png.png">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 transition-shadow duration-300 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index-en.html'">
+                    <img class="h-16 w-auto" src="img/logo grande png.png" alt="REMAPRED Logo">
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index-en.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="productos-en.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Products</a>
+                    <a href="servicios-en.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="nosotros-en.html" class="text-slate-600 hover:text-primary font-medium transition-colors">About Us</a>
+                    <a href="contacto-en.html" class="bg-accent text-white px-5 py-2.5 rounded-md hover:bg-orange-600 transition-colors font-medium shadow-md">Contact</a>
+                    <div class="relative group">
+                        <div class="flex items-center text-slate-600 cursor-pointer hover:text-primary transition-colors">
+                            EN <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                        </div>
+                        <div class="absolute right-0 mt-0 w-24 bg-white border border-slate-100 rounded-md shadow-lg hidden group-hover:block z-50">
+                            <a href="contacto-en.html" class="block px-4 py-2 text-sm text-accent hover:bg-slate-50">EN</a>
+                            <a href="contacto.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-accent">ES</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Home</a>
+                <a href="productos-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Products</a>
+                <a href="servicios-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">Services</a>
+                <a href="nosotros-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600">About Us</a>
+                <a href="contacto-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-accent bg-orange-50 font-bold">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow bg-slate-50 pb-12">
+        <!-- Premium Contact Header & Info -->
+        <div class="relative bg-primary pt-20 pb-40 overflow-hidden">
+            <!-- Tech Pattern Background -->
+            <div class="absolute inset-0 opacity-10 bg-[linear-gradient(#f97316_1px,transparent_1px),linear-gradient(90deg,#f97316_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+            
+            <!-- Glowing Orbs -->
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-accent rounded-full opacity-20 blur-[100px] transform -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500 rounded-full opacity-20 blur-[100px] transform translate-y-1/2"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight mb-6">
+                        Get in <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-orange-400">Touch</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-300 font-light">
+                        We are ready to advise you with the best FOTRIC thermal imaging technology for your company.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form & Details Section (Overlapping) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 -mt-24">
+            <div class="flex flex-col lg:flex-row bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
+                
+                <!-- Contact Info (Left Side) -->
+                <div class="lg:w-2/5 bg-slate-900 p-10 md:p-12 text-white relative overflow-hidden flex flex-col justify-between">
+                    <!-- Deco element -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-accent rounded-full opacity-10 blur-[80px] transform translate-x-1/2 -translate-y-1/2"></div>
+                    
+                    <div>
+                        <h2 class="text-3xl font-bold mb-10 relative z-10 text-white">Direct Information</h2>
+                        
+                        <div class="space-y-8 relative z-10">
+                            <div class="flex items-start space-x-5">
+                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 border border-white/5">
+                                    <i class="fa-solid fa-location-dot text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-1">Head Office</h3>
+                                    <p class="text-white font-medium text-lg">Nela Molina, Lima</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-5">
+                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 border border-white/5">
+                                    <i class="fa-solid fa-phone text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-1">Phone</h3>
+                                    <p class="text-white font-medium text-lg">+51 987 654 321</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-5">
+                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 border border-white/5">
+                                    <i class="fa-solid fa-envelope text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-1">Email Address</h3>
+                                    <p class="text-white font-medium text-lg">ventas@remapred.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-16 pt-8 border-t border-white/10 relative z-10">
+                        <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors border border-white/5 shadow-lg">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors border border-white/5 shadow-lg">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Right Side) -->
+                <div class="lg:w-3/5 p-10 md:p-14 bg-white">
+                    <h2 class="text-3xl font-bold text-primary mb-8">Send Us a Message</h2>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-semibold text-slate-700 mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3.5 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-accent focus:border-accent transition-all outline-none" placeholder="e.g. John Doe" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3.5 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-accent focus:border-accent transition-all outline-none" placeholder="email@company.com" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-sm font-semibold text-slate-700 mb-2">Company</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3.5 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-accent focus:border-accent transition-all outline-none" placeholder="Your company name">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3.5 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-accent focus:border-accent transition-all outline-none resize-none" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        
+                        <div class="flex items-center bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <input type="checkbox" id="quote" name="quote" class="w-5 h-5 rounded border-slate-300 text-accent focus:ring-accent accent-accent cursor-pointer">
+                            <label for="quote" class="ml-3 text-sm text-slate-700 font-medium cursor-pointer">I would like to request a formal quote</label>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-accent hover-lift transition-all shadow-lg text-lg mt-4">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 text-slate-800 pt-10 pb-6 mt-12 flex-shrink-0 mt-12 flex-shrink-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center pb-8 border-b border-slate-200">
+                <div class="mb-6 md:mb-0">
+                    <img src="img/logo grande png.png" alt="REMAPRED Logo" class="h-16">
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-6 md:gap-10 text-sm text-slate-600">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-phone text-primary mr-2"></i>
+                        <div>
+                            <p>+51 987 654 321</p>
+</div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-envelope text-primary mr-2"></i>
+                        <p>ventas@remapred.com</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-location-dot text-primary mr-2"></i>
+                        <div>
+                            <p>Nela Molina,</p>
+                            <p>Lima</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4 mt-6 md:mt-0">
+                    <a href="#" class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-accent transition-colors">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-accent transition-colors">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 text-xs text-slate-500">
+                <p>REMAPRED &copy; <span id="current-year"></span> All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="terminos-condiciones-en.html" class="hover:text-primary transition-colors">Terms and Conditions</a>
+                    <a href="politica-privacidad-en.html" class="hover:text-primary transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/51987654321?text=Hi,%20I%20would%20like%20more%20information" target="_blank" class="whatsapp-btn fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg z-50 hover:bg-[#1ebe57]">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
