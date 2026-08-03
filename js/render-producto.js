@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <!-- Action Buttons -->
         <div class="mt-auto pt-6 flex flex-col sm:flex-row gap-3">
-          <a href="https://wa.me/51987654321?text=${encodeURIComponent(lang === 'en' ? 'Hello, I would like to request a quote for model ' + nombre : 'Hola, deseo cotizar el modelo ' + nombre)}" target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-bold py-3.5 px-5 rounded-lg hover:bg-[#1ebe57] transition-all flex items-center justify-center shadow-md hover-lift">
+          <a href="https://wa.me/51989171589?text=${encodeURIComponent(lang === 'en' ? 'Hello, I would like to request a quote for model ' + nombre : 'Hola, deseo cotizar el modelo ' + nombre)}" target="_blank" class="flex-1 text-center bg-[#25D366] text-white font-bold py-3.5 px-5 rounded-lg hover:bg-[#1ebe57] transition-all flex items-center justify-center shadow-md hover-lift">
             <i class="fa-brands fa-whatsapp text-xl mr-2"></i> ${lang === 'en' ? 'Quote via WhatsApp' : 'Cotizar por WhatsApp'}
           </a>
           <a href="mailto:ventas@remapred.com?subject=${encodeURIComponent(lang === 'en' ? 'Quote Request - Model ' + nombre : 'Cotización Modelo ' + nombre)}&body=${encodeURIComponent(lang === 'en' ? 'Hello, I would like to request a quote for model ' + nombre + '.' : 'Hola, deseo cotizar el modelo ' + nombre + '.')}" class="flex-1 text-center bg-accent text-white font-bold py-3.5 px-5 rounded-lg hover:bg-orange-600 transition-all flex items-center justify-center shadow-md hover-lift">
