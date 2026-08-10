@@ -1,4 +1,4 @@
-// Capa de datos para productos FOTRIC
+﻿// Capa de datos para productos FOTRIC
 // Usamos { es: "...", en: "..." } para soportar i18n más adelante.
 
 const products = [
@@ -220,6 +220,172 @@ const products = [
       { titulo: { es: "Certificado de Calibración", en: "Calibration Certificate" }, url: "img/productos/fotric-tk8-calibracion.pdf" }
     ]
   }
+
+,
+
+  // ─── SERIE V — TÉRMICAS AVANZADAS ───────────────────────────────────────
+  {
+    id: "fotric-v5",
+    nombre: "FOTRIC V5",
+    gama: { es: "Serie V - Térmica Avanzada", en: "V Series - Advanced Thermal" },
+    precioUSD: null,
+    imagen: "https://www.fotric.com/wp-content/uploads/2023/10/V5-1.png",
+    imagenes: ["https://www.fotric.com/wp-content/uploads/2023/10/V5-1.png"],
+    urlFabricante: "https://www.fotric.com/products/v5/",
+    especificaciones: [
+      { etiqueta: { es: "Resolución infrarroja", en: "Infrared resolution" }, valor: { es: "384x288", en: "384x288" } },
+      { etiqueta: { es: "Sensibilidad térmica", en: "Thermal sensitivity" }, valor: { es: "<40 mK", en: "<40 mK" } },
+      { etiqueta: { es: "Rango de temperatura", en: "Temperature range" }, valor: { es: "-20 °C a 1550 °C", en: "-20 °C to 1550 °C" } },
+      { etiqueta: { es: "Cámara visual", en: "Visual camera" }, valor: { es: "13 MP", en: "13 MP" } },
+      { etiqueta: { es: "Pantalla", en: "Display" }, valor: { es: "5.0 pulgadas HD táctil", en: "5.0 inch HD touchscreen" } },
+      { etiqueta: { es: "Tipo de enfoque", en: "Focus type" }, valor: { es: "TurboFocus (Auto/Manual)", en: "TurboFocus (Auto/Manual)" } },
+      { etiqueta: { es: "Batería / autonomía", en: "Battery / autonomy" }, valor: { es: "≥ 4 horas", en: "≥ 4 hours" } },
+      { etiqueta: { es: "Lentes", en: "Lenses" }, valor: { es: "Intercambiables", en: "Interchangeable" } }
+    ],
+    aplicaciones: { es: "Medición de hornos, calderas, tuberías de vapor y equipos a altísimas temperaturas (hasta 1550 °C). Fundición, metalurgia e industria pesada.", en: "Measurement of furnaces, boilers, steam pipes and equipment at extremely high temperatures (up to 1550 °C). Foundry, metallurgy and heavy industry." },
+    beneficios: [
+      { es: "Rango de temperatura excepcional hasta 1550 °C", en: "Exceptional temperature range up to 1550 °C" },
+      { es: "Pantalla HD de 5 pulgadas para trabajo en campo", en: "5-inch HD display for fieldwork" },
+      { es: "TurboFocus: enfoque automático y manual ultrarrápido", en: "TurboFocus: ultra-fast automatic and manual focus" },
+      { es: "Lentes intercambiables para múltiples aplicaciones", en: "Interchangeable lenses for multiple applications" },
+      { es: "Cámara visual de 13 MP integrada", en: "Integrated 13 MP visual camera" }
+    ],
+    faqs: [
+      { q: { es: "¿Para qué industrias está diseñada la V5?", en: "For which industries is the V5 designed?" }, a: { es: "Fundición, metalurgia, petroquímica e industria pesada donde se requieren mediciones a temperaturas extremas de hasta 1550 °C.", en: "Foundry, metallurgy, petrochemical and heavy industry where measurements at extreme temperatures up to 1550 °C are required." } },
+      { q: { es: "¿Qué ventaja ofrece TurboFocus?", en: "What advantage does TurboFocus offer?" }, a: { es: "Permite cambiar entre enfoque automático ultrarrápido y manual con precisión, adaptándose a escenas complejas o en movimiento.", en: "Allows switching between ultra-fast auto focus and precise manual focus, adapting to complex or moving scenes." } }
+    ],
+    descargas: []
+  },
+  {
+    id: "fotric-v7",
+    nombre: "FOTRIC V7",
+    gama: { es: "Serie V - Térmica Avanzada (Tope de Gama)", en: "V Series - Advanced Thermal (Top of Range)" },
+    precioUSD: null,
+    imagen: "https://www.fotric.com/wp-content/uploads/2023/10/V7-1.png",
+    imagenes: ["https://www.fotric.com/wp-content/uploads/2023/10/V7-1.png"],
+    urlFabricante: "https://www.fotric.com/products/v7/",
+    especificaciones: [
+      { etiqueta: { es: "Resolución infrarroja", en: "Infrared resolution" }, valor: { es: "640x480", en: "640x480" } },
+      { etiqueta: { es: "Sensibilidad térmica", en: "Thermal sensitivity" }, valor: { es: "<30 mK", en: "<30 mK" } },
+      { etiqueta: { es: "Rango de temperatura", en: "Temperature range" }, valor: { es: "-20 °C a 1550 °C", en: "-20 °C to 1550 °C" } },
+      { etiqueta: { es: "Cámara visual", en: "Visual camera" }, valor: { es: "13 MP", en: "13 MP" } },
+      { etiqueta: { es: "Pantalla", en: "Display" }, valor: { es: "5.0 pulgadas HD táctil", en: "5.0 inch HD touchscreen" } },
+      { etiqueta: { es: "Tipo de enfoque", en: "Focus type" }, valor: { es: "TurboFocus (Auto/Manual)", en: "TurboFocus (Auto/Manual)" } },
+      { etiqueta: { es: "Batería / autonomía", en: "Battery / autonomy" }, valor: { es: "≥ 4 horas", en: "≥ 4 hours" } },
+      { etiqueta: { es: "Lentes", en: "Lenses" }, valor: { es: "Intercambiables", en: "Interchangeable" } }
+    ],
+    aplicaciones: { es: "Análisis predictivo, inspecciones de alta tensión y reportes de altísima precisión. Para termógrafos certificados (Nivel II/III) e ingenieros de confiabilidad (CBM).", en: "Predictive analysis, high-voltage inspections and high-precision reports. For certified thermographers (Level II/III) and reliability engineers (CBM)." },
+    beneficios: [
+      { es: "Resolución máxima 640x480 — el tope de gama FOTRIC", en: "Maximum 640x480 resolution — FOTRIC top of the range" },
+      { es: "Sensibilidad <30 mK para detectar diferencias mínimas de temperatura", en: "<30 mK sensitivity to detect minimal temperature differences" },
+      { es: "Rango hasta 1550 °C para entornos de temperatura extrema", en: "Range up to 1550 °C for extreme temperature environments" },
+      { es: "Lentes intercambiables y pantalla HD de 5 pulgadas", en: "Interchangeable lenses and 5-inch HD screen" },
+      { es: "Ideal para termógrafos certificados Nivel II/III", en: "Ideal for Level II/III certified thermographers" }
+    ],
+    faqs: [
+      { q: { es: "¿En qué se diferencia la V7 de la V5?", en: "How does the V7 differ from the V5?" }, a: { es: "La V7 es el tope de gama con resolución 640x480 (vs 384x288 de la V5) y mayor sensibilidad (<30 mK vs <40 mK). Para el profesional que no acepta márgenes de error.", en: "The V7 is the top of range with 640x480 resolution (vs 384x288 for V5) and greater sensitivity (<30 mK vs <40 mK). For the professional who accepts no margin for error." } },
+      { q: { es: "¿Para qué perfil profesional es la V7?", en: "For what professional profile is the V7?" }, a: { es: "Termógrafos certificados (Nivel II/III), ingenieros de confiabilidad (CBM) e inspectores de redes eléctricas que requieren máxima precisión.", en: "Certified thermographers (Level II/III), reliability engineers (CBM) and power grid inspectors requiring maximum precision." } }
+    ],
+    descargas: []
+  },
+
+  // ─── SERIE ACÚSTICA — DETECCIÓN DE FUGAS ─────────────────────────────────
+  {
+    id: "fotric-h4",
+    nombre: "FOTRIC H4",
+    gama: { es: "Serie Acústica - Industrial Pro", en: "Acoustic Series - Industrial Pro" },
+    precioUSD: null,
+    imagen: "https://www.fotric.com/wp-content/uploads/2024/01/H4-1.png",
+    imagenes: ["https://www.fotric.com/wp-content/uploads/2024/01/H4-1.png"],
+    urlFabricante: "https://www.fotric.com/products/h4/",
+    especificaciones: [
+      { etiqueta: { es: "Tipo de sensor", en: "Sensor type" }, valor: { es: "112 Micrófonos MEMS", en: "112 MEMS Microphones" } },
+      { etiqueta: { es: "Rango de frecuencia", en: "Frequency range" }, valor: { es: "2 kHz - 100 kHz", en: "2 kHz - 100 kHz" } },
+      { etiqueta: { es: "Alcance de detección", en: "Detection range" }, valor: { es: "0.3 m a 200 m", en: "0.3 m to 200 m" } },
+      { etiqueta: { es: "Cámara visual", en: "Visual camera" }, valor: { es: "13 MP", en: "13 MP" } },
+      { etiqueta: { es: "Pantalla", en: "Display" }, valor: { es: "5.0 pulgadas táctil", en: "5.0 inch touchscreen" } },
+      { etiqueta: { es: "Tipo de enfoque", en: "Focus type" }, valor: { es: "Automático", en: "Automatic" } },
+      { etiqueta: { es: "Batería / autonomía", en: "Battery / autonomy" }, valor: { es: "> 4 horas", en: "> 4 hours" } },
+      { etiqueta: { es: "Modos de detección", en: "Detection modes" }, valor: { es: "Fuga de gas / Descarga parcial automática", en: "Gas leak / Auto partial discharge" } }
+    ],
+    aplicaciones: { es: "Detección de efecto corona, descargas parciales y fugas de gas hasta 200 m. Subestaciones eléctricas, redes de transmisión e industria petroquímica.", en: "Detection of corona effect, partial discharges and gas leaks up to 200 m. Electrical substations, transmission networks and petrochemical industry." },
+    beneficios: [
+      { es: "Alcance de hasta 200 m — el mayor de la línea acústica FOTRIC", en: "Range up to 200 m — the longest in the FOTRIC acoustic line" },
+      { es: "112 micrófonos MEMS para máxima sensibilidad acústica", en: "112 MEMS microphones for maximum acoustic sensitivity" },
+      { es: "Autodetección de descargas parciales (corona, superficial, flotante)", en: "Auto-detection of partial discharges (corona, surface, floating)" },
+      { es: "Cálculo aproximado de flujo y costeo de fugas", en: "Approximate flow calculation and leak cost estimation" },
+      { es: "Pantalla de 5 pulgadas para trabajo cómodo en campo", en: "5-inch screen for comfortable fieldwork" }
+    ],
+    faqs: [
+      { q: { es: "¿Qué diferencia a la H4 de la H4MINI?", en: "What differentiates the H4 from the H4MINI?" }, a: { es: "La H4 tiene alcance hasta 200 m (vs 100 m del H4MINI), pantalla de 5 pulgadas y autodetección de descargas parciales. Es la opción más potente para subestaciones y alta tensión.", en: "The H4 has a range up to 200 m (vs 100 m for H4MINI), a 5-inch screen and auto partial discharge detection. It is the most powerful option for substations and high voltage." } },
+      { q: { es: "¿Puede detectar descargas parciales automáticamente?", en: "Can it detect partial discharges automatically?" }, a: { es: "Sí, el modo PD clasifica automáticamente el tipo de descarga: corona, superficial o flotante, con visualización PRPD.", en: "Yes, the PD mode automatically classifies the discharge type: corona, surface or floating, with PRPD visualization." } }
+    ],
+    descargas: []
+  },
+  {
+    id: "fotric-h4mini",
+    nombre: "FOTRIC H4MINI",
+    gama: { es: "Serie Acústica - Portátil", en: "Acoustic Series - Portable" },
+    precioUSD: null,
+    imagen: "https://www.fotric.com/wp-content/uploads/2024/01/H4-Mini-1.png",
+    imagenes: ["https://www.fotric.com/wp-content/uploads/2024/01/H4-Mini-1.png"],
+    urlFabricante: "https://www.fotric.com/products/h4mini/",
+    especificaciones: [
+      { etiqueta: { es: "Tipo de sensor", en: "Sensor type" }, valor: { es: "112 Micrófonos MEMS", en: "112 MEMS Microphones" } },
+      { etiqueta: { es: "Rango de frecuencia", en: "Frequency range" }, valor: { es: "2 kHz - 100 kHz", en: "2 kHz - 100 kHz" } },
+      { etiqueta: { es: "Alcance de detección", en: "Detection range" }, valor: { es: "0.3 m a 100 m", en: "0.3 m to 100 m" } },
+      { etiqueta: { es: "Cámara visual", en: "Visual camera" }, valor: { es: "13 MP", en: "13 MP" } },
+      { etiqueta: { es: "Pantalla", en: "Display" }, valor: { es: "3.5 pulgadas táctil", en: "3.5 inch touchscreen" } },
+      { etiqueta: { es: "Tipo de enfoque", en: "Focus type" }, valor: { es: "Automático", en: "Automatic" } },
+      { etiqueta: { es: "Batería / autonomía", en: "Battery / autonomy" }, valor: { es: "≥ 4 horas", en: "≥ 4 hours" } },
+      { etiqueta: { es: "Modos de detección", en: "Detection modes" }, valor: { es: "Fuga de gas / Medición de flujo", en: "Gas leak / Flow measurement" } }
+    ],
+    aplicaciones: { es: "Inspección ágil de válvulas, tuberías y fugas en espacios reducidos. Uso con una sola mano. Para técnicos de servicio de campo y especialistas en sistemas neumáticos.", en: "Agile inspection of valves, pipes and leaks in confined spaces. One-handed use. For field service technicians and pneumatic system specialists." },
+    beneficios: [
+      { es: "112 micrófonos de precisión en formato compacto y ligero", en: "112 precision microphones in a compact, lightweight form" },
+      { es: "Uso con una sola mano — máxima portabilidad en campo", en: "One-handed use — maximum portability in the field" },
+      { es: "Medición y costeo aproximado de flujo de fugas", en: "Approximate flow measurement and leak cost estimation" },
+      { es: "Alcance hasta 100 m en entornos industriales", en: "Range up to 100 m in industrial environments" }
+    ],
+    faqs: [
+      { q: { es: "¿Qué ventaja tiene la H4MINI sobre la TD2E?", en: "What advantage does the H4MINI have over the TD2E?" }, a: { es: "La H4MINI tiene 112 micrófonos (vs 64 del TD2E), mayor alcance (100 m vs 60 m) y medición de flujo. El TD2E es la opción de entrada más económica.", en: "The H4MINI has 112 microphones (vs 64 for TD2E), longer range (100 m vs 60 m) and flow measurement. The TD2E is the most economical entry option." } },
+      { q: { es: "¿Se puede usar con una sola mano?", en: "Can it be used with one hand?" }, a: { es: "Sí, diseño compacto pensado para uso con una sola mano, perfecto para inspecciones en movimiento o en espacios reducidos.", en: "Yes, compact design for one-handed use, perfect for inspections on the move or in confined spaces." } }
+    ],
+    descargas: []
+  },
+  {
+    id: "fotric-td2e",
+    nombre: "FOTRIC TD2E",
+    gama: { es: "Serie Acústica - Entrada Industrial", en: "Acoustic Series - Industrial Entry" },
+    precioUSD: null,
+    imagen: "https://www.fotric.com/wp-content/uploads/2024/01/TD2E-1.png",
+    imagenes: ["https://www.fotric.com/wp-content/uploads/2024/01/TD2E-1.png"],
+    urlFabricante: "https://www.fotric.com/products/td2e/",
+    especificaciones: [
+      { etiqueta: { es: "Tipo de sensor", en: "Sensor type" }, valor: { es: "64 Micrófonos MEMS", en: "64 MEMS Microphones" } },
+      { etiqueta: { es: "Rango de frecuencia", en: "Frequency range" }, valor: { es: "2 kHz - 100 kHz", en: "2 kHz - 100 kHz" } },
+      { etiqueta: { es: "Alcance de detección", en: "Detection range" }, valor: { es: "0.3 m a 60 m", en: "0.3 m to 60 m" } },
+      { etiqueta: { es: "Cámara visual", en: "Visual camera" }, valor: { es: "5 MP", en: "5 MP" } },
+      { etiqueta: { es: "Pantalla", en: "Display" }, valor: { es: "3.5 pulgadas táctil", en: "3.5 inch touchscreen" } },
+      { etiqueta: { es: "Tipo de enfoque", en: "Focus type" }, valor: { es: "Automático", en: "Automatic" } },
+      { etiqueta: { es: "Batería / autonomía", en: "Battery / autonomy" }, valor: { es: "> 3 horas", en: "> 3 hours" } },
+      { etiqueta: { es: "Modos de detección", en: "Detection modes" }, valor: { es: "Fuga de aire comprimido / Gas a presión", en: "Compressed air / Pressurized gas leak" } }
+    ],
+    aplicaciones: { es: "Detección rápida de fugas de aire comprimido en líneas de producción. Para técnicos de mantenimiento, mecánicos industriales y responsables de costos operativos.", en: "Quick detection of compressed air leaks in production lines. For maintenance technicians, industrial mechanics and operational cost managers." },
+    beneficios: [
+      { es: "El kit de entrada más accesible de la línea acústica FOTRIC", en: "The most accessible entry kit in the FOTRIC acoustic line" },
+      { es: "64 micrófonos MEMS para detección precisa de fugas industriales", en: "64 MEMS microphones for precise industrial leak detection" },
+      { es: "Detecta y cuantifica fugas de aire comprimido al instante", en: "Detects and quantifies compressed air leaks instantly" },
+      { es: "Alcance hasta 60 m — suficiente para la mayoría de plantas industriales", en: "Range up to 60 m — sufficient for most industrial plants" },
+      { es: "Reduce costos operativos detectando pérdidas de energía", en: "Reduces operational costs by detecting energy losses" }
+    ],
+    faqs: [
+      { q: { es: "¿Qué tipo de fugas puede detectar el TD2E?", en: "What type of leaks can the TD2E detect?" }, a: { es: "Detecta fugas de aire comprimido, vacío y gases a presión en líneas de producción industrial, con alcance hasta 60 metros.", en: "Detects compressed air, vacuum and pressurized gas leaks in industrial production lines, with a range of up to 60 meters." } },
+      { q: { es: "¿Es el TD2E el equipo correcto para comenzar en acústica?", en: "Is the TD2E the right equipment to start in acoustics?" }, a: { es: "Sí, es el punto de entrada ideal. Para mayor alcance o medición de flujo, considera la H4MINI. Para subestaciones y alta tensión, la H4 es la opción profesional.", en: "Yes, it is the ideal entry point. For greater range or flow measurement, consider the H4MINI. For substations and high voltage, the H4 is the professional option." } }
+    ],
+    descargas: []
+  }
+
 ];
 
 window.fotricProducts = products;

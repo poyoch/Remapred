@@ -4,8 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const products = window.fotricProducts || [];
   
-  // Ensure products are sorted by price ascending
-  products.sort((a, b) => a.precioUSD - b.precioUSD);
+  // Ensure products are sorted by price ascending, but items without price (null) go at the end
+  products.sort((a, b) => {
+    if (a.precioUSD === null && b.precioUSD === null) return 0;
+    if (a.precioUSD === null) return 1;
+    if (b.precioUSD === null) return -1;
+    return a.precioUSD - b.precioUSD;
+  });
 
   const container = document.getElementById('products-container');
   const tableContainer = document.getElementById('comparative-table-container');
@@ -97,6 +102,7 @@ function renderProductCards(products, container, lang) {
 }
 
 function setupFilters(products, container, lang) {
+  const tipoChecks = document.querySelectorAll('.filter-tipo');
   const resolucionChecks = document.querySelectorAll('.filter-resolucion');
   const gamaChecks = document.querySelectorAll('.filter-gama');
 
@@ -107,10 +113,22 @@ function setupFilters(products, container, lang) {
   }
 
   function applyFilters() {
+    const selectedTipo = getSelectedValues(tipoChecks);
     const selectedRes = getSelectedValues(resolucionChecks);
     const selectedGama = getSelectedValues(gamaChecks);
 
     const filtered = products.filter(p => {
+      // Filter by tipo (Térmica / Acústica)
+      let matchTipo = true;
+      if (selectedTipo.length > 0) {
+        const pGama = (getText(p.gama, 'es') || '').toLowerCase();
+        const isAcoustic = pGama.includes('acústica') || pGama.includes('acoustic');
+        const isThermal = !isAcoustic; // Everything else is thermal
+        
+        matchTipo = (selectedTipo.includes('Acústica') || selectedTipo.includes('Acoustic')) && isAcoustic ||
+                    (selectedTipo.includes('Térmica') || selectedTipo.includes('Thermal')) && isThermal;
+      }
+
       // Filter by resolucion
       let matchRes = true;
       if (selectedRes.length > 0) {
@@ -129,7 +147,7 @@ function setupFilters(products, container, lang) {
         matchGama = selectedGama.some(g => pGama.toLowerCase().includes(g.toLowerCase()));
       }
 
-      return matchRes && matchGama;
+      return matchTipo && matchRes && matchGama;
     });
 
     if (filtered.length === 0) {
@@ -140,6 +158,7 @@ function setupFilters(products, container, lang) {
     }
   }
 
+  tipoChecks.forEach(cb => cb.addEventListener('change', applyFilters));
   resolucionChecks.forEach(cb => cb.addEventListener('change', applyFilters));
   gamaChecks.forEach(cb => cb.addEventListener('change', applyFilters));
 }
