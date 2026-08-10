@@ -1,4 +1,4 @@
-﻿// Capa de datos para productos FOTRIC
+// Capa de datos para productos FOTRIC
 // Usamos { es: "...", en: "..." } para soportar i18n más adelante.
 
 const products = [
@@ -229,8 +229,8 @@ const products = [
     nombre: "FOTRIC V5",
     gama: { es: "Serie V - Térmica Avanzada", en: "V Series - Advanced Thermal" },
     precioUSD: null,
-    imagen: "https://www.fotric.com/wp-content/uploads/2023/10/V5-1.png",
-    imagenes: ["https://www.fotric.com/wp-content/uploads/2023/10/V5-1.png"],
+    imagen: "https://static.wixstatic.com/media/571718_e0d9d2c0b45249108634fd7144c7e08d~mv2.png",
+    imagenes: ["https://static.wixstatic.com/media/571718_e0d9d2c0b45249108634fd7144c7e08d~mv2.png"],
     urlFabricante: "https://www.fotric.com/products/v5/",
     especificaciones: [
       { etiqueta: { es: "Resolución infrarroja", en: "Infrared resolution" }, valor: { es: "384x288", en: "384x288" } },
@@ -261,8 +261,8 @@ const products = [
     nombre: "FOTRIC V7",
     gama: { es: "Serie V - Térmica Avanzada (Tope de Gama)", en: "V Series - Advanced Thermal (Top of Range)" },
     precioUSD: null,
-    imagen: "https://www.fotric.com/wp-content/uploads/2023/10/V7-1.png",
-    imagenes: ["https://www.fotric.com/wp-content/uploads/2023/10/V7-1.png"],
+    imagen: "https://static.wixstatic.com/media/571718_84994c3e1aee4f859a04b4ec670cc6e5~mv2.png",
+    imagenes: ["https://static.wixstatic.com/media/571718_84994c3e1aee4f859a04b4ec670cc6e5~mv2.png"],
     urlFabricante: "https://www.fotric.com/products/v7/",
     especificaciones: [
       { etiqueta: { es: "Resolución infrarroja", en: "Infrared resolution" }, valor: { es: "640x480", en: "640x480" } },
@@ -295,8 +295,8 @@ const products = [
     nombre: "FOTRIC H4",
     gama: { es: "Serie Acústica - Industrial Pro", en: "Acoustic Series - Industrial Pro" },
     precioUSD: null,
-    imagen: "https://www.fotric.com/wp-content/uploads/2024/01/H4-1.png",
-    imagenes: ["https://www.fotric.com/wp-content/uploads/2024/01/H4-1.png"],
+    imagen: "https://static.wixstatic.com/media/571718_8f9757b094bb4679a3c2b4a5a4b2de6f~mv2.png",
+    imagenes: ["https://static.wixstatic.com/media/571718_8f9757b094bb4679a3c2b4a5a4b2de6f~mv2.png"],
     urlFabricante: "https://www.fotric.com/products/h4/",
     especificaciones: [
       { etiqueta: { es: "Tipo de sensor", en: "Sensor type" }, valor: { es: "112 Micrófonos MEMS", en: "112 MEMS Microphones" } },
@@ -327,8 +327,8 @@ const products = [
     nombre: "FOTRIC H4MINI",
     gama: { es: "Serie Acústica - Portátil", en: "Acoustic Series - Portable" },
     precioUSD: null,
-    imagen: "https://www.fotric.com/wp-content/uploads/2024/01/H4-Mini-1.png",
-    imagenes: ["https://www.fotric.com/wp-content/uploads/2024/01/H4-Mini-1.png"],
+    imagen: "https://static.wixstatic.com/media/0fa391_949dee3c5b9842539c8efd8cf74acd56~mv2.png",
+    imagenes: ["https://static.wixstatic.com/media/0fa391_949dee3c5b9842539c8efd8cf74acd56~mv2.png"],
     urlFabricante: "https://www.fotric.com/products/h4mini/",
     especificaciones: [
       { etiqueta: { es: "Tipo de sensor", en: "Sensor type" }, valor: { es: "112 Micrófonos MEMS", en: "112 MEMS Microphones" } },
@@ -358,8 +358,8 @@ const products = [
     nombre: "FOTRIC TD2E",
     gama: { es: "Serie Acústica - Entrada Industrial", en: "Acoustic Series - Industrial Entry" },
     precioUSD: null,
-    imagen: "https://www.fotric.com/wp-content/uploads/2024/01/TD2E-1.png",
-    imagenes: ["https://www.fotric.com/wp-content/uploads/2024/01/TD2E-1.png"],
+    imagen: "https://static.wixstatic.com/media/0fa391_1356242bddca46789c14fc213589287a~mv2.png",
+    imagenes: ["https://static.wixstatic.com/media/0fa391_1356242bddca46789c14fc213589287a~mv2.png"],
     urlFabricante: "https://www.fotric.com/products/td2e/",
     especificaciones: [
       { etiqueta: { es: "Tipo de sensor", en: "Sensor type" }, valor: { es: "64 Micrófonos MEMS", en: "64 MEMS Microphones" } },
