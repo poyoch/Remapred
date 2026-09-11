@@ -41,7 +41,16 @@
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8 items-center">
                     <a href="index.html" class="text-accent font-semibold hover:text-accent transition-colors">Inicio</a>
-                    <a href="productos.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Productos</a>
+                    <div class="relative group">
+                        <a href="productos.html" class="text-slate-600 hover:text-primary font-medium transition-colors flex items-center">
+                            Productos <i class="fa-solid fa-chevron-down ml-1 text-[10px]"></i>
+                        </a>
+                        <div class="absolute left-0 mt-0 w-48 bg-[#1a1a1a] border border-[#2a2a2a] rounded-b-md shadow-lg hidden group-hover:block z-50">
+                            <a href="productos.html" class="block px-4 py-3 text-sm text-gray-200 hover:bg-[#2a2a2a] hover:text-accent transition-colors">Todos los Productos</a>
+                            <a href="productos.html?marca=fotric" class="block px-4 py-3 text-sm text-gray-200 hover:bg-[#2a2a2a] hover:text-accent transition-colors border-t border-[#333]">Fotric</a>
+                            <a href="productos.html?marca=iriss" class="block px-4 py-3 text-sm text-gray-200 hover:bg-[#2a2a2a] hover:text-accent transition-colors border-t border-[#333]">Iriss</a>
+                        </div>
+                    </div>
                     <a href="servicios.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Servicios</a>
                     <a href="nosotros.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Sobre Nosotros</a>
                     <a href="contacto.html" class="bg-accent text-white px-5 py-2.5 rounded-md hover:bg-orange-600 transition-colors font-medium hover-lift">Contacto</a>
@@ -69,7 +78,15 @@
         <div id="mobile-menu" class="md:hidden hidden absolute w-full left-0 top-full bg-white border-t shadow-lg z-50">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-accent bg-orange-50">Inicio</a>
-                <a href="productos.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50">Productos</a>
+                <div class="space-y-1">
+                    <a href="productos.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 flex justify-between items-center">
+                        Productos
+                    </a>
+                    <div class="pl-6 space-y-1 mt-1">
+                        <a href="productos.html?marca=fotric" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-500 hover:text-accent hover:bg-slate-50 transition-colors border-l-2 border-slate-200">Fotric</a>
+                        <a href="productos.html?marca=iriss" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-500 hover:text-accent hover:bg-slate-50 transition-colors border-l-2 border-slate-200">Iriss</a>
+                    </div>
+                </div>
                 <a href="servicios.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50">Servicios</a>
                 <a href="nosotros.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50">Sobre Nosotros</a>
                 <a href="contacto.html" class="block px-3 py-2 rounded-md text-base font-medium text-accent font-bold">Contacto</a>

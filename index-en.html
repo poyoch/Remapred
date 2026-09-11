@@ -41,7 +41,16 @@
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8 items-center">
                     <a href="index-en.html" class="text-accent font-semibold hover:text-accent transition-colors">Home</a>
-                    <a href="productos-en.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Products</a>
+                    <div class="relative group">
+                        <a href="productos-en.html" class="text-slate-600 hover:text-primary font-medium transition-colors flex items-center">
+                            Products <i class="fa-solid fa-chevron-down ml-1 text-[10px]"></i>
+                        </a>
+                        <div class="absolute left-0 mt-0 w-48 bg-[#1a1a1a] border border-[#2a2a2a] rounded-b-md shadow-lg hidden group-hover:block z-50">
+                            <a href="productos-en.html" class="block px-4 py-3 text-sm text-gray-200 hover:bg-[#2a2a2a] hover:text-accent transition-colors">All Products</a>
+                            <a href="productos-en.html?marca=fotric" class="block px-4 py-3 text-sm text-gray-200 hover:bg-[#2a2a2a] hover:text-accent transition-colors border-t border-[#333]">Fotric</a>
+                            <a href="productos-en.html?marca=iriss" class="block px-4 py-3 text-sm text-gray-200 hover:bg-[#2a2a2a] hover:text-accent transition-colors border-t border-[#333]">Iriss</a>
+                        </div>
+                    </div>
                     <a href="servicios-en.html" class="text-slate-600 hover:text-primary font-medium transition-colors">Services</a>
                     <a href="nosotros-en.html" class="text-slate-600 hover:text-primary font-medium transition-colors">About Us</a>
                     <a href="contacto-en.html" class="bg-accent text-white px-5 py-2.5 rounded-md hover:bg-orange-600 transition-colors font-medium hover-lift">Contact</a>
@@ -69,7 +78,15 @@
         <div id="mobile-menu" class="md:hidden hidden absolute w-full left-0 top-full bg-white border-t shadow-lg z-50">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-accent bg-orange-50">Home</a>
-                <a href="productos-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50">Products</a>
+                <div class="space-y-1">
+                    <a href="productos-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 flex justify-between items-center">
+                        Products
+                    </a>
+                    <div class="pl-6 space-y-1 mt-1">
+                        <a href="productos-en.html?marca=fotric" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-500 hover:text-accent hover:bg-slate-50 transition-colors border-l-2 border-slate-200">Fotric</a>
+                        <a href="productos-en.html?marca=iriss" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-500 hover:text-accent hover:bg-slate-50 transition-colors border-l-2 border-slate-200">Iriss</a>
+                    </div>
+                </div>
                 <a href="servicios-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50">Services</a>
                 <a href="nosotros-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50">About Us</a>
                 <a href="contacto-en.html" class="block px-3 py-2 rounded-md text-base font-medium text-accent font-bold">Contact</a>
@@ -125,7 +142,7 @@
                         <h3 class="text-xl font-bold text-primary mb-2">FOTRIC TK6</h3>
                         <ul class="text-sm text-slate-600 space-y-1 mb-4 border-l-2 border-slate-200 pl-3">
                             <li><span class="font-semibold">Resolution:</span> 384x288</li>
-                            <li><span class="font-semibold">Range:</span> -20 °C to 550 °C</li>
+                            <li><span class="font-semibold">Range:</span> -20 ï¿½C to 550 ï¿½C</li>
                         </ul>
                     </div>
                     <div class="w-full text-center bg-accent text-white font-bold py-2.5 rounded hover:bg-orange-600 transition-colors mt-auto">

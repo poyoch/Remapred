@@ -2,7 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Current language determined by html lang attribute
   const lang = document.documentElement.lang || 'es';
 
-  const products = window.fotricProducts || [];
+  let products = window.fotricProducts || [];
+  
+  // Filter by brand (marca) from URL if present
+  const urlParams = new URLSearchParams(window.location.search);
+  const marcaFiltro = urlParams.get('marca');
+  if (marcaFiltro) {
+    const marcaUpper = marcaFiltro.toUpperCase();
+    products = products.filter(p => p.nombre.toUpperCase().startsWith(marcaUpper));
+  }
   
   // Ensure products are sorted by price ascending, but items without price (null) go at the end
   products.sort((a, b) => {
