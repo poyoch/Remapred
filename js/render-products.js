@@ -81,16 +81,26 @@ function renderProductCards(products, container, lang) {
               </li>`;
     }).join("");
 
+    let brandLogoHtml = '';
+    if (nombre.toUpperCase().includes('FOTRIC')) {
+        brandLogoHtml = '<img src="img/fotric-logo.png" alt="FOTRIC" class="h-6 object-contain ml-auto">';
+    } else if (nombre.toUpperCase().includes('IRISS')) {
+        brandLogoHtml = '<img src="img/iriss-logo.svg" alt="IRISS" class="h-6 object-contain ml-auto">';
+    }
+
     card.innerHTML = `
       <div onclick="window.location.href='producto${lang === 'en' ? '-en' : ''}.html?id=${product.id}'" class="cursor-pointer h-full flex flex-col">
-          <div class="product-img-wrapper h-64 w-full flex items-center justify-center mb-4 overflow-hidden rounded">
+          <div class="product-img-wrapper h-64 w-full flex items-center justify-center mb-4 overflow-hidden rounded relative">
               <img src="${product.imagen}" alt="${nombre}" 
                    onerror="this.src='img/productos/placeholder.svg'"
                    class="max-h-full object-contain mix-blend-multiply ${product.cssScale || ''}">
           </div>
           <div class="flex-grow flex flex-col">
               <div class="flex flex-col mb-2">
-                <span class="inline-block bg-accent/10 text-accent text-[10px] font-bold px-2 py-1 rounded w-max mb-2">${gama}</span>
+                <div class="flex items-center w-full mb-2">
+                    <span class="inline-block bg-accent/10 text-accent text-[10px] font-bold px-2 py-1 rounded w-max">${gama}</span>
+                    ${brandLogoHtml}
+                </div>
                 <h3 class="font-bold text-primary text-lg leading-tight">${nombre}</h3>
               </div>
               
