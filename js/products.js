@@ -425,8 +425,8 @@ const products = [
     nombre: "IRISS VPT-75",
     gama: { es: "Serie Platinum VPT", en: "Platinum VPT Series" },
     precioUSD: null,
-    imagen: "img/productos/iriss-vpt-75.png",
-    imagenes: ["img/productos/iriss-vpt-75.png"],
+    imagen: "img/productos/iriss-vpt-75.jpg",
+    imagenes: ["img/productos/iriss-vpt-75.jpg"],
     urlFabricante: "https://iriss.com",
     especificaciones: [
       { etiqueta: { es: "Dimensiones totales", en: "Overall dimensions" }, valor: { es: "12,1 cm (4,8 pulgadas) de diámetro", en: "12.1 cm (4.8 inches) diameter" } },
@@ -459,8 +459,8 @@ const products = [
     nombre: "IRISS VPT-100",
     gama: { es: "Serie Platinum VPT", en: "Platinum VPT Series" },
     precioUSD: null,
-    imagen: "img/productos/iriss-vpt-100.png",
-    imagenes: ["img/productos/iriss-vpt-100.png"],
+    imagen: "img/productos/iriss-vpt-100.jpg",
+    imagenes: ["img/productos/iriss-vpt-100.jpg"],
     urlFabricante: "https://iriss.com",
     especificaciones: [
       { etiqueta: { es: "Dimensiones totales", en: "Overall dimensions" }, valor: { es: "15,1 cm (5,95 pulgadas) de diámetro", en: "15.1 cm (5.95 inches) diameter" } },
