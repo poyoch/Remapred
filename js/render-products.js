@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (marcaFiltro) {
     const marcaUpper = marcaFiltro.toUpperCase();
     products = products.filter(p => p.nombre.toUpperCase().startsWith(marcaUpper));
+
+    const sidebar = document.getElementById('filters-sidebar');
+    if (sidebar && marcaUpper === 'IRISS') {
+      sidebar.style.display = 'none';
+    }
   }
   
   // Ensure products are sorted by price ascending, but items without price (null) go at the end
