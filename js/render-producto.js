@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="mb-4">
           <div class="flex items-center justify-between mb-4">
             <span class="inline-block bg-accent/10 text-accent font-bold px-3 py-1 rounded-full text-sm">${gama}</span>
-            ${nombre.toUpperCase().includes('FOTRIC') ? '<img src="img/fotric-logo.png" alt="FOTRIC" class="h-8 object-contain">' : ''}
-            ${nombre.toUpperCase().includes('IRISS') ? '<img src="img/iriss-logo.svg" alt="IRISS" class="h-8 object-contain">' : ''}
+            ${nombre.toUpperCase().includes('FOTRIC') ? '<img src="img/fotric-logo.png" alt="FOTRIC" class="h-12 object-contain">' : ''}
+            ${nombre.toUpperCase().includes('IRISS') ? '<img src="img/iriss-logo.svg" alt="IRISS" class="h-12 object-contain">' : ''}
           </div>
           <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-4 leading-tight">${nombre}</h2>
           <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4">
