@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
-            header.classList.add('shadow-md');
+            if (header) header.classList.add('shadow-md');
         } else {
-            header.classList.remove('shadow-md');
+            if (header) header.classList.remove('shadow-md');
         }
     });
 
