@@ -384,6 +384,109 @@ const products = [
       { q: { es: "¿Es el TD2E el equipo correcto para comenzar en acústica?", en: "Is the TD2E the right equipment to start in acoustics?" }, a: { es: "Sí, es el punto de entrada ideal. Para mayor alcance o medición de flujo, considera la H4MINI. Para subestaciones y alta tensión, la H4 es la opción profesional.", en: "Yes, it is the ideal entry point. For greater range or flow measurement, consider the H4MINI. For substations and high voltage, the H4 is the professional option." } }
     ],
     descargas: []
+  },
+  // ─── SERIE IRISS VPT ─────────────────────────────────────────────────────
+  {
+    id: "iriss-vpt-50",
+    nombre: "IRISS VPT-50",
+    gama: { es: "Serie Platinum VPT", en: "Platinum VPT Series" },
+    precioUSD: null,
+    imagen: "img/productos/iriss-vpt-50.png",
+    imagenes: ["img/productos/iriss-vpt-50.png"],
+    urlFabricante: "https://iriss.com",
+    especificaciones: [
+      { etiqueta: { es: "Dimensiones totales", en: "Overall dimensions" }, valor: { es: "9,1 cm (3,6 pulgadas) de diámetro", en: "9.1 cm (3.6 inches) diameter" } },
+      { etiqueta: { es: "Dimensiones de apertura", en: "Aperture dimensions" }, valor: { es: "5,1 cm (2,0 pulgadas) de diámetro", en: "5.1 cm (2.0 inches) diameter" } },
+      { etiqueta: { es: "Espesor total", en: "Overall thickness" }, valor: { es: "2,6 cm (1,0 pulgadas)", en: "2.6 cm (1.0 inches)" } },
+      { etiqueta: { es: "Calificación ambiental", en: "Environmental rating" }, valor: { es: "IP67 / NEMA 6", en: "IP67 / NEMA 6" } },
+      { etiqueta: { es: "Temperatura de funcionamiento", en: "Operating temperature" }, valor: { es: "-40 °C a 273 °C", en: "-40 °C to 273 °C" } },
+      { etiqueta: { es: "Cuerpo material", en: "Body material" }, valor: { es: "Nylon UL 94 5VA; cubierta de aluminio", en: "Nylon UL 94 5VA; aluminum cover" } },
+      { etiqueta: { es: "Material de la junta", en: "Gasket material" }, valor: { es: "UL 94 5VA TPE", en: "UL 94 5VA TPE" } },
+      { etiqueta: { es: "Material de ferretería", en: "Hardware material" }, valor: { es: "Acero inoxidable 316", en: "316 Stainless Steel" } },
+      { etiqueta: { es: "Rango de voltaje", en: "Voltage range" }, valor: { es: "Cualquier", en: "Any" } },
+      { etiqueta: { es: "Material Óptico", en: "Optic material" }, valor: { es: "Poly-View™ Polímero transmisivo", en: "Poly-View™ Transmissive polymer" } }
+    ],
+    aplicaciones: { es: "IR de onda media e IR de onda larga; Ultravioleta (UV); Inspección visual; Aplicaciones de Media/Alta Tensión.", en: "Mid-wave and long-wave IR; Ultraviolet (UV); Visual inspection; Medium/High Voltage applications." },
+    beneficios: [
+      { es: "Permite inspecciones infrarrojas y visuales seguras", en: "Enables safe infrared and visual inspections" },
+      { es: "Puesta a tierra automáticamente", en: "Automatically grounded" },
+      { es: "Rejilla de refuerzo de aluminio (estándar IP22/IP2x)", en: "Aluminum reinforcing grill (IP22/IP2x standard)" },
+      { es: "Compatible con cualquier cámara termográfica", en: "Compatible with any thermal camera" },
+      { es: "Certificaciones: UL, cUL, CSA, ABS, DNV, Lloyds, IEEE", en: "Certifications: UL, cUL, CSA, ABS, DNV, Lloyds, IEEE" }
+    ],
+    faqs: [
+      { q: { es: "¿Qué tipo de inspecciones permite?", en: "What type of inspections does it allow?" }, a: { es: "Permite inspecciones por infrarrojo (onda media y larga), ultravioleta y visuales de forma segura.", en: "It allows infrared (mid and long wave), ultraviolet, and visual inspections safely." } },
+      { q: { es: "¿Es seguro usarlo en aplicaciones de alto voltaje?", en: "Is it safe to use in high voltage applications?" }, a: { es: "Sí, cuenta con certificaciones internacionales y cumple con estándares estrictos como IEEE C37 20.2.a.3.6 para resistir arcos eléctricos.", en: "Yes, it has international certifications and meets strict standards like IEEE C37 20.2.a.3.6 to withstand arc flashes." } }
+    ],
+    descargas: []
+  },
+  {
+    id: "iriss-vpt-75",
+    nombre: "IRISS VPT-75",
+    gama: { es: "Serie Platinum VPT", en: "Platinum VPT Series" },
+    precioUSD: null,
+    imagen: "img/productos/iriss-vpt-75.png",
+    imagenes: ["img/productos/iriss-vpt-75.png"],
+    urlFabricante: "https://iriss.com",
+    especificaciones: [
+      { etiqueta: { es: "Dimensiones totales", en: "Overall dimensions" }, valor: { es: "12,1 cm (4,8 pulgadas) de diámetro", en: "12.1 cm (4.8 inches) diameter" } },
+      { etiqueta: { es: "Dimensiones de apertura", en: "Aperture dimensions" }, valor: { es: "7,6 cm (3,0 pulgadas) de diámetro", en: "7.6 cm (3.0 inches) diameter" } },
+      { etiqueta: { es: "Espesor total", en: "Overall thickness" }, valor: { es: "2,6 cm (1,0 pulgadas)", en: "2.6 cm (1.0 inches)" } },
+      { etiqueta: { es: "Calificación ambiental", en: "Environmental rating" }, valor: { es: "IP67 / NEMA 6", en: "IP67 / NEMA 6" } },
+      { etiqueta: { es: "Temperatura de funcionamiento", en: "Operating temperature" }, valor: { es: "-40 °C a 273 °C", en: "-40 °C to 273 °C" } },
+      { etiqueta: { es: "Cuerpo material", en: "Body material" }, valor: { es: "Nylon UL 94 5VA; cubierta de aluminio", en: "Nylon UL 94 5VA; aluminum cover" } },
+      { etiqueta: { es: "Material de la junta", en: "Gasket material" }, valor: { es: "UL 94 5VA TPE", en: "UL 94 5VA TPE" } },
+      { etiqueta: { es: "Material de ferretería", en: "Hardware material" }, valor: { es: "Acero inoxidable 316", en: "316 Stainless Steel" } },
+      { etiqueta: { es: "Rango de voltaje", en: "Voltage range" }, valor: { es: "Cualquier", en: "Any" } },
+      { etiqueta: { es: "Material Óptico", en: "Optic material" }, valor: { es: "Poly-View™ Polímero transmisivo", en: "Poly-View™ Transmissive polymer" } }
+    ],
+    aplicaciones: { es: "IR de onda media e IR de onda larga; Ultravioleta (UV); Inspección visual; Aplicaciones de Media/Alta Tensión.", en: "Mid-wave and long-wave IR; Ultraviolet (UV); Visual inspection; Medium/High Voltage applications." },
+    beneficios: [
+      { es: "Permite inspecciones infrarrojas y visuales seguras", en: "Enables safe infrared and visual inspections" },
+      { es: "Puesta a tierra automáticamente", en: "Automatically grounded" },
+      { es: "Rejilla de refuerzo de aluminio (estándar IP22/IP2x)", en: "Aluminum reinforcing grill (IP22/IP2x standard)" },
+      { es: "Compatible con cualquier cámara termográfica", en: "Compatible with any thermal camera" },
+      { es: "Certificaciones: UL, cUL, CSA, ABS, DNV, Lloyds, IEEE", en: "Certifications: UL, cUL, CSA, ABS, DNV, Lloyds, IEEE" }
+    ],
+    faqs: [
+      { q: { es: "¿Qué tipo de inspecciones permite?", en: "What type of inspections does it allow?" }, a: { es: "Permite inspecciones por infrarrojo (onda media y larga), ultravioleta y visuales de forma segura.", en: "It allows infrared (mid and long wave), ultraviolet, and visual inspections safely." } },
+      { q: { es: "¿Es seguro usarlo en aplicaciones de alto voltaje?", en: "Is it safe to use in high voltage applications?" }, a: { es: "Sí, cuenta con certificaciones internacionales y cumple con estándares estrictos como IEEE C37 20.2.a.3.6 para resistir arcos eléctricos.", en: "Yes, it has international certifications and meets strict standards like IEEE C37 20.2.a.3.6 to withstand arc flashes." } }
+    ],
+    descargas: []
+  },
+  {
+    id: "iriss-vpt-100",
+    nombre: "IRISS VPT-100",
+    gama: { es: "Serie Platinum VPT", en: "Platinum VPT Series" },
+    precioUSD: null,
+    imagen: "img/productos/iriss-vpt-100.png",
+    imagenes: ["img/productos/iriss-vpt-100.png"],
+    urlFabricante: "https://iriss.com",
+    especificaciones: [
+      { etiqueta: { es: "Dimensiones totales", en: "Overall dimensions" }, valor: { es: "15,1 cm (5,95 pulgadas) de diámetro", en: "15.1 cm (5.95 inches) diameter" } },
+      { etiqueta: { es: "Dimensiones de apertura", en: "Aperture dimensions" }, valor: { es: "10,2 cm (4,0 pulgadas) de diámetro", en: "10.2 cm (4.0 inches) diameter" } },
+      { etiqueta: { es: "Espesor total", en: "Overall thickness" }, valor: { es: "2,6 cm (1,0 pulgadas)", en: "2.6 cm (1.0 inches)" } },
+      { etiqueta: { es: "Calificación ambiental", en: "Environmental rating" }, valor: { es: "IP67 / NEMA 6", en: "IP67 / NEMA 6" } },
+      { etiqueta: { es: "Temperatura de funcionamiento", en: "Operating temperature" }, valor: { es: "-40 °C a 273 °C", en: "-40 °C to 273 °C" } },
+      { etiqueta: { es: "Cuerpo material", en: "Body material" }, valor: { es: "Nylon UL 94 5VA; cubierta de aluminio", en: "Nylon UL 94 5VA; aluminum cover" } },
+      { etiqueta: { es: "Material de la junta", en: "Gasket material" }, valor: { es: "UL 94 5VA TPE", en: "UL 94 5VA TPE" } },
+      { etiqueta: { es: "Material de ferretería", en: "Hardware material" }, valor: { es: "Acero inoxidable 316", en: "316 Stainless Steel" } },
+      { etiqueta: { es: "Rango de voltaje", en: "Voltage range" }, valor: { es: "Cualquier", en: "Any" } },
+      { etiqueta: { es: "Material Óptico", en: "Optic material" }, valor: { es: "Poly-View™ Polímero transmisivo", en: "Poly-View™ Transmissive polymer" } }
+    ],
+    aplicaciones: { es: "IR de onda media e IR de onda larga; Ultravioleta (UV); Inspección visual; Aplicaciones de Media/Alta Tensión.", en: "Mid-wave and long-wave IR; Ultraviolet (UV); Visual inspection; Medium/High Voltage applications." },
+    beneficios: [
+      { es: "Permite inspecciones infrarrojas y visuales seguras", en: "Enables safe infrared and visual inspections" },
+      { es: "Puesta a tierra automáticamente", en: "Automatically grounded" },
+      { es: "Rejilla de refuerzo de aluminio (estándar IP22/IP2x)", en: "Aluminum reinforcing grill (IP22/IP2x standard)" },
+      { es: "Compatible con cualquier cámara termográfica", en: "Compatible with any thermal camera" },
+      { es: "Certificaciones: UL, cUL, CSA, ABS, DNV, Lloyds, IEEE", en: "Certifications: UL, cUL, CSA, ABS, DNV, Lloyds, IEEE" }
+    ],
+    faqs: [
+      { q: { es: "¿Qué tipo de inspecciones permite?", en: "What type of inspections does it allow?" }, a: { es: "Permite inspecciones por infrarrojo (onda media y larga), ultravioleta y visuales de forma segura.", en: "It allows infrared (mid and long wave), ultraviolet, and visual inspections safely." } },
+      { q: { es: "¿Es seguro usarlo en aplicaciones de alto voltaje?", en: "Is it safe to use in high voltage applications?" }, a: { es: "Sí, cuenta con certificaciones internacionales y cumple con estándares estrictos como IEEE C37 20.2.a.3.6 para resistir arcos eléctricos.", en: "Yes, it has international certifications and meets strict standards like IEEE C37 20.2.a.3.6 to withstand arc flashes." } }
+    ],
+    descargas: []
   }
 
 ];
