@@ -391,8 +391,8 @@ const products = [
     nombre: "IRISS VPT-50",
     gama: { es: "Serie Platinum VPT", en: "Platinum VPT Series" },
     precioUSD: null,
-    imagen: "img/productos/iriss-vpt-50.png",
-    imagenes: ["img/productos/iriss-vpt-50.png"],
+    imagen: "img/productos/iriss-vpt-50.jpg",
+    imagenes: ["img/productos/iriss-vpt-50.jpg"],
     urlFabricante: "https://iriss.com",
     especificaciones: [
       { etiqueta: { es: "Dimensiones totales", en: "Overall dimensions" }, valor: { es: "9,1 cm (3,6 pulgadas) de diámetro", en: "9.1 cm (3.6 inches) diameter" } },
