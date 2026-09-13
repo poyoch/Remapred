@@ -117,12 +117,12 @@
     </section>
 
     <!-- Featured Products -->
-    <section class="relative z-20 -mt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-20">
-        <div class="bg-white rounded-2xl shadow-2xl p-8 border border-slate-100 border-t-4 border-t-accent">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4 border-b border-slate-100 pb-4">
+    <section class="relative z-20 -mt-12 md:-mt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-16 md:mb-20">
+        <div class="bg-white rounded-2xl shadow-2xl p-5 md:p-8 border border-slate-100 border-t-4 border-t-accent">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-6 md:mb-8 gap-4 border-b border-slate-100 pb-4 text-center md:text-left">
                 <div>
-                    <h2 class="text-3xl font-bold text-primary">Equipos Más Destacados</h2>
-                    <p class="text-slate-500 mt-2">La mejor selección en tecnología termográfica y acústica</p>
+                    <h2 class="text-2xl md:text-3xl font-bold text-primary">Equipos Más Destacados</h2>
+                    <p class="text-slate-500 mt-2 text-sm md:text-base">La mejor selección en tecnología termográfica y acústica</p>
                 </div>
                 <div class="flex space-x-2">
                     <button onclick="document.getElementById('featured-slider').scrollBy({left: -350, behavior: 'smooth'})" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-accent hover:border-accent hover:text-white transition-colors shadow-sm">
@@ -134,7 +134,7 @@
                 </div>
             </div>
 
-            <div id="featured-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 scroll-smooth hide-scrollbar p-2">
+            <div id="featured-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-4 md:gap-6 pb-6 scroll-smooth hide-scrollbar p-1 md:p-2">
                 
                 <!-- Product 1 -->
                 <div class="product-card group bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-xl hover:border-accent/30 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center hover:-translate-y-1" onclick="window.location.href='producto.html?id=fotric-tk7'">
@@ -269,12 +269,12 @@
         </div>
     </section>
     <!-- Strategic Partners -->
-    <section class="py-16 bg-slate-50 border-t border-slate-200">
+    <section class="py-12 md:py-16 bg-slate-50 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-3xl font-bold text-primary mb-4">Nuestros Aliados Estratégicos</h2>
-                <p class="text-slate-600">Nos asociamos exclusivamente con fabricantes líderes mundiales para asegurar que cada equipo cuente con tecnología de punta, soporte directo y certificaciones internacionales.</p>
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-3 md:mb-4">Nuestros Aliados Estratégicos</h2>
+                <p class="text-slate-600 text-sm md:text-base">Nos asociamos exclusivamente con fabricantes líderes mundiales para asegurar que cada equipo cuente con tecnología de punta, soporte directo y certificaciones internacionales.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -317,15 +317,15 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section class="py-20 bg-white border-t border-slate-100 relative overflow-hidden">
+    <section class="py-12 md:py-20 bg-white border-t border-slate-100 relative overflow-hidden">
         <!-- Decorative bg blob -->
-        <div class="absolute -right-20 -top-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl pointer-events-none hidden md:block"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-accent font-bold tracking-wider uppercase text-sm mb-2 block">Diferencia REMAPRED</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-4">¿Por qué elegirnos?</h2>
-                <p class="text-slate-600 text-lg">No solo vendemos equipos, ofrecemos soluciones completas respaldadas por expertos.</p>
+            <div class="text-center max-w-2xl mx-auto mb-10 md:mb-16">
+                <span class="text-accent font-bold tracking-wider uppercase text-xs md:text-sm mb-2 block">Diferencia REMAPRED</span>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-primary mb-3 md:mb-4">¿Por qué elegirnos?</h2>
+                <p class="text-slate-600 text-base md:text-lg">No solo vendemos equipos, ofrecemos soluciones completas respaldadas por expertos.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
