@@ -29,6 +29,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableContainer = document.getElementById('comparative-table-container');
 
   if (container) {
+    if (marcaFiltro) {
+      const marcaUpper = marcaFiltro.toUpperCase();
+      let subtitleText = '';
+      if (marcaUpper === 'FOTRIC') {
+          subtitleText = lang === 'en' ? 'Strategic Partner of Fotric' : 'Aliado estratégico de Fotric';
+      } else if (marcaUpper === 'IRISS') {
+          subtitleText = lang === 'en' ? 'Strategic Partner of IRISS' : 'Aliado estratégico de IRISS';
+      }
+      
+      if (subtitleText) {
+          const titleEl = document.createElement('h2');
+          titleEl.className = 'text-2xl md:text-3xl font-bold text-primary mb-8 border-b pb-4';
+          titleEl.innerHTML = subtitleText;
+          container.parentNode.insertBefore(titleEl, container);
+      }
+    }
+
     renderProductCards(products, container, lang);
     setupFilters(products, container, lang);
   }
