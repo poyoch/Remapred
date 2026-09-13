@@ -118,29 +118,29 @@
 
     <!-- Featured Products -->
     <section class="relative z-20 -mt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-20">
-        <div class="bg-white rounded-xl shadow-xl p-8 border border-slate-100">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 border border-slate-100 border-t-4 border-t-accent">
             <div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4 border-b border-slate-100 pb-4">
                 <div>
                     <h2 class="text-3xl font-bold text-primary">Equipos Más Destacados</h2>
                     <p class="text-slate-500 mt-2">La mejor selección en tecnología termográfica y acústica</p>
                 </div>
                 <div class="flex space-x-2">
-                    <button onclick="document.getElementById('featured-slider').scrollBy({left: -350, behavior: 'smooth'})" class="w-10 h-10 rounded border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-slate-50 hover:text-primary transition-colors">
+                    <button onclick="document.getElementById('featured-slider').scrollBy({left: -350, behavior: 'smooth'})" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-accent hover:border-accent hover:text-white transition-colors shadow-sm">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
-                    <button onclick="document.getElementById('featured-slider').scrollBy({left: 350, behavior: 'smooth'})" class="w-10 h-10 rounded border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-slate-50 hover:text-primary transition-colors">
+                    <button onclick="document.getElementById('featured-slider').scrollBy({left: 350, behavior: 'smooth'})" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-accent hover:border-accent hover:text-white transition-colors shadow-sm">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
             </div>
 
-            <div id="featured-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 scroll-smooth hide-scrollbar">
+            <div id="featured-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 scroll-smooth hide-scrollbar p-2">
                 
                 <!-- Product 1 -->
-                <div class="product-card group bg-white border border-slate-200 rounded-lg p-5 hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-tk7'">
-                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded p-4 border border-slate-100">
-                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Serie Media</span>
-                        <img src="img/productos/fotric-tk7-frontal.png" alt="FOTRIC TK7" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300">
+                <div class="product-card group bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-xl hover:border-accent/30 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center hover:-translate-y-1" onclick="window.location.href='producto.html?id=fotric-tk7'">
+                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100 group-hover:bg-orange-50/30 transition-colors">
+                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Serie Media</span>
+                        <img src="img/productos/fotric-tk7-frontal.png" alt="FOTRIC TK7" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500">
                     </div>
                     
                     <div class="flex-grow">
@@ -156,17 +156,17 @@
                     </div>
                     
                     <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2.5 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm">
+                        <div class="w-full text-center text-primary font-bold py-2.5 rounded-full border-2 border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm shadow-sm">
                         Cotizar Equipo
                         </div>
                     </div>
                 </div>
 
                 <!-- Product 2 -->
-                <div class="product-card group bg-white border border-slate-200 rounded-lg p-5 hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-td2e'">
-                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded p-4 border border-slate-100">
-                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Serie Acústica</span>
-                        <img src="https://static.wixstatic.com/media/0fa391_1356242bddca46789c14fc213589287a~mv2.png" alt="FOTRIC TD2E" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300">
+                <div class="product-card group bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-xl hover:border-accent/30 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center hover:-translate-y-1" onclick="window.location.href='producto.html?id=fotric-td2e'">
+                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100 group-hover:bg-orange-50/30 transition-colors">
+                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Serie Acústica</span>
+                        <img src="https://static.wixstatic.com/media/0fa391_1356242bddca46789c14fc213589287a~mv2.png" alt="FOTRIC TD2E" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500">
                     </div>
                     
                     <div class="flex-grow">
@@ -182,17 +182,17 @@
                     </div>
                     
                     <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2.5 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm">
+                        <div class="w-full text-center text-primary font-bold py-2.5 rounded-full border-2 border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm shadow-sm">
                         Cotizar Equipo
                         </div>
                     </div>
                 </div>
 
                 <!-- Product 3 -->
-                <div class="product-card group bg-white border border-slate-200 rounded-lg p-5 hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center" onclick="window.location.href='producto.html?id=iriss-vpt-75'">
-                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded p-4 border border-slate-100">
-                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Serie Platinum</span>
-                        <img src="img/productos/iriss-vpt-75.jpg" alt="IRISS VPT-75" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300 scale-110">
+                <div class="product-card group bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-xl hover:border-accent/30 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center hover:-translate-y-1" onclick="window.location.href='producto.html?id=iriss-vpt-75'">
+                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100 group-hover:bg-orange-50/30 transition-colors">
+                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Serie Platinum</span>
+                        <img src="img/productos/iriss-vpt-75.jpg" alt="IRISS VPT-75" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 scale-110">
                     </div>
                     
                     <div class="flex-grow">
@@ -208,17 +208,17 @@
                     </div>
                     
                     <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2.5 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm">
+                        <div class="w-full text-center text-primary font-bold py-2.5 rounded-full border-2 border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm shadow-sm">
                         Cotizar Equipo
                         </div>
                     </div>
                 </div>
 
                 <!-- Product 4 -->
-                <div class="product-card group bg-white border border-slate-200 rounded-lg p-5 hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-tk6'">
-                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded p-4 border border-slate-100">
-                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Serie Baja</span>
-                        <img src="img/productos/fotric-tk6-dos-camaras.png" alt="FOTRIC TK6" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300 scale-110">
+                <div class="product-card group bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-xl hover:border-accent/30 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center hover:-translate-y-1" onclick="window.location.href='producto.html?id=fotric-tk6'">
+                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100 group-hover:bg-orange-50/30 transition-colors">
+                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Serie Baja</span>
+                        <img src="img/productos/fotric-tk6-dos-camaras.png" alt="FOTRIC TK6" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 scale-110">
                     </div>
                     
                     <div class="flex-grow">
@@ -234,17 +234,17 @@
                     </div>
                     
                     <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2.5 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm">
+                        <div class="w-full text-center text-primary font-bold py-2.5 rounded-full border-2 border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm shadow-sm">
                         Cotizar Equipo
                         </div>
                     </div>
                 </div>
                 
                 <!-- Product 5 -->
-                <div class="product-card group bg-white border border-slate-200 rounded-lg p-5 hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-tk8'">
-                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded p-4 border border-slate-100">
-                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Serie Media</span>
-                        <img src="img/productos/fotric-tk8-frontal.png" alt="FOTRIC TK8" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300">
+                <div class="product-card group bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-xl hover:border-accent/30 transition-all duration-300 flex flex-col h-full cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)] snap-center hover:-translate-y-1" onclick="window.location.href='producto.html?id=fotric-tk8'">
+                    <div class="relative h-56 w-full flex items-center justify-center mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100 group-hover:bg-orange-50/30 transition-colors">
+                        <span class="absolute top-3 left-3 bg-slate-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Serie Media</span>
+                        <img src="img/productos/fotric-tk8-frontal.png" alt="FOTRIC TK8" class="max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500">
                     </div>
                     
                     <div class="flex-grow">
@@ -260,7 +260,7 @@
                     </div>
                     
                     <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2.5 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm">
+                        <div class="w-full text-center text-primary font-bold py-2.5 rounded-full border-2 border-primary group-hover:bg-primary group-hover:text-white transition-colors text-sm shadow-sm">
                         Cotizar Equipo
                         </div>
                     </div>
@@ -279,35 +279,35 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <!-- Fotric -->
-                <div class="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-primary/50 transition-all duration-300 cursor-pointer flex flex-col items-center text-center group" onclick="window.location.href='productos.html?marca=fotric'">
-                    <div class="h-20 mb-6 flex items-center justify-center w-full border-b border-slate-100 pb-6">
-                        <img src="img/fotric-logo.png" alt="FOTRIC" class="h-12 object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+                <div class="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-slate-200 hover:shadow-lg hover:border-accent/50 transition-all duration-300 cursor-pointer flex flex-col items-center text-center group hover:-translate-y-1" onclick="window.location.href='productos.html?marca=fotric'">
+                    <div class="h-24 mb-6 flex items-center justify-center w-full pb-4">
+                        <img src="img/fotric-logo.png" alt="FOTRIC" class="h-14 object-contain group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <h3 class="text-xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Aliado estratégico de Fotric</h3>
+                    <div class="w-12 h-1 bg-accent/20 group-hover:bg-accent transition-colors mb-6 rounded-full"></div>
                     <p class="text-sm text-slate-500">Tecnología de imagen térmica de vanguardia para inspecciones precisas y mantenimiento predictivo en entornos industriales.</p>
                 </div>
                 
                 <!-- Iriss -->
-                <div class="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-primary/50 transition-all duration-300 cursor-pointer flex flex-col items-center text-center group" onclick="window.location.href='productos.html?marca=iriss'">
-                    <div class="h-20 mb-6 flex items-center justify-center w-full border-b border-slate-100 pb-6">
-                        <img src="img/iriss-logo.svg" alt="IRISS" class="h-12 object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+                <div class="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-slate-200 hover:shadow-lg hover:border-accent/50 transition-all duration-300 cursor-pointer flex flex-col items-center text-center group hover:-translate-y-1" onclick="window.location.href='productos.html?marca=iriss'">
+                    <div class="h-24 mb-6 flex items-center justify-center w-full pb-4">
+                        <img src="img/iriss-logo.svg" alt="IRISS" class="h-14 object-contain group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <h3 class="text-xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Aliado estratégico de IRISS</h3>
+                    <div class="w-12 h-1 bg-accent/20 group-hover:bg-accent transition-colors mb-6 rounded-full"></div>
                     <p class="text-sm text-slate-500">Líder global en ventanas de inspección infrarroja, facilitando inspecciones eléctricas seguras sin abrir tableros.</p>
                 </div>
             </div>
 
             <!-- Stats -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div class="bg-white py-6 px-4 rounded-lg border border-slate-200 text-center flex flex-col items-center justify-center shadow-sm">
+                <div class="bg-white py-6 px-4 rounded-lg border border-slate-200 text-center flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                     <i class="fa-solid fa-certificate text-2xl text-accent mb-2"></i>
                     <div class="text-lg font-bold text-primary">100% Originales</div>
                 </div>
-                <div class="bg-white py-6 px-4 rounded-lg border border-slate-200 text-center flex flex-col items-center justify-center shadow-sm">
+                <div class="bg-white py-6 px-4 rounded-lg border border-slate-200 text-center flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                     <i class="fa-solid fa-shield-halved text-2xl text-accent mb-2"></i>
                     <div class="text-lg font-bold text-primary">Garantía Directa</div>
                 </div>
-                <div class="bg-white py-6 px-4 rounded-lg border border-slate-200 text-center flex flex-col items-center justify-center shadow-sm">
+                <div class="bg-white py-6 px-4 rounded-lg border border-slate-200 text-center flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                     <i class="fa-solid fa-headset text-2xl text-accent mb-2"></i>
                     <div class="text-lg font-bold text-primary">Soporte Especializado</div>
                 </div>
@@ -317,36 +317,43 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section class="py-16 bg-white border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-primary mb-12">Por Qué Elegir REMAPRED</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="flex items-start">
-                    <div class="flex-shrink-0 mt-1">
-                        <i class="fa-solid fa-shield-halved text-3xl text-primary"></i>
+    <section class="py-20 bg-white border-t border-slate-100 relative overflow-hidden">
+        <!-- Decorative bg blob -->
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-accent font-bold tracking-wider uppercase text-sm mb-2 block">Diferencia REMAPRED</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-4">¿Por qué elegirnos?</h2>
+                <p class="text-slate-600 text-lg">No solo vendemos equipos, ofrecemos soluciones completas respaldadas por expertos.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-accent/30 transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-colors text-accent">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
                     </div>
-                    <div class="ml-4">
-                        <h3 class="text-lg font-bold text-primary">Aliados Estratégicos</h3>
-                        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Equipos originales con garantía oficial y respaldo directo de los fabricantes FOTRIC e IRISS.</p>
-                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Respaldo Directo</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Equipos 100% originales con garantía oficial directa. Somos el canal oficial y certificado de los fabricantes FOTRIC e IRISS.</p>
                 </div>
-                <div class="flex items-start">
-                    <div class="flex-shrink-0 mt-1">
-                        <i class="fa-solid fa-user-tie text-3xl text-primary"></i>
+                
+                <!-- Benefit 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-accent/30 transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-colors text-accent">
+                        <i class="fa-solid fa-user-tie text-2xl"></i>
                     </div>
-                    <div class="ml-4">
-                        <h3 class="text-lg font-bold text-primary">Asesoría Técnica</h3>
-                        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Te ayudamos a elegir el equipo exacto para tu industria sin pagar de más.</p>
-                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Asesoría Técnica</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">No pagues de más. Nuestros ingenieros evalúan tu caso y te recomiendan exactamente la cámara o ventana que tu industria necesita.</p>
                 </div>
-                <div class="flex items-start">
-                    <div class="flex-shrink-0 mt-1">
-                        <i class="fa-solid fa-headset text-3xl text-primary"></i>
+                
+                <!-- Benefit 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-accent/30 transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-colors text-accent">
+                        <i class="fa-solid fa-graduation-cap text-2xl"></i>
                     </div>
-                    <div class="ml-4">
-                        <h3 class="text-lg font-bold text-primary">Soporte y Capacitación</h3>
-                        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Te enseñamos a operar la cámara y a utilizar el software de análisis AnalyzIR.</p>
-                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Capacitación Incluida</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Te enseñamos desde cero a operar la cámara en campo y a utilizar el software de análisis AnalyzIR para tus reportes.</p>
                 </div>
             </div>
         </div>
