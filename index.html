@@ -118,131 +118,165 @@
 
     <!-- Featured Products (Overlapping) -->
     <section class="relative z-20 -mt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-20">
-        <div class="bg-white rounded-xl shadow-xl p-8">
-            <div class="flex justify-between items-center mb-8">
-                <h2 class="text-2xl md:text-3xl font-bold text-primary">Nuestros Equipos Más Destacados</h2>
-                <div class="flex space-x-2">
-                    <button onclick="document.getElementById('featured-slider').scrollBy({left: -350, behavior: 'smooth'})" class="w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-400 hover:border-primary hover:text-primary transition-colors">
-                        <i class="fa-solid fa-chevron-left"></i>
+        <div class="bg-white rounded-[2.5rem] shadow-2xl p-8 md:p-12 border border-slate-100">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+                <div>
+                    <span class="text-accent font-bold tracking-wider uppercase text-sm mb-2 block"><i class="fa-solid fa-fire mr-2"></i>Lo Mejor del Catálogo</span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-slate-800 uppercase tracking-tight">Equipos <span class="text-accent">Destacados</span></h2>
+                </div>
+                <div class="flex space-x-3">
+                    <button onclick="document.getElementById('featured-slider').scrollBy({left: -350, behavior: 'smooth'})" class="w-12 h-12 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-accent hover:text-white hover:border-accent transition-all hover:-translate-y-1 shadow-sm">
+                        <i class="fa-solid fa-arrow-left"></i>
                     </button>
-                    <button onclick="document.getElementById('featured-slider').scrollBy({left: 350, behavior: 'smooth'})" class="w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-400 hover:border-primary hover:text-primary transition-colors">
-                        <i class="fa-solid fa-chevron-right"></i>
+                    <button onclick="document.getElementById('featured-slider').scrollBy({left: 350, behavior: 'smooth'})" class="w-12 h-12 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-accent hover:text-white hover:border-accent transition-all hover:-translate-y-1 shadow-sm">
+                        <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
 
-            <div id="featured-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-8 pb-4 scroll-smooth hide-scrollbar">
+            <div id="featured-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-8 pb-8 scroll-smooth hide-scrollbar">
+                
                 <!-- Product 1 -->
-                <div class="product-card border border-slate-100 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white flex flex-col h-full hover-lift group relative cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-tk7'">
-                    <div class="product-img-wrapper h-64 w-full flex items-center justify-center mb-6">
-                        <img src="img/productos/fotric-tk7-frontal.png" alt="FOTRIC TK7" class="max-h-full object-contain mix-blend-multiply">
-                    </div>
-                    <div class="flex-grow">
-                        <div class="flex items-center w-full mb-2">
-                            <span class="inline-block bg-accent/10 text-accent text-[10px] font-bold px-2 py-1 rounded w-max">Serie Media</span>
-                            <img src="img/fotric-logo.png" alt="FOTRIC" class="h-6 object-contain ml-auto">
+                <div class="product-card group bg-white border border-slate-100 rounded-[2rem] p-5 hover:shadow-2xl transition-all duration-300 flex flex-col h-full hover:-translate-y-2 cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-tk7'">
+                    <div class="relative h-64 w-full rounded-2xl bg-slate-50 flex items-center justify-center mb-6 overflow-hidden group-hover:bg-orange-50/50 transition-colors border border-slate-100">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1">
+                            <i class="fa-solid fa-star text-yellow-400"></i> Serie Media
                         </div>
-                        <h3 class="text-xl font-bold text-primary mb-2">FOTRIC TK7</h3>
-                        <ul class="text-sm text-slate-600 space-y-1 mb-4 border-l-2 border-slate-200 pl-3">
-                            <li><span class="font-semibold">Resolución:</span> 384x288</li>
-                            <li><span class="font-semibold">Pantalla:</span> Táctil 3,5"</li>
+                        <img src="img/productos/fotric-tk7-frontal.png" alt="FOTRIC TK7" class="max-h-[85%] object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    
+                    <div class="flex-grow px-2">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-extrabold text-slate-800 group-hover:text-primary transition-colors">FOTRIC TK7</h3>
+                            <img src="img/fotric-logo.png" alt="FOTRIC" class="h-5 object-contain grayscale opacity-60">
+                        </div>
+                        
+                        <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Resolución:</span> 384x288</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Pantalla:</span> Táctil 3,5"</li>
                         </ul>
                     </div>
-                    <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        Ver Detalles y Cotizar
+                    
+                    <div class="mt-auto px-2 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-sm font-bold text-slate-400 group-hover:text-slate-800 transition-colors">Ver Detalles</span>
+                        <div class="h-10 w-auto px-5 rounded-full bg-accent text-white flex items-center justify-center hover:bg-orange-600 transition-colors shadow-md">
+                            <span class="font-bold text-sm">Cotizar</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Product 2 -->
-                <div class="product-card border border-slate-100 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white flex flex-col h-full hover-lift group relative cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-td2e'">
-                    <div class="product-img-wrapper h-64 w-full flex items-center justify-center mb-6 relative">
-                        <img src="https://static.wixstatic.com/media/0fa391_1356242bddca46789c14fc213589287a~mv2.png" alt="FOTRIC TD2E" class="max-h-full object-contain mix-blend-multiply">
-                    </div>
-                    <div class="flex-grow">
-                        <div class="flex items-center w-full mb-2">
-                            <span class="inline-block bg-accent/10 text-accent text-[10px] font-bold px-2 py-1 rounded w-max">Serie Acústica</span>
-                            <img src="img/fotric-logo.png" alt="FOTRIC" class="h-6 object-contain ml-auto">
+                <div class="product-card group bg-white border border-slate-100 rounded-[2rem] p-5 hover:shadow-2xl transition-all duration-300 flex flex-col h-full hover:-translate-y-2 cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-td2e'">
+                    <div class="relative h-64 w-full rounded-2xl bg-slate-50 flex items-center justify-center mb-6 overflow-hidden group-hover:bg-orange-50/50 transition-colors border border-slate-100">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1">
+                            <i class="fa-solid fa-star text-yellow-400"></i> Serie Acústica
                         </div>
-                        <h3 class="text-xl font-bold text-primary mb-2">FOTRIC TD2E</h3>
-                        <ul class="text-sm text-slate-600 space-y-1 mb-4 border-l-2 border-slate-200 pl-3">
-                            <li><span class="font-semibold">Sensor:</span> 64 Micrófonos MEMS</li>
-                            <li><span class="font-semibold">Rango:</span> 2 kHz - 100 kHz</li>
+                        <img src="https://static.wixstatic.com/media/0fa391_1356242bddca46789c14fc213589287a~mv2.png" alt="FOTRIC TD2E" class="max-h-[85%] object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    
+                    <div class="flex-grow px-2">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-extrabold text-slate-800 group-hover:text-primary transition-colors">FOTRIC TD2E</h3>
+                            <img src="img/fotric-logo.png" alt="FOTRIC" class="h-5 object-contain grayscale opacity-60">
+                        </div>
+                        
+                        <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Sensor:</span> 64 Micrófonos MEMS</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Rango:</span> 2 kHz - 100 kHz</li>
                         </ul>
                     </div>
-                    <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        Ver Detalles y Cotizar
+                    
+                    <div class="mt-auto px-2 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-sm font-bold text-slate-400 group-hover:text-slate-800 transition-colors">Ver Detalles</span>
+                        <div class="h-10 w-auto px-5 rounded-full bg-accent text-white flex items-center justify-center hover:bg-orange-600 transition-colors shadow-md">
+                            <span class="font-bold text-sm">Cotizar</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Product 3 -->
-                <div class="product-card border border-slate-100 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white flex flex-col h-full hover-lift group relative cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=iriss-vpt-75'">
-                    <div class="product-img-wrapper h-64 w-full flex items-center justify-center mb-6 relative">
-                        <img src="img/productos/iriss-vpt-75.jpg" alt="IRISS VPT-75" class="max-h-full object-contain mix-blend-multiply scale-[1.2]">
-                    </div>
-                    <div class="flex-grow">
-                        <div class="flex items-center w-full mb-2">
-                            <span class="inline-block bg-accent/10 text-accent text-[10px] font-bold px-2 py-1 rounded w-max">Serie Platinum VPT</span>
-                            <img src="img/iriss-logo.svg" alt="IRISS" class="h-6 object-contain ml-auto">
+                <div class="product-card group bg-white border border-slate-100 rounded-[2rem] p-5 hover:shadow-2xl transition-all duration-300 flex flex-col h-full hover:-translate-y-2 cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=iriss-vpt-75'">
+                    <div class="relative h-64 w-full rounded-2xl bg-slate-50 flex items-center justify-center mb-6 overflow-hidden group-hover:bg-orange-50/50 transition-colors border border-slate-100">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1">
+                            <i class="fa-solid fa-star text-yellow-400"></i> Serie Platinum
                         </div>
-                        <h3 class="text-xl font-bold text-primary mb-2">IRISS VPT-75</h3>
-                        <ul class="text-sm text-slate-600 space-y-1 mb-4 border-l-2 border-slate-200 pl-3">
-                            <li><span class="font-semibold">Apertura:</span> 7,6 cm (3,0")</li>
-                            <li><span class="font-semibold">Protección:</span> IP67 / NEMA 6</li>
+                        <img src="img/productos/iriss-vpt-75.jpg" alt="IRISS VPT-75" class="max-h-[85%] object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500 scale-[1.2]">
+                    </div>
+                    
+                    <div class="flex-grow px-2">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-extrabold text-slate-800 group-hover:text-primary transition-colors">IRISS VPT-75</h3>
+                            <img src="img/iriss-logo.svg" alt="IRISS" class="h-5 object-contain grayscale opacity-60">
+                        </div>
+                        
+                        <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Apertura:</span> 7,6 cm (3.0")</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Protección:</span> IP67 / NEMA 6</li>
                         </ul>
                     </div>
-                    <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        Ver Detalles y Cotizar
+                    
+                    <div class="mt-auto px-2 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-sm font-bold text-slate-400 group-hover:text-slate-800 transition-colors">Ver Detalles</span>
+                        <div class="h-10 w-auto px-5 rounded-full bg-accent text-white flex items-center justify-center hover:bg-orange-600 transition-colors shadow-md">
+                            <span class="font-bold text-sm">Cotizar</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Product 4 -->
-                <div class="product-card border border-slate-100 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white flex flex-col h-full hover-lift group relative cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-tk6'">
-                    <div class="product-img-wrapper h-64 w-full flex items-center justify-center mb-6">
-                        <img src="img/productos/fotric-tk6-dos-camaras.png" alt="FOTRIC TK6" class="max-h-full object-contain mix-blend-multiply scale-[1.3]">
-                    </div>
-                    <div class="flex-grow">
-                        <div class="flex items-center w-full mb-2">
-                            <span class="inline-block bg-accent/10 text-accent text-[10px] font-bold px-2 py-1 rounded w-max">Serie Baja</span>
-                            <img src="img/fotric-logo.png" alt="FOTRIC" class="h-6 object-contain ml-auto">
+                <div class="product-card group bg-white border border-slate-100 rounded-[2rem] p-5 hover:shadow-2xl transition-all duration-300 flex flex-col h-full hover:-translate-y-2 cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-tk6'">
+                    <div class="relative h-64 w-full rounded-2xl bg-slate-50 flex items-center justify-center mb-6 overflow-hidden group-hover:bg-orange-50/50 transition-colors border border-slate-100">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1">
+                            <i class="fa-solid fa-star text-yellow-400"></i> Serie Baja
                         </div>
-                        <h3 class="text-xl font-bold text-primary mb-2">FOTRIC TK6</h3>
-                        <ul class="text-sm text-slate-600 space-y-1 mb-4 border-l-2 border-slate-200 pl-3">
-                            <li><span class="font-semibold">Resolución:</span> 384x288</li>
-                            <li><span class="font-semibold">Rango:</span> -20 °C a 550 °C</li>
+                        <img src="img/productos/fotric-tk6-dos-camaras.png" alt="FOTRIC TK6" class="max-h-[85%] object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500 scale-[1.3]">
+                    </div>
+                    
+                    <div class="flex-grow px-2">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-extrabold text-slate-800 group-hover:text-primary transition-colors">FOTRIC TK6</h3>
+                            <img src="img/fotric-logo.png" alt="FOTRIC" class="h-5 object-contain grayscale opacity-60">
+                        </div>
+                        
+                        <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Resolución:</span> 384x288</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Rango:</span> -20 °C a 550 °C</li>
                         </ul>
                     </div>
-                    <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        Ver Detalles y Cotizar
+                    
+                    <div class="mt-auto px-2 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-sm font-bold text-slate-400 group-hover:text-slate-800 transition-colors">Ver Detalles</span>
+                        <div class="h-10 w-auto px-5 rounded-full bg-accent text-white flex items-center justify-center hover:bg-orange-600 transition-colors shadow-md">
+                            <span class="font-bold text-sm">Cotizar</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Product 5 -->
-                <div class="product-card border border-slate-100 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white flex flex-col h-full hover-lift group relative cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-tk8'">
-                    <div class="product-img-wrapper h-64 w-full flex items-center justify-center mb-6">
-                        <img src="img/productos/fotric-tk8-frontal.png" alt="FOTRIC TK8" class="max-h-full object-contain mix-blend-multiply">
-                    </div>
-                    <div class="flex-grow">
-                        <div class="flex items-center w-full mb-2">
-                            <span class="inline-block bg-accent/10 text-accent text-[10px] font-bold px-2 py-1 rounded w-max">Serie Media</span>
-                            <img src="img/fotric-logo.png" alt="FOTRIC" class="h-6 object-contain ml-auto">
+                <div class="product-card group bg-white border border-slate-100 rounded-[2rem] p-5 hover:shadow-2xl transition-all duration-300 flex flex-col h-full hover:-translate-y-2 cursor-pointer flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(33.333%-1.33rem)] snap-center" onclick="window.location.href='producto.html?id=fotric-tk8'">
+                    <div class="relative h-64 w-full rounded-2xl bg-slate-50 flex items-center justify-center mb-6 overflow-hidden group-hover:bg-orange-50/50 transition-colors border border-slate-100">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1">
+                            <i class="fa-solid fa-star text-yellow-400"></i> Serie Media
                         </div>
-                        <h3 class="text-xl font-bold text-primary mb-2">FOTRIC TK8</h3>
-                        <ul class="text-sm text-slate-600 space-y-1 mb-4 border-l-2 border-slate-200 pl-3">
-                            <li><span class="font-semibold">Resolución:</span> 384x288</li>
-                            <li><span class="font-semibold">Batería:</span> Hasta 8 h</li>
+                        <img src="img/productos/fotric-tk8-frontal.png" alt="FOTRIC TK8" class="max-h-[85%] object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    
+                    <div class="flex-grow px-2">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-extrabold text-slate-800 group-hover:text-primary transition-colors">FOTRIC TK8</h3>
+                            <img src="img/fotric-logo.png" alt="FOTRIC" class="h-5 object-contain grayscale opacity-60">
+                        </div>
+                        
+                        <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Resolución:</span> 384x288</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent mr-2"></i> <span class="font-semibold mr-1">Batería:</span> Hasta 8 h</li>
                         </ul>
                     </div>
-                    <div class="mt-auto pt-4 border-t border-slate-100">
-                        <div class="w-full text-center text-primary font-bold py-2 rounded border border-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        Ver Detalles y Cotizar
+                    
+                    <div class="mt-auto px-2 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-sm font-bold text-slate-400 group-hover:text-slate-800 transition-colors">Ver Detalles</span>
+                        <div class="h-10 w-auto px-5 rounded-full bg-accent text-white flex items-center justify-center hover:bg-orange-600 transition-colors shadow-md">
+                            <span class="font-bold text-sm">Cotizar</span>
                         </div>
                     </div>
                 </div>
@@ -250,27 +284,61 @@
         </div>
     </section>
     <!-- Strategic Partners -->
-    <section class="py-16 bg-slate-50 border-t border-slate-100">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Nuestros Aliados Estratégicos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- Fotric -->
-                <div class="flex flex-col items-center text-center group cursor-pointer bg-white p-10 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-accent/30 transition-all hover:-translate-y-2" onclick="window.location.href='productos.html?marca=fotric'">
-                    <div class="h-28 w-full flex items-center justify-center mb-6">
-                        <img src="img/fotric-logo.png" alt="FOTRIC" class="max-h-24 max-w-full object-contain mx-auto grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100">
+    <section class="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+        <!-- Decorative background elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-blue-50 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <!-- Left Side: Cards Composition -->
+                <div class="w-full lg:w-1/2 relative h-[350px] md:h-[450px]">
+                    <!-- Fotric Card -->
+                    <div class="absolute top-0 left-0 w-[80%] md:w-[70%] bg-white rounded-3xl p-6 md:p-8 shadow-2xl border border-slate-100 z-20 hover:-translate-y-2 transition-transform cursor-pointer" onclick="window.location.href='productos.html?marca=fotric'">
+                        <div class="bg-slate-50 rounded-2xl h-24 md:h-32 flex items-center justify-center mb-6 border border-slate-100">
+                            <img src="img/fotric-logo.png" alt="FOTRIC" class="h-10 md:h-12 object-contain">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-extrabold text-slate-800 mb-2">Aliado estratégico de Fotric</h3>
+                        <p class="text-xs md:text-sm text-slate-500">Tecnología de imagen térmica de vanguardia para inspecciones precisas y mantenimiento predictivo.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-accent transition-colors">Aliado estratégico de Fotric</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Tecnología de imagen térmica de vanguardia para inspecciones precisas, mantenimiento predictivo e investigación.</p>
+                    
+                    <!-- Iriss Card -->
+                    <div class="absolute bottom-0 right-0 w-[80%] md:w-[70%] bg-white rounded-3xl p-6 md:p-8 shadow-2xl border border-slate-100 z-10 hover:-translate-y-2 transition-transform cursor-pointer" onclick="window.location.href='productos.html?marca=iriss'">
+                        <div class="bg-slate-50 rounded-2xl h-24 md:h-32 flex items-center justify-center mb-6 border border-slate-100">
+                            <img src="img/iriss-logo.svg" alt="IRISS" class="h-10 md:h-12 object-contain">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-extrabold text-slate-800 mb-2">Aliado estratégico de IRISS</h3>
+                        <p class="text-xs md:text-sm text-slate-500">Líder global en ventanas de inspección infrarroja y soluciones integrales de seguridad eléctrica.</p>
+                    </div>
                 </div>
                 
-                <!-- Iriss -->
-                <div class="flex flex-col items-center text-center group cursor-pointer bg-white p-10 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-accent/30 transition-all hover:-translate-y-2" onclick="window.location.href='productos.html?marca=iriss'">
-                    <div class="h-28 w-full flex items-center justify-center mb-6">
-                        <img src="img/iriss-logo.svg" alt="IRISS" class="max-h-24 max-w-full object-contain mx-auto grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100">
+                <!-- Right Side: Text & Stats -->
+                <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+                    <span class="text-accent font-bold tracking-wider uppercase text-sm mb-3 block"><i class="fa-solid fa-handshake mr-2"></i> Respaldo Global</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-800 uppercase tracking-tight mb-6 leading-tight">
+                        NUESTROS <span class="text-accent">ALIADOS</span> ESTRATÉGICOS
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                        Nos asociamos exclusivamente con fabricantes líderes mundiales para asegurar que cada equipo que adquieras cuente con tecnología de punta, soporte directo y certificaciones internacionales.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                        <div class="bg-slate-50 p-4 md:p-5 rounded-2xl border border-slate-100 text-center shadow-sm">
+                            <div class="text-3xl font-extrabold text-accent mb-1">100%</div>
+                            <div class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-wide">Originales</div>
+                        </div>
+                        <div class="bg-slate-50 p-4 md:p-5 rounded-2xl border border-slate-100 text-center shadow-sm">
+                            <div class="text-3xl font-extrabold text-accent mb-1">2+</div>
+                            <div class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-wide">Años Garantía</div>
+                        </div>
+                        <div class="bg-slate-50 p-4 md:p-5 rounded-2xl border border-slate-100 text-center shadow-sm col-span-2 md:col-span-1">
+                            <div class="text-3xl font-extrabold text-accent mb-1">24/7</div>
+                            <div class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-wide">Soporte Local</div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-accent transition-colors">Aliado estratégico de IRISS</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Líder global en ventanas de inspección infrarroja y soluciones para inspección segura de equipos eléctricos.</p>
                 </div>
+                
             </div>
         </div>
     </section>
