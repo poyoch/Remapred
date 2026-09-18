@@ -31,18 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (container) {
     if (marcaFiltro) {
       const marcaUpper = marcaFiltro.toUpperCase();
-      let subtitleText = '';
-      if (marcaUpper === 'FOTRIC') {
-          subtitleText = lang === 'en' ? 'Strategic Partner of Fotric' : 'Aliado estratégico de Fotric';
-      } else if (marcaUpper === 'IRISS') {
-          subtitleText = lang === 'en' ? 'Strategic Partner of IRISS' : 'Aliado estratégico de IRISS';
-      }
-      
-      if (subtitleText) {
-          const titleEl = document.createElement('h2');
-          titleEl.className = 'text-2xl md:text-3xl font-bold text-primary mb-8 border-b pb-4';
-          titleEl.innerHTML = subtitleText;
-          container.parentNode.insertBefore(titleEl, container);
+      const carouselEl = createBrandCarousel(marcaUpper, lang);
+      if (carouselEl) {
+         container.parentNode.insertBefore(carouselEl, container);
       }
     }
 
@@ -201,5 +192,147 @@ function setupFilters(products, container, lang) {
   tipoChecks.forEach(cb => cb.addEventListener('change', applyFilters));
   resolucionChecks.forEach(cb => cb.addEventListener('change', applyFilters));
   gamaChecks.forEach(cb => cb.addEventListener('change', applyFilters));
+}
+
+function createBrandCarousel(marca, lang) {
+  const isEn = lang === 'en';
+  let images = [];
+  let bgGradient = '';
+  let logoHtml = '';
+  let titleHtml = '';
+  
+  if (marca === 'FOTRIC') {
+      images = [
+          { src: 'img/productos/fotric-tp320a-dispositivo.png', title: 'Serie TP300' },
+          { src: 'img/productos/fotric-tk6-dos-camaras.png', title: 'Serie TK' },
+          { src: 'img/productos/fotric-tk5-frontal.png', title: 'Equipos Portátiles' }
+      ];
+      bgGradient = 'bg-white border border-slate-200';
+      logoHtml = '<img src="img/fotric-logo.png" alt="FOTRIC" class="h-10 md:h-14 object-contain">';
+      titleHtml = `<h2 class="text-2xl md:text-4xl font-bold text-primary mt-4">${isEn ? 'Strategic Partner of FOTRIC' : 'Aliado Estratégico de FOTRIC'}</h2>
+                   <p class="text-slate-500 mt-2 text-sm md:text-base">${isEn ? 'Advanced Thermography Solutions' : 'Soluciones Avanzadas en Termografía'}</p>`;
+  } else if (marca === 'IRISS') {
+      images = [
+          { src: 'img/productos/iriss-vpt-50.jpg', title: 'VPT-50' },
+          { src: 'img/productos/iriss-vpt-75.jpg', title: 'VPT-75' },
+          { src: 'img/productos/iriss-vpt-100.jpg', title: 'VPT-100' }
+      ];
+      bgGradient = 'bg-white border border-slate-200';
+      logoHtml = '<img src="img/iriss-logo.svg" alt="IRISS" class="h-10 md:h-14 object-contain">';
+      titleHtml = `<h2 class="text-2xl md:text-4xl font-bold text-primary mt-4">${isEn ? 'Strategic Partner of IRISS' : 'Aliado Estratégico de IRISS'}</h2>
+                   <p class="text-slate-500 mt-2 text-sm md:text-base">${isEn ? 'Safety and Inspection Windows' : 'Ventanas de Inspección Infrarroja y Seguridad'}</p>`;
+  } else {
+      return null;
+  }
+
+  const wrapper = document.createElement('div');
+  wrapper.className = `w-full rounded-2xl overflow-hidden shadow-sm mb-10 flex flex-col md:flex-row items-stretch ${bgGradient}`;
+  
+  // Text Side
+  const textSide = document.createElement('div');
+  textSide.className = "w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center z-10 border-b md:border-b-0 md:border-r border-slate-100 bg-slate-50/50";
+  textSide.innerHTML = `
+      <div class="inline-block">${logoHtml}</div>
+      ${titleHtml}
+  `;
+  wrapper.appendChild(textSide);
+
+  // Carousel Side
+  const carouselSide = document.createElement('div');
+  carouselSide.className = "w-full md:w-1/2 h-72 md:h-96 relative overflow-hidden group bg-white";
+  
+  const slidesContainer = document.createElement('div');
+  slidesContainer.className = "w-full h-full relative transition-transform duration-700 ease-in-out flex";
+  
+  let slidesHtml = '';
+  images.forEach((img, index) => {
+      slidesHtml += `
+          <div class="w-full h-full flex-shrink-0 relative flex items-center justify-center p-8">
+              <img src="${img.src}" alt="${img.title}" class="w-full h-full object-contain mix-blend-multiply drop-shadow-xl" onerror="this.src='img/productos/placeholder.svg'">
+              <div class="absolute bottom-6 bg-white/90 backdrop-blur border border-slate-200 text-slate-700 px-4 py-2 rounded-full text-sm font-bold shadow-lg transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                  ${img.title}
+              </div>
+          </div>
+      `;
+  });
+  slidesContainer.innerHTML = slidesHtml;
+  carouselSide.appendChild(slidesContainer);
+
+  // Controls
+  const prevBtn = document.createElement('button');
+  prevBtn.className = "absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white border border-slate-200 shadow-md rounded-full text-slate-600 hover:text-accent flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 z-20 focus:outline-none";
+  prevBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+  
+  const nextBtn = document.createElement('button');
+  nextBtn.className = "absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white border border-slate-200 shadow-md rounded-full text-slate-600 hover:text-accent flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 z-20 focus:outline-none";
+  nextBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+
+  // Indicators
+  const indicatorsContainer = document.createElement('div');
+  indicatorsContainer.className = "absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20";
+  let indicatorsHtml = '';
+  images.forEach((_, i) => {
+      indicatorsHtml += `<button class="w-2.5 h-2.5 rounded-full transition-all border border-slate-300 ${i === 0 ? 'bg-accent border-accent w-6' : 'bg-white hover:bg-slate-200'}" data-slide="${i}"></button>`;
+  });
+  indicatorsContainer.innerHTML = indicatorsHtml;
+
+  carouselSide.appendChild(prevBtn);
+  carouselSide.appendChild(nextBtn);
+  carouselSide.appendChild(indicatorsContainer);
+  wrapper.appendChild(carouselSide);
+
+  // Logic
+  let currentSlide = 0;
+  const totalSlides = images.length;
+  let autoPlayInterval;
+
+  const updateSlide = () => {
+      slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+      const dots = indicatorsContainer.querySelectorAll('button');
+      dots.forEach((dot, i) => {
+          if (i === currentSlide) {
+              dot.className = "w-6 h-2.5 rounded-full transition-all bg-accent border border-accent";
+          } else {
+              dot.className = "w-2.5 h-2.5 rounded-full transition-all bg-white border border-slate-300 hover:bg-slate-200";
+          }
+      });
+  };
+
+  const nextSlide = () => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlide();
+  };
+
+  const prevSlide = () => {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateSlide();
+  };
+
+  const startAutoPlay = () => {
+      autoPlayInterval = setInterval(nextSlide, 4500);
+  };
+
+  const stopAutoPlay = () => {
+      clearInterval(autoPlayInterval);
+  };
+
+  nextBtn.addEventListener('click', () => { nextSlide(); stopAutoPlay(); startAutoPlay(); });
+  prevBtn.addEventListener('click', () => { prevSlide(); stopAutoPlay(); startAutoPlay(); });
+  
+  indicatorsContainer.querySelectorAll('button').forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+          currentSlide = i;
+          updateSlide();
+          stopAutoPlay();
+          startAutoPlay();
+      });
+  });
+
+  wrapper.addEventListener('mouseenter', stopAutoPlay);
+  wrapper.addEventListener('mouseleave', startAutoPlay);
+
+  startAutoPlay();
+
+  return wrapper;
 }
 
