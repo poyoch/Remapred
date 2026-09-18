@@ -206,27 +206,57 @@ function setupFilters(products, container, lang) {
 function createBrandCarousel(marca, lang) {
   const isEn = lang === 'en';
   let images = [];
-  let logoHtml = '';
-  let titleHtml = '';
   
+  const logoSrc = marca === 'FOTRIC' ? 'img/fotric-logo.png' : 'img/iriss-logo.svg';
+
   if (marca === 'FOTRIC') {
       images = [
-          'img/marcas/fotric_hero_1_1789699620251.jpg',
-          'img/marcas/fotric_hero_2_1789699754997.jpg',
-          'img/marcas/fotric_hero_3_1789699765199.jpg'
+          {
+             src: 'img/marcas/fotric_hero_1_1789699620251.jpg',
+             title: isEn ? 'Strategic Partner of FOTRIC' : 'Aliado Estratégico de FOTRIC',
+             subtitle: isEn ? 'Advanced Thermography Solutions' : 'Soluciones Avanzadas en Termografía',
+             justify: 'justify-start',
+             gradient: 'bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent'
+          },
+          {
+             src: 'img/marcas/fotric_hero_2_1789699754997.jpg',
+             title: isEn ? 'Precision and Reliability' : 'Precisión y Confiabilidad',
+             subtitle: isEn ? 'High-end diagnostics for industry' : 'Diagnósticos de alta gama para la industria',
+             justify: 'justify-center',
+             gradient: 'bg-gradient-to-t from-slate-900/90 via-transparent to-slate-900/40'
+          },
+          {
+             src: 'img/marcas/fotric_hero_3_1789699765199.jpg',
+             title: isEn ? 'Smart Manufacturing' : 'Manufactura Inteligente',
+             subtitle: isEn ? 'Automated inspection systems' : 'Sistemas de inspección automatizados',
+             justify: 'justify-end',
+             gradient: 'bg-gradient-to-l from-slate-900/90 via-slate-900/50 to-transparent'
+          }
       ];
-      logoHtml = '<img src="img/fotric-logo.png" alt="FOTRIC" class="h-12 md:h-16 object-contain mb-6 bg-white/10 rounded-lg backdrop-blur-md p-3 shadow-lg border border-white/20">';
-      titleHtml = `<h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">${isEn ? 'Strategic Partner of FOTRIC' : 'Aliado Estratégico de FOTRIC'}</h2>
-                   <p class="text-slate-200 mt-4 text-lg md:text-2xl font-light drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">${isEn ? 'Advanced Thermography Solutions' : 'Soluciones Avanzadas en Termografía'}</p>`;
   } else if (marca === 'IRISS') {
       images = [
-          'img/marcas/iriss_hero_1_1789699801381.jpg',
-          'img/marcas/iriss_hero_2_1789699819790.jpg',
-          'img/marcas/iriss_hero_3_1789699830961.jpg'
+          {
+             src: 'img/marcas/iriss_hero_1_1789699801381.jpg',
+             title: isEn ? 'Strategic Partner of IRISS' : 'Aliado Estratégico de IRISS',
+             subtitle: isEn ? 'Safety and Inspection Windows' : 'Ventanas de Inspección Infrarroja y Seguridad',
+             justify: 'justify-start',
+             gradient: 'bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent'
+          },
+          {
+             src: 'img/marcas/iriss_hero_2_1789699819790.jpg',
+             title: isEn ? 'Uncompromised Safety' : 'Seguridad Sin Compromisos',
+             subtitle: isEn ? 'Monitor critical systems securely' : 'Monitorea sistemas críticos de forma segura',
+             justify: 'justify-center',
+             gradient: 'bg-gradient-to-t from-slate-900/90 via-transparent to-slate-900/40'
+          },
+          {
+             src: 'img/marcas/iriss_hero_3_1789699830961.jpg',
+             title: isEn ? 'Continuous Monitoring' : 'Monitoreo Continuo',
+             subtitle: isEn ? 'Prevent failures before they happen' : 'Prevén fallas antes de que ocurran',
+             justify: 'justify-end',
+             gradient: 'bg-gradient-to-l from-slate-900/90 via-slate-900/50 to-transparent'
+          }
       ];
-      logoHtml = '<img src="img/iriss-logo.svg" alt="IRISS" class="h-12 md:h-16 object-contain mb-6 bg-white/10 rounded-lg backdrop-blur-md p-3 shadow-lg border border-white/20" style="filter: brightness(0) invert(1);">';
-      titleHtml = `<h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">${isEn ? 'Strategic Partner of IRISS' : 'Aliado Estratégico de IRISS'}</h2>
-                   <p class="text-slate-200 mt-4 text-lg md:text-2xl font-light drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">${isEn ? 'Safety and Inspection Windows' : 'Ventanas de Inspección Infrarroja y Seguridad'}</p>`;
   } else {
       return null;
   }
@@ -239,29 +269,32 @@ function createBrandCarousel(marca, lang) {
   slidesContainer.className = "absolute inset-0 w-full h-full transition-transform duration-1000 ease-in-out flex";
   
   let slidesHtml = '';
-  images.forEach((src) => {
+  images.forEach((img) => {
+      let alignClass = 'items-start text-left';
+      if (img.justify === 'justify-center') alignClass = 'items-center text-center';
+      if (img.justify === 'justify-end') alignClass = 'items-end text-right';
+
       slidesHtml += `
           <div class="w-full h-full flex-shrink-0 relative">
-              <img src="${src}" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent"></div>
+              <img src="${img.src}" class="w-full h-full object-cover">
+              <div class="absolute inset-0 ${img.gradient}"></div>
+              
+              <div class="absolute inset-0 flex items-center pointer-events-none z-10">
+                  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex ${img.justify}">
+                      <div class="max-w-3xl flex flex-col ${alignClass}">
+                          <div class="bg-white p-3 md:p-4 rounded-xl shadow-2xl mb-6 inline-flex items-center justify-center">
+                              <img src="${logoSrc}" alt="${marca}" class="h-10 md:h-14 object-contain">
+                          </div>
+                          <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">${img.title}</h2>
+                          <p class="text-slate-200 mt-4 text-lg md:text-2xl font-light drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">${img.subtitle}</p>
+                      </div>
+                  </div>
+              </div>
           </div>
       `;
   });
   slidesContainer.innerHTML = slidesHtml;
   wrapper.appendChild(slidesContainer);
-
-  // Static Text Overlay
-  const overlayContent = document.createElement('div');
-  overlayContent.className = "absolute inset-0 pointer-events-none flex items-center";
-  overlayContent.innerHTML = `
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
-          <div class="max-w-3xl transform transition-all duration-1000 translate-y-0 opacity-100">
-              ${logoHtml}
-              ${titleHtml}
-          </div>
-      </div>
-  `;
-  wrapper.appendChild(overlayContent);
 
   // Controls
   const prevBtn = document.createElement('button');
