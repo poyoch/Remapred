@@ -1,11 +1,11 @@
-// Capa de datos para productos FOTRIC
+﻿// Capa de datos para productos FOTRIC
 // Usamos { es: "...", en: "..." } para soportar i18n más adelante.
 
 const products = [
   {
     id: "fotric-tp320a",
     nombre: "FOTRIC TP320A",
-    gama: { es: "Serie Portátil - Uso móvil", en: "Portable Series - Mobile use" },
+    gama: { es: "Serie TP", en: "TP Series" },
     precioUSD: 359.99,
     imagen: "img/productos/fotric-tp320a-dispositivo.png",
     imagenes: [
@@ -50,7 +50,7 @@ const products = [
     id: "fotric-tk5",
     nombre: "FOTRIC TK5",
     cssScale: "scale-[1.3]",
-    gama: { es: "Serie Baja - Inspección general", en: "Entry Series - General inspection" },
+    gama: { es: "Serie TK", en: "TK Series" },
     precioUSD: 709.99,
     imagen: "img/productos/fotric-tk5-frontal.png",
     imagenes: [ "img/productos/fotric-tk5-frontal.png" ],
@@ -94,7 +94,7 @@ const products = [
     id: "fotric-tk6",
     nombre: "FOTRIC TK6",
     cssScale: "scale-[1.3]",
-    gama: { es: "Serie Baja - Inspección general", en: "Entry Series - General inspection" },
+    gama: { es: "Serie TK", en: "TK Series" },
     precioUSD: 829.99,
     imagen: "img/productos/fotric-tk6-dos-camaras.png",
     imagenes: [
@@ -139,7 +139,7 @@ const products = [
     id: "fotric-tk7",
     nombre: "FOTRIC TK7",
     cssScale: "scale-[1.1]",
-    gama: { es: "Serie Media - Inspecciones especializadas", en: "Mid-range Series - Specialized inspections" },
+    gama: { es: "Serie TK", en: "TK Series" },
     precioUSD: 1259.99,
     imagen: "img/productos/fotric-tk7-frontal.png",
     imagenes: [ "img/productos/fotric-tk7-frontal.png" ],
@@ -181,7 +181,7 @@ const products = [
     id: "fotric-tk8",
     nombre: "FOTRIC TK8",
     cssScale: "scale-[1.1]",
-    gama: { es: "Serie Media - Inspecciones especializadas", en: "Mid-range Series - Specialized inspections" },
+    gama: { es: "Serie TK", en: "TK Series" },
     precioUSD: 1489.99,
     imagen: "img/productos/fotric-tk8-frontal.png",
     imagenes: [ "img/productos/fotric-tk8-frontal.png" ],
@@ -227,7 +227,7 @@ const products = [
   {
     id: "fotric-v5",
     nombre: "FOTRIC V5",
-    gama: { es: "Serie V - Térmica Avanzada", en: "V Series - Advanced Thermal" },
+    gama: { es: "Serie V", en: "V Series" },
     precioUSD: null,
     imagen: "https://static.wixstatic.com/media/571718_e0d9d2c0b45249108634fd7144c7e08d~mv2.png",
     imagenes: ["https://static.wixstatic.com/media/571718_e0d9d2c0b45249108634fd7144c7e08d~mv2.png"],
@@ -259,7 +259,7 @@ const products = [
   {
     id: "fotric-v7",
     nombre: "FOTRIC V7",
-    gama: { es: "Serie V - Térmica Avanzada (Tope de Gama)", en: "V Series - Advanced Thermal (Top of Range)" },
+    gama: { es: "Serie V", en: "V Series" },
     precioUSD: null,
     imagen: "https://static.wixstatic.com/media/571718_84994c3e1aee4f859a04b4ec670cc6e5~mv2.png",
     imagenes: ["https://static.wixstatic.com/media/571718_84994c3e1aee4f859a04b4ec670cc6e5~mv2.png"],

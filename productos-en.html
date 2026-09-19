@@ -91,7 +91,7 @@
         <div class="flex flex-col md:flex-row gap-8">
             
             <!-- Sidebar / Filters -->
-            <aside id="filters-sidebar" class="w-full md:w-64 flex-shrink-0">
+            <aside id="filters-sidebar" class="w-full md:w-64 flex-shrink-0 md:sticky md:top-32 self-start h-fit max-h-[calc(100vh-8rem)] overflow-y-auto">
                 <h2 class="text-xl font-bold text-primary mb-6 border-b pb-2">Filter By</h2>
                 
                 <!-- Filter 0: Camera Type -->
@@ -105,6 +105,10 @@
                         <label class="flex items-center space-x-2 cursor-pointer">
                             <input type="checkbox" value="Acoustic" class="filter-tipo rounded border-slate-300 text-accent focus:ring-accent accent-accent">
                             <span class="text-sm text-slate-600"><i class="fa-solid fa-volume-high text-blue-500 mr-1"></i> Acoustic Camera</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" value="Window" class="filter-tipo rounded border-slate-300 text-accent focus:ring-accent accent-accent">
+                            <span class="text-sm text-slate-600"><i class="fa-solid fa-border-all text-slate-500 mr-1"></i> IR Inspection Window</span>
                         </label>
                     </div>
                 </div>
@@ -133,20 +137,20 @@
                     <h3 class="font-semibold text-slate-700 mb-4">Series</h3>
                     <div class="space-y-2">
                         <label class="flex items-center space-x-2 cursor-pointer">
-                            <input type="checkbox" value="Portable Series" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
-                            <span class="text-sm text-slate-600">Portable Series (Mobile use)</span>
+                            <input type="checkbox" value="TP Series" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
+                            <span class="text-sm text-slate-600">TP Series</span>
                         </label>
                         <label class="flex items-center space-x-2 cursor-pointer">
-                            <input type="checkbox" value="Entry Series" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
-                            <span class="text-sm text-slate-600">Entry Series (General inspection)</span>
+                            <input type="checkbox" value="TK Series" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
+                            <span class="text-sm text-slate-600">TK Series</span>
                         </label>
                         <label class="flex items-center space-x-2 cursor-pointer">
-                            <input type="checkbox" value="Mid-range Series" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
-                            <span class="text-sm text-slate-600">Mid-range Series (Specialized inspections)</span>
+                            <input type="checkbox" value="P Series" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
+                            <span class="text-sm text-slate-600">P Series</span>
                         </label>
                         <label class="flex items-center space-x-2 cursor-pointer">
                             <input type="checkbox" value="V Series" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
-                            <span class="text-sm text-slate-600">V Series (Advanced Thermal)</span>
+                            <span class="text-sm text-slate-600">V Series</span>
                         </label>
                         <label class="flex items-center space-x-2 cursor-pointer">
                             <input type="checkbox" value="Acoustic Series" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">

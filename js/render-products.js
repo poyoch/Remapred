@@ -158,15 +158,21 @@ function setupFilters(products, container, lang) {
     const selectedGama = getSelectedValues(gamaChecks);
 
     const filtered = products.filter(p => {
-      // Filter by tipo (Térmica / Acústica)
+      // Filter by tipo (Térmica / Acústica / Ventana)
       let matchTipo = true;
       if (selectedTipo.length > 0) {
-        const pGama = (getText(p.gama, 'es') || '').toLowerCase();
-        const isAcoustic = pGama.includes('acústica') || pGama.includes('acoustic');
-        const isThermal = !isAcoustic; // Everything else is thermal
+        const id = p.id.toLowerCase();
         
-        matchTipo = (selectedTipo.includes('Acústica') || selectedTipo.includes('Acoustic')) && isAcoustic ||
-                    (selectedTipo.includes('Térmica') || selectedTipo.includes('Thermal')) && isThermal;
+        // Use ID for robust matching regardless of encoding
+        const isAcoustic = id.includes('-td') || id.includes('-mu') || id.includes('acustica') || id.includes('acoustic');
+        const isWindow = id.includes('iriss') || id.includes('ventana') || id.includes('window');
+        const isThermal = !isAcoustic && !isWindow; 
+        
+        const checkAcoustic = selectedTipo.includes('Acústica') || selectedTipo.includes('Acoustic');
+        const checkThermal = selectedTipo.includes('Térmica') || selectedTipo.includes('Thermal');
+        const checkWindow = selectedTipo.includes('Ventana') || selectedTipo.includes('Window');
+
+        matchTipo = (checkAcoustic && isAcoustic) || (checkThermal && isThermal) || (checkWindow && isWindow);
       }
 
       // Filter by resolucion

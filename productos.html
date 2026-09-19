@@ -91,10 +91,10 @@
         <div class="flex flex-col md:flex-row gap-8">
             
             <!-- Sidebar / Filters -->
-            <aside id="filters-sidebar" class="w-full md:w-64 flex-shrink-0">
+            <aside id="filters-sidebar" class="w-full md:w-64 flex-shrink-0 md:sticky md:top-32 self-start h-fit max-h-[calc(100vh-8rem)] overflow-y-auto">
                 <h2 class="text-xl font-bold text-primary mb-6 border-b pb-2">Filtrar Por</h2>
-                
-                <!-- Filter 0: Tipo de cámara -->
+                    
+                    <!-- Filter 0: Tipo de cámara -->
                 <div class="mb-8">
                     <h3 class="font-semibold text-slate-700 mb-4">Tipo de Cámara</h3>
                     <div class="space-y-2">
@@ -105,6 +105,10 @@
                         <label class="flex items-center space-x-2 cursor-pointer">
                             <input type="checkbox" value="Acústica" class="filter-tipo rounded border-slate-300 text-accent focus:ring-accent accent-accent">
                             <span class="text-sm text-slate-600"><i class="fa-solid fa-volume-high text-blue-500 mr-1"></i> Cámara Acústica</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" value="Ventana" class="filter-tipo rounded border-slate-300 text-accent focus:ring-accent accent-accent">
+                            <span class="text-sm text-slate-600"><i class="fa-solid fa-border-all text-slate-500 mr-1"></i> Ventana de Inspección IR</span>
                         </label>
                     </div>
                 </div>
@@ -133,20 +137,20 @@
                     <h3 class="font-semibold text-slate-700 mb-4">Serie / Gama</h3>
                     <div class="space-y-2">
                         <label class="flex items-center space-x-2 cursor-pointer">
-                            <input type="checkbox" value="Portátil" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
-                            <span class="text-sm text-slate-600">Serie Portátil (Uso móvil)</span>
+                            <input type="checkbox" value="Serie TP" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
+                            <span class="text-sm text-slate-600">Serie TP</span>
                         </label>
                         <label class="flex items-center space-x-2 cursor-pointer">
-                            <input type="checkbox" value="Serie Baja" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
-                            <span class="text-sm text-slate-600">Serie Baja (Inspección general)</span>
+                            <input type="checkbox" value="Serie TK" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
+                            <span class="text-sm text-slate-600">Serie TK</span>
                         </label>
                         <label class="flex items-center space-x-2 cursor-pointer">
-                            <input type="checkbox" value="Serie Media" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
-                            <span class="text-sm text-slate-600">Serie Media (Inspecciones especializadas)</span>
+                            <input type="checkbox" value="Serie P" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
+                            <span class="text-sm text-slate-600">Serie P</span>
                         </label>
                         <label class="flex items-center space-x-2 cursor-pointer">
                             <input type="checkbox" value="Serie V" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
-                            <span class="text-sm text-slate-600">Serie V (Térmica Avanzada)</span>
+                            <span class="text-sm text-slate-600">Serie V</span>
                         </label>
                         <label class="flex items-center space-x-2 cursor-pointer">
                             <input type="checkbox" value="Acústica" class="filter-gama rounded border-slate-300 text-accent focus:ring-accent accent-accent">
