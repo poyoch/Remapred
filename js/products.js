@@ -1,4 +1,4 @@
-// Capa de datos para productos FOTRIC
+﻿// Capa de datos para productos FOTRIC
 // Usamos { es: "...", en: "..." } para soportar i18n más adelante.
 
 const products = [
