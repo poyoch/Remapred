@@ -9,7 +9,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image14.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -25,7 +25,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image14.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -41,7 +41,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image13.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -57,7 +57,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image13.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -73,7 +73,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image12.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -89,7 +89,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image12.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -105,7 +105,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image12.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -121,7 +121,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image15.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -137,7 +137,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image15.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -153,7 +153,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image17.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -169,7 +169,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image17.png",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -185,7 +185,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image18.jpeg",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
@@ -201,7 +201,7 @@ const products = [
     categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
     subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
-    imagen: "img/productos/placeholder.svg",
+    imagen: "img/productos/image18.jpeg",
     imagenes: [],
     urlFabricante: "#",
     especificaciones: [
