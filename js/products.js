@@ -3,6 +3,215 @@
 
 const products = [
   {
+    id: "fotric-td2-geek-acustica",
+    nombre: "FOTRIC TD2 Geek",
+    gama: { es: "Serie TD2", en: "TD2 Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Aplicaciones", en: "Applications" }, valor: { es: "Fugas de aire comprimido, gases industriales", en: "Compressed air leaks, industrial gases" } }
+    ],
+    aplicaciones: { es: "Detección práctica de fugas de aire comprimido, gases industriales y localización preliminar de descargas parciales.", en: "Practical detection of compressed air leaks, industrial gases and preliminary localization of partial discharges." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-td2-sense-acustica",
+    nombre: "FOTRIC TD2 Sense",
+    gama: { es: "Serie TD2", en: "TD2 Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Aplicaciones", en: "Applications" }, valor: { es: "Fugas de aire comprimido, gases industriales", en: "Compressed air leaks, industrial gases" } }
+    ],
+    aplicaciones: { es: "Detección práctica de fugas de aire comprimido, gases industriales y localización preliminar de descargas parciales.", en: "Practical detection of compressed air leaks, industrial gases and preliminary localization of partial discharges." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-td2e-acustica",
+    nombre: "FOTRIC TD2e",
+    gama: { es: "Serie TD", en: "TD Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Aplicaciones", en: "Applications" }, valor: { es: "Fugas de aire comprimido, gases industriales", en: "Compressed air leaks, industrial gases" } }
+    ],
+    aplicaciones: { es: "Detección práctica de fugas de aire comprimido, gases industriales y localización preliminar de descargas parciales.", en: "Practical detection of compressed air leaks, industrial gases and preliminary localization of partial discharges." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-h4mini-acustica",
+    nombre: "FOTRIC H4mini",
+    gama: { es: "Serie H", en: "H Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Precisión", en: "Accuracy" }, valor: { es: "Localización de precisión y cuantificación", en: "Precision localization and quantification" } }
+    ],
+    aplicaciones: { es: "Localización de precisión y cuantificación de fugas de aire/gas, mapeo de ruido acústico industrial.", en: "Precision localization and quantification of air/gas leaks, industrial acoustic noise mapping." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-h4-acustica",
+    nombre: "FOTRIC H4",
+    gama: { es: "Serie H", en: "H Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Precisión", en: "Accuracy" }, valor: { es: "Localización de precisión y cuantificación", en: "Precision localization and quantification" } }
+    ],
+    aplicaciones: { es: "Localización de precisión y cuantificación de fugas de aire/gas, mapeo de ruido acústico industrial.", en: "Precision localization and quantification of air/gas leaks, industrial acoustic noise mapping." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-h6-acustica",
+    nombre: "FOTRIC H6",
+    gama: { es: "Serie H", en: "H Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Uso", en: "Usage" }, valor: { es: "Auditorías energéticas avanzadas", en: "Advanced energy audits" } }
+    ],
+    aplicaciones: { es: "Auditorías energéticas avanzadas, estimación de costos monetarios por fugas y diagnóstico de descargas parciales en alta tensión.", en: "Advanced energy audits, monetary cost estimation for leaks and high-voltage partial discharge diagnostics." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-h6-plus-acustica",
+    nombre: "FOTRIC H6+",
+    gama: { es: "Serie H", en: "H Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Uso", en: "Usage" }, valor: { es: "Auditorías energéticas avanzadas", en: "Advanced energy audits" } }
+    ],
+    aplicaciones: { es: "Auditorías energéticas avanzadas, estimación de costos monetarios por fugas y diagnóstico de descargas parciales en alta tensión.", en: "Advanced energy audits, monetary cost estimation for leaks and high-voltage partial discharge diagnostics." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-h7-acustica",
+    nombre: "FOTRIC H7",
+    gama: { es: "Serie H", en: "H Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Uso", en: "Usage" }, valor: { es: "Máxima precisión", en: "Maximum precision" } }
+    ],
+    aplicaciones: { es: "Auditorías energéticas de máxima precisión, cuantificación financiera de pérdidas y descargas parciales en subestaciones.", en: "Maximum precision energy audits, financial quantification of losses and partial discharges in substations." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-h-flex-acustica",
+    nombre: "FOTRIC H-Flex",
+    gama: { es: "Serie H-Flex", en: "H-Flex Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Diseño", en: "Design" }, valor: { es: "Zonas de acceso complejo", en: "Complex access zones" } }
+    ],
+    aplicaciones: { es: "Monitoreo y diagnóstico en zonas de acceso complejo o estrecho.", en: "Monitoring and diagnostics in complex or narrow access areas." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-p5mix-acustica",
+    nombre: "FOTRIC P5MiX",
+    gama: { es: "Serie P-MiX", en: "P-MiX Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Tipo", en: "Type" }, valor: { es: "Acústica y Térmica (2 en 1)", en: "Acoustic & Thermal (2-in-1)" } }
+    ],
+    aplicaciones: { es: "Inspección predictiva integral en subestaciones y plantas críticas (detección simultánea de sobrecalentamientos térmicos y descargas parciales/fugas).", en: "Comprehensive predictive inspection in substations and critical plants (simultaneous detection of thermal overheating and partial discharges/leaks)." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-p7mix-acustica",
+    nombre: "FOTRIC P7MiX",
+    gama: { es: "Serie P-MiX", en: "P-MiX Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Tipo", en: "Type" }, valor: { es: "Acústica y Térmica (2 en 1)", en: "Acoustic & Thermal (2-in-1)" } }
+    ],
+    aplicaciones: { es: "Inspección predictiva integral en subestaciones y plantas críticas (detección simultánea de sobrecalentamientos térmicos y descargas parciales/fugas).", en: "Comprehensive predictive inspection in substations and critical plants (simultaneous detection of thermal overheating and partial discharges/leaks)." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-v5mix-acustica",
+    nombre: "FOTRIC V5MiX",
+    gama: { es: "Serie V-MiX", en: "V-MiX Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Tipo", en: "Type" }, valor: { es: "Acústica y Térmica (2 en 1)", en: "Acoustic & Thermal (2-in-1)" } }
+    ],
+    aplicaciones: { es: "Inspección técnica híbrida en activos de difícil acceso o en altura, combinando termografía infrarroja de precisión con análisis acústico ultrasónico.", en: "Hybrid technical inspection in hard-to-reach or high-altitude assets, combining precision infrared thermography with ultrasonic acoustic analysis." },
+    beneficios: [], faqs: [], descargas: []
+  },
+  {
+    id: "fotric-v7mix-acustica",
+    nombre: "FOTRIC V7MiX",
+    gama: { es: "Serie V-MiX", en: "V-MiX Series" },
+    categoriaPrincipal: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
+    precioUSD: null,
+    imagen: "img/productos/placeholder.svg",
+    imagenes: [],
+    urlFabricante: "#",
+    especificaciones: [
+      { etiqueta: { es: "Tipo", en: "Type" }, valor: { es: "Acústica y Térmica (2 en 1)", en: "Acoustic & Thermal (2-in-1)" } }
+    ],
+    aplicaciones: { es: "Inspección técnica híbrida en activos de difícil acceso o en altura, combinando termografía infrarroja de precisión con análisis acústico ultrasónico.", en: "Hybrid technical inspection in hard-to-reach or high-altitude assets, combining precision infrared thermography with ultrasonic acoustic analysis." },
+    beneficios: [], faqs: [], descargas: []
+  },
+
+  {
     id: "fotric-tf3",
     nombre: "FOTRIC TF3",
     gama: { es: "Serie TF", en: "TF Series" },
