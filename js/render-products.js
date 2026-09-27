@@ -282,6 +282,8 @@ function setupFilters(products, container, lang) {
     const selectedTipo = getSelectedValues(tipoChecks);
     const selectedRes = getSelectedValues(resolucionChecks);
     const selectedGama = getSelectedValues(gamaChecks);
+    const searchInput = document.getElementById('search-input');
+    const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
 
     const filtered = products.filter(p => {
       // Filter by tipo (Térmica / Acústica / Ventana)
@@ -319,7 +321,16 @@ function setupFilters(products, container, lang) {
         matchGama = selectedGama.some(g => pGama.toLowerCase().includes(g.toLowerCase()));
       }
 
-      return matchTipo && matchRes && matchGama;
+            // Filter by Search term
+      let matchSearch = true;
+      if (searchTerm) {
+        const pNombre = p.nombre.toLowerCase();
+        const pGama2 = (getText(p.gama, lang) || '') + ' ' + (getText(p.gama, 'es') || '');
+        const pApps = (getText(p.aplicaciones, lang) || '');
+        matchSearch = pNombre.includes(searchTerm) || pGama2.toLowerCase().includes(searchTerm) || pApps.toLowerCase().includes(searchTerm);
+      }
+
+      return matchTipo && matchRes && matchGama && matchSearch;
     });
 
     if (filtered.length === 0) {
@@ -333,5 +344,7 @@ function setupFilters(products, container, lang) {
   tipoChecks.forEach(cb => cb.addEventListener('change', applyFilters));
   resolucionChecks.forEach(cb => cb.addEventListener('change', applyFilters));
   gamaChecks.forEach(cb => cb.addEventListener('change', applyFilters));
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) searchInput.addEventListener('input', applyFilters);
 }
 
