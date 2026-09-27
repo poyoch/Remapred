@@ -64,6 +64,39 @@
 
     renderProductCards(products, container, lang);
     setupFilters(products, container, lang);
+  // Update sidebar visibility based on category
+  if (catFiltro) {
+      const labels = document.querySelectorAll('#filters-sidebar label');
+      labels.forEach(label => {
+          const input = label.querySelector('input');
+          if (!input) return;
+          const val = input.value;
+          let shouldShow = true;
+          
+          if (catFiltro === 'termograficas') {
+              if (val === 'Acústica' || val === 'Acoustic' || val === 'Ventana' || val === 'Window') shouldShow = false;
+              if (val.includes('TD') || val.includes('H Series') || val === 'Serie H' || val.includes('MiX')) shouldShow = false;
+          } else if (catFiltro === 'acusticas') {
+              if (val === 'Térmica' || val === 'Thermal' || val === 'Ventana' || val === 'Window') shouldShow = false;
+              if (input.classList.contains('filter-resolucion')) shouldShow = false;
+              const thermalSeries = ['Serie TF', 'TF Series', 'Serie C', 'C Series', 'Serie Ti', 'Ti Series', 'Serie TP', 'TP Series', 'Serie TK', 'TK Series', 'Serie P', 'P Series', 'Serie 600', '600 Series', 'Serie V', 'V Series'];
+              if (thermalSeries.includes(val)) shouldShow = false;
+          }
+          
+          if (!shouldShow) {
+              label.style.display = 'none';
+          }
+      });
+      
+      // Also hide empty filter sections
+      if (catFiltro === 'acusticas') {
+          const resBlock = document.querySelector('.filter-resolucion');
+          if (resBlock) {
+             const parentDiv = resBlock.closest('.mb-8');
+             if (parentDiv) parentDiv.style.display = 'none';
+          }
+      }
+  }
   }
 
   
