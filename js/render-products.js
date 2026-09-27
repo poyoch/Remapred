@@ -64,6 +64,83 @@
 
     renderProductCards(products, container, lang);
     setupFilters(products, container, lang);
+  // Dynamic Sidebar Filtering
+  const availableTipos = new Set();
+  const availableRes = new Set();
+  const availableGamas = new Set();
+
+  products.forEach(p => {
+      // Tipo
+      const id = p.id.toLowerCase();
+      const isAcoustic = id.includes('-td') || id.includes('-mu') || id.includes('acustica') || id.includes('acoustic');
+      const isWindow = id.includes('iriss') || id.includes('ventana') || id.includes('window');
+      const isThermal = !isAcoustic && !isWindow;
+      
+      if (isAcoustic) availableTipos.add('Acústica');
+      if (isWindow) availableTipos.add('Ventana');
+      if (isThermal) availableTipos.add('Térmica');
+
+      // Resolucion
+      if (p.especificaciones) {
+          const resSpec = p.especificaciones.find(e => e.etiqueta && (e.etiqueta.es === 'Resolución infrarroja' || e.etiqueta.en === 'Infrared resolution'));
+          if (resSpec && resSpec.valor) {
+              const resVal = resSpec.valor.es || resSpec.valor;
+              if (resVal.includes('640x480')) availableRes.add('640x480');
+              if (resVal.includes('384x288')) availableRes.add('384x288');
+              if (resVal.includes('320x240')) availableRes.add('320x240');
+              if (resVal.includes('1280x1024')) availableRes.add('1280x1024');
+          }
+      }
+
+      // Gama
+      if (p.gama) {
+          const gamaStr = (p.gama.es || '').toLowerCase();
+          if (gamaStr.includes('tf')) availableGamas.add('Serie TF');
+          else if (gamaStr.includes(' c') || gamaStr === 'serie c') availableGamas.add('Serie C');
+          else if (gamaStr.includes('ti')) availableGamas.add('Serie Ti');
+          else if (gamaStr.includes('tp')) availableGamas.add('Serie TP');
+          else if (gamaStr.includes('tk')) availableGamas.add('Serie TK');
+          else if (gamaStr.includes('mix')) availableGamas.add('MiX');
+          else if (gamaStr.includes('v') && !gamaStr.includes('mix')) availableGamas.add('Serie V');
+          else if (gamaStr.includes('p') && !gamaStr.includes('tp') && !gamaStr.includes('mix')) availableGamas.add('Serie P');
+          else if (gamaStr.includes('600')) availableGamas.add('Serie 600');
+          else if (gamaStr.includes('td')) availableGamas.add('Serie TD');
+          else if (gamaStr.includes('h') || gamaStr.includes('flex')) availableGamas.add('Serie H');
+      }
+  });
+
+  const labels = document.querySelectorAll('#filters-sidebar label');
+  labels.forEach(label => {
+      const input = label.querySelector('input');
+      if (!input) return;
+      const val = input.value;
+      
+      let shouldShow = false;
+      if (input.classList.contains('filter-tipo')) {
+          if (availableTipos.has(val)) shouldShow = true;
+      } else if (input.classList.contains('filter-resolucion')) {
+          if (availableRes.has(val)) shouldShow = true;
+      } else if (input.classList.contains('filter-gama')) {
+          if (availableGamas.has(val)) shouldShow = true;
+      }
+
+      if (!shouldShow) {
+          label.style.display = 'none';
+      }
+  });
+
+  // Hide empty blocks
+  ['.filter-tipo', '.filter-resolucion', '.filter-gama'].forEach(cls => {
+      const inputs = document.querySelectorAll(cls);
+      let anyVisible = false;
+      inputs.forEach(input => {
+          if (input.closest('label').style.display !== 'none') anyVisible = true;
+      });
+      if (!anyVisible && inputs.length > 0) {
+          const block = inputs[0].closest('.mb-8');
+          if (block) block.style.display = 'none';
+      }
+  });
   // Update sidebar visibility based on category
   if (catFiltro) {
       const labels = document.querySelectorAll('#filters-sidebar label');
