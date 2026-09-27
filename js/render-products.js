@@ -4,9 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let products = window.fotricProducts || [];
   
-  // Filter by brand (marca) from URL if present
+  // Filters from URL if present
   const urlParams = new URLSearchParams(window.location.search);
   const marcaFiltro = urlParams.get('marca');
+  const catFiltro = urlParams.get('cat');
+  const subFiltro = urlParams.get('sub');
+
   if (marcaFiltro) {
     const marcaUpper = marcaFiltro.toUpperCase();
     products = products.filter(p => p.nombre.toUpperCase().startsWith(marcaUpper));
@@ -15,6 +18,34 @@ document.addEventListener("DOMContentLoaded", () => {
     if (sidebar && marcaUpper === 'IRISS') {
       sidebar.style.display = 'none';
     }
+  }
+
+  if (catFiltro) {
+    if (catFiltro === 'ventanas') {
+      products = products.filter(p => p.id.includes('iriss') || p.id.includes('ventana'));
+      const sidebar = document.getElementById('filters-sidebar');
+      if (sidebar) sidebar.style.display = 'none';
+    } else if (catFiltro === 'termograficas') {
+      products = products.filter(p => {
+        const id = p.id.toLowerCase();
+        return !id.includes('-td') && !id.includes('-mu') && !id.includes('acustica') && !id.includes('iriss');
+      });
+    } else if (catFiltro === 'acusticas') {
+      products = products.filter(p => p.id.includes('-td') || p.id.includes('-mu') || p.id.includes('acustica'));
+    }
+  }
+
+  if (subFiltro) {
+    products = products.filter(p => {
+      const sub = (p.subcategoria && p.subcategoria.es) ? p.subcategoria.es.toLowerCase() : '';
+      if (subFiltro === 'portatiles') return sub.includes('portátil') || sub.includes('ligero');
+      if (subFiltro === 'mantenimiento') return sub.includes('mantenimiento');
+      if (subFiltro === 'avanzado') return sub.includes('avanzado');
+      if (subFiltro === 'fijo') return sub.includes('fijo');
+      if (subFiltro === 'id') return sub.includes('investigación') || sub.includes('desarrollo');
+      if (subFiltro === 'fugas') return sub.includes('fugas') || sub.includes('descargas');
+      return true;
+    });
   }
   
   // Ensure products are sorted by price ascending, but items without price (null) go at the end
@@ -29,13 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableContainer = document.getElementById('comparative-table-container');
 
   if (container) {
-    if (marcaFiltro) {
-      const marcaUpper = marcaFiltro.toUpperCase();
-      
-      const sidebar = document.getElementById('filters-sidebar');
-      if (sidebar) sidebar.style.display = 'none';
+    const shouldShowFotricCarousel = marcaFiltro === 'fotric' || catFiltro === 'termograficas' || catFiltro === 'acusticas' || subFiltro;
+    const shouldShowIrissCarousel = marcaFiltro === 'iriss' || catFiltro === 'ventanas';
 
-      const carouselEl = createBrandCarousel(marcaUpper, lang);
+    if (shouldShowFotricCarousel || shouldShowIrissCarousel) {
+      const sidebar = document.getElementById('filters-sidebar');
+      if (sidebar && shouldShowIrissCarousel) sidebar.style.display = 'none';
+
+      const carouselEl = createBrandCarousel(shouldShowFotricCarousel ? 'FOTRIC' : 'IRISS', lang);
       if (carouselEl) {
          const mainEl = document.querySelector('main');
          if (mainEl && mainEl.parentNode) {
@@ -268,7 +300,7 @@ function createBrandCarousel(marca, lang) {
   }
 
   const wrapper = document.createElement('div');
-  wrapper.className = `w-full h-[65vh] min-h-[500px] max-h-[800px] relative overflow-hidden group bg-black mb-12 shadow-xl`;
+  wrapper.className = \`w-full h-[65vh] min-h-[500px] max-h-[800px] relative overflow-hidden group bg-black mb-12 shadow-xl\`;
   
   // Carousel Images
   const slidesContainer = document.createElement('div');
@@ -280,24 +312,24 @@ function createBrandCarousel(marca, lang) {
       if (img.justify === 'justify-center') alignClass = 'items-center text-center';
       if (img.justify === 'justify-end') alignClass = 'items-end text-right';
 
-      slidesHtml += `
+      slidesHtml += \`
           <div class="w-full h-full flex-shrink-0 relative">
-              <img src="${img.src}" class="w-full h-full object-cover">
-              <div class="absolute inset-0 ${img.gradient}"></div>
+              <img src="\${img.src}" class="w-full h-full object-cover">
+              <div class="absolute inset-0 \${img.gradient}"></div>
               
               <div class="absolute inset-0 flex items-center pointer-events-none z-10">
-                  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex ${img.justify}">
-                      <div class="max-w-3xl flex flex-col ${alignClass}">
+                  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex \${img.justify}">
+                      <div class="max-w-3xl flex flex-col \${alignClass}">
                           <div class="bg-white p-3 md:p-4 rounded-xl shadow-2xl mb-6 inline-flex items-center justify-center">
-                              <img src="${logoSrc}" alt="${marca}" class="h-10 md:h-14 object-contain">
+                              <img src="\${logoSrc}" alt="\${marca}" class="h-10 md:h-14 object-contain">
                           </div>
-                          <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">${img.title}</h2>
-                          <p class="text-slate-200 mt-4 text-lg md:text-2xl font-light drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">${img.subtitle}</p>
+                          <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">\${img.title}</h2>
+                          <p class="text-slate-200 mt-4 text-lg md:text-2xl font-light drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">\${img.subtitle}</p>
                       </div>
                   </div>
               </div>
           </div>
-      `;
+      \`;
   });
   slidesContainer.innerHTML = slidesHtml;
   wrapper.appendChild(slidesContainer);
@@ -316,7 +348,7 @@ function createBrandCarousel(marca, lang) {
   indicatorsContainer.className = "absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20";
   let indicatorsHtml = '';
   images.forEach((_, i) => {
-      indicatorsHtml += `<button class="w-3 h-3 rounded-full transition-all ${i === 0 ? 'bg-white w-8' : 'bg-white/40 hover:bg-white/80'}" data-slide="${i}"></button>`;
+      indicatorsHtml += \`<button class="w-3 h-3 rounded-full transition-all \${i === 0 ? 'bg-white w-8' : 'bg-white/40 hover:bg-white/80'}" data-slide="\${i}"></button>\`;
   });
   indicatorsContainer.innerHTML = indicatorsHtml;
 
@@ -330,7 +362,7 @@ function createBrandCarousel(marca, lang) {
   let autoPlayInterval;
 
   const updateSlide = () => {
-      slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+      slidesContainer.style.transform = \`translateX(-\${currentSlide * 100}%)\`;
       const dots = indicatorsContainer.querySelectorAll('button');
       dots.forEach((dot, i) => {
           if (i === currentSlide) {
@@ -378,4 +410,3 @@ function createBrandCarousel(marca, lang) {
 
   return wrapper;
 }
-
