@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -112,8 +112,13 @@
         <div class="flex flex-col md:flex-row gap-8">
             
             <!-- Sidebar / Filters -->
-            <aside id="filters-sidebar" class="w-full md:w-64 flex-shrink-0 md:sticky md:top-32 self-start h-fit max-h-[calc(100vh-8rem)] overflow-y-auto">
-                <h2 class="text-xl font-bold text-primary mb-6 border-b pb-2">Filter By</h2>
+            <aside id="filters-sidebar" class="w-full md:w-64 flex-shrink-0 sticky top-24 md:top-32 self-start h-fit max-h-[calc(100vh-6rem)] overflow-y-auto z-40 mb-6 md:mb-0">
+                <div class="md:hidden flex justify-between items-center py-3 px-4 bg-white rounded-lg shadow-md cursor-pointer border border-slate-200" onclick="document.getElementById('filters-content').classList.toggle('hidden')">
+                    <span class="font-bold text-primary"><i class="fa-solid fa-filter mr-2 text-accent"></i> Filters</span>
+                    <i class="fa-solid fa-chevron-down text-slate-500"></i>
+                </div>
+                <div id="filters-content" class="hidden md:block mt-2 md:mt-0 p-4 md:p-0 bg-white md:bg-transparent rounded-lg border md:border-0 border-slate-200 shadow-md md:shadow-none">
+                    <h2 class="hidden md:block text-xl font-bold text-primary mb-6 border-b pb-2">Filter By</h2>
                 
                 <!-- Filter 0: Camera Type -->
                 <div class="mb-8">
@@ -178,6 +183,8 @@
                             <span class="text-sm text-slate-600">Acoustic Series (Leak detection)</span>
                         </label>
                     </div>
+                </div>
+            
                 </div>
             </aside>
 
