@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Resolucion
       if (p.especificaciones) {
-          const resSpec = p.especificaciones.find(e => e.etiqueta && (e.etiqueta.es === 'Resolución infrarroja' || e.etiqueta.en === 'Infrared resolution'));
+          const resSpec = p.especificaciones.find(e => e.etiqueta && (e.etiqueta.es.includes('Resoluci') || e.etiqueta.en === 'Infrared resolution'));
           if (resSpec && resSpec.valor) {
               const resVal = resSpec.valor.es || resSpec.valor;
               if (resVal.includes('1280x1024')) availableRes.add('1280x1024');
@@ -218,9 +218,18 @@ function renderProductCards(products, container, lang) {
               </li>`;
     }).join('');
 
-    
-    // Limit specs to 3 for catalog
-    const catalogSpecsHtml = availableSpecs.slice(0, 3).map(spec => {
+    // Select top 3 specs, and also always include "Pantalla" (Display) if it exists.
+    const selectedSpecs = availableSpecs.slice(0, 3);
+    const pantallaSpec = availableSpecs.find(s => {
+       const lbl = getText(s.etiqueta, 'es') || '';
+       return lbl.toLowerCase().includes('pantalla');
+    });
+    // Add "Pantalla" if it wasn't already in the top 3
+    if (pantallaSpec && !selectedSpecs.includes(pantallaSpec)) {
+       selectedSpecs.push(pantallaSpec);
+    }
+
+    const catalogSpecsHtml = selectedSpecs.map(spec => {
       return `<li class="text-xs text-slate-500 mb-1">
                 <span class="font-semibold">${getText(spec.etiqueta, lang)}:</span> ${getText(spec.valor, lang)}
               </li>`;
@@ -310,7 +319,7 @@ function setupFilters(products, container, lang) {
       if (selectedRes.length > 0) {
         const resSpec = p.especificaciones.find(s => {
           const lbl = getText(s.etiqueta, 'es') || '';
-          return lbl.toLowerCase().includes('resolución') || lbl.toLowerCase().includes('resolucion');
+          return lbl.toLowerCase().includes('resoluci') || lbl.toLowerCase().includes('resoluci');
         });
         const resValue = resSpec && resSpec.valor ? getText(resSpec.valor, lang) : '';
         matchRes = selectedRes.some(r => resValue.includes(r));
@@ -349,4 +358,5 @@ function setupFilters(products, container, lang) {
   const searchInput = document.getElementById('search-input');
   if (searchInput) searchInput.addEventListener('input', applyFilters);
 }
+
 
