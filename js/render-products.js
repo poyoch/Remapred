@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Current language determined by html lang attribute
   const lang = document.documentElement.lang || 'es';
 
@@ -85,10 +85,12 @@
           const resSpec = p.especificaciones.find(e => e.etiqueta && (e.etiqueta.es === 'Resolución infrarroja' || e.etiqueta.en === 'Infrared resolution'));
           if (resSpec && resSpec.valor) {
               const resVal = resSpec.valor.es || resSpec.valor;
+              if (resVal.includes('1280x1024')) availableRes.add('1280x1024');
               if (resVal.includes('640x480')) availableRes.add('640x480');
               if (resVal.includes('384x288')) availableRes.add('384x288');
               if (resVal.includes('320x240')) availableRes.add('320x240');
-              if (resVal.includes('1280x1024')) availableRes.add('1280x1024');
+              if (resVal.includes('240x320')) availableRes.add('240x320');
+              if (resVal.includes('160x120')) availableRes.add('160x120');
           }
       }
 
