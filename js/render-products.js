@@ -286,7 +286,6 @@ function setupFilters(products, container, lang, preselectLine) {
       <label class="filter-option flex items-center space-x-2 cursor-pointer group/opt">
         <input type="checkbox" value="${escapeHtml(k)}" class="filter-${f.key} rounded border-slate-300 text-accent focus:ring-accent accent-accent">
         <span class="text-sm text-slate-600 group-hover/opt:text-primary transition-colors">${labels.get(k)}</span>
-        <span class="filter-count ml-auto text-[11px] text-slate-400 tabular-nums"></span>
       </label>`).join('');
 
     f.inputs = Array.from(f.el.querySelectorAll('input'));
@@ -370,8 +369,6 @@ function setupFilters(products, container, lang, preselectLine) {
         const show = f.key === 'linea' ? true : (n > 0 || cb.checked);
         label.classList.toggle('hidden', !show);
         label.classList.toggle('opacity-50', f.key === 'linea' && n === 0 && !cb.checked);
-        const countEl = label.querySelector('.filter-count');
-        if (countEl) countEl.textContent = n;
         if (show) visible++;
       });
       if (f.block) f.block.style.display = visible === 0 ? 'none' : '';
