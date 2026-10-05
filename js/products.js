@@ -1,4 +1,4 @@
-﻿// Capa de datos para productos FOTRIC
+// Capa de datos para productos FOTRIC
 // Usamos { es: "...", en: "..." } para soportar i18n más adelante.
 
 const products = [
@@ -2291,6 +2291,14 @@ const products = [
     "gama": {
       "es": "Serie TP",
       "en": "TP Series"
+    },
+    "categoriaPrincipal": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
+    },
+    "subcategoria": {
+      "es": "Portátiles y de Uso Ligero",
+      "en": "Portable and Light Use"
     },
     "precioUSD": 359.99,
     "imagen": "img/productos/fotric-tp320a.avif",
