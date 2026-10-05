@@ -1,5 +1,5 @@
-// Capa de datos para productos FOTRIC
-// Usamos { es: "...", en: "..." } para soportar i18n más adelante.
+ï»¿// Capa de datos para productos FOTRIC
+// Usamos { es: "...", en: "..." } para soportar i18n mÃ¡s adelante.
 
 const products = [
   {
@@ -10,11 +10,11 @@ const products = [
       "en": "TD2 Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -36,7 +36,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Detección práctica de fugas de aire comprimido, gases industriales y localización preliminar de descargas parciales.",
+      "es": "DetecciÃ³n prÃ¡ctica de fugas de aire comprimido, gases industriales y localizaciÃ³n preliminar de descargas parciales.",
       "en": "Practical detection of compressed air leaks, industrial gases and preliminary localization of partial discharges."
     },
     "beneficios": [],
@@ -51,11 +51,11 @@ const products = [
       "en": "TD2 Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -77,7 +77,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Detección práctica de fugas de aire comprimido, gases industriales y localización preliminar de descargas parciales.",
+      "es": "DetecciÃ³n prÃ¡ctica de fugas de aire comprimido, gases industriales y localizaciÃ³n preliminar de descargas parciales.",
       "en": "Practical detection of compressed air leaks, industrial gases and preliminary localization of partial discharges."
     },
     "beneficios": [],
@@ -92,11 +92,11 @@ const products = [
       "en": "TD Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -118,7 +118,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Detección práctica de fugas de aire comprimido, gases industriales y localización preliminar de descargas parciales.",
+      "es": "DetecciÃ³n prÃ¡ctica de fugas de aire comprimido, gases industriales y localizaciÃ³n preliminar de descargas parciales.",
       "en": "Practical detection of compressed air leaks, industrial gases and preliminary localization of partial discharges."
     },
     "beneficios": [],
@@ -133,11 +133,11 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -149,17 +149,17 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Precisión",
+          "es": "PrecisiÃ³n",
           "en": "Accuracy"
         },
         "valor": {
-          "es": "Localización de precisión y cuantificación",
+          "es": "LocalizaciÃ³n de precisiÃ³n y cuantificaciÃ³n",
           "en": "Precision localization and quantification"
         }
       }
     ],
     "aplicaciones": {
-      "es": "Localización de precisión y cuantificación de fugas de aire/gas, mapeo de ruido acústico industrial.",
+      "es": "LocalizaciÃ³n de precisiÃ³n y cuantificaciÃ³n de fugas de aire/gas, mapeo de ruido acÃºstico industrial.",
       "en": "Precision localization and quantification of air/gas leaks, industrial acoustic noise mapping."
     },
     "beneficios": [],
@@ -174,11 +174,11 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -190,17 +190,17 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Precisión",
+          "es": "PrecisiÃ³n",
           "en": "Accuracy"
         },
         "valor": {
-          "es": "Localización de precisión y cuantificación",
+          "es": "LocalizaciÃ³n de precisiÃ³n y cuantificaciÃ³n",
           "en": "Precision localization and quantification"
         }
       }
     ],
     "aplicaciones": {
-      "es": "Localización de precisión y cuantificación de fugas de aire/gas, mapeo de ruido acústico industrial.",
+      "es": "LocalizaciÃ³n de precisiÃ³n y cuantificaciÃ³n de fugas de aire/gas, mapeo de ruido acÃºstico industrial.",
       "en": "Precision localization and quantification of air/gas leaks, industrial acoustic noise mapping."
     },
     "beneficios": [],
@@ -215,11 +215,11 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -235,13 +235,13 @@ const products = [
           "en": "Usage"
         },
         "valor": {
-          "es": "Auditorías energéticas avanzadas",
+          "es": "AuditorÃ­as energÃ©ticas avanzadas",
           "en": "Advanced energy audits"
         }
       }
     ],
     "aplicaciones": {
-      "es": "Auditorías energéticas avanzadas, estimación de costos monetarios por fugas y diagnóstico de descargas parciales en alta tensión.",
+      "es": "AuditorÃ­as energÃ©ticas avanzadas, estimaciÃ³n de costos monetarios por fugas y diagnÃ³stico de descargas parciales en alta tensiÃ³n.",
       "en": "Advanced energy audits, monetary cost estimation for leaks and high-voltage partial discharge diagnostics."
     },
     "beneficios": [],
@@ -256,11 +256,11 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -276,13 +276,13 @@ const products = [
           "en": "Usage"
         },
         "valor": {
-          "es": "Auditorías energéticas avanzadas",
+          "es": "AuditorÃ­as energÃ©ticas avanzadas",
           "en": "Advanced energy audits"
         }
       }
     ],
     "aplicaciones": {
-      "es": "Auditorías energéticas avanzadas, estimación de costos monetarios por fugas y diagnóstico de descargas parciales en alta tensión.",
+      "es": "AuditorÃ­as energÃ©ticas avanzadas, estimaciÃ³n de costos monetarios por fugas y diagnÃ³stico de descargas parciales en alta tensiÃ³n.",
       "en": "Advanced energy audits, monetary cost estimation for leaks and high-voltage partial discharge diagnostics."
     },
     "beneficios": [],
@@ -297,11 +297,11 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -317,13 +317,13 @@ const products = [
           "en": "Usage"
         },
         "valor": {
-          "es": "Máxima precisión",
+          "es": "MÃ¡xima precisiÃ³n",
           "en": "Maximum precision"
         }
       }
     ],
     "aplicaciones": {
-      "es": "Auditorías energéticas de máxima precisión, cuantificación financiera de pérdidas y descargas parciales en subestaciones.",
+      "es": "AuditorÃ­as energÃ©ticas de mÃ¡xima precisiÃ³n, cuantificaciÃ³n financiera de pÃ©rdidas y descargas parciales en subestaciones.",
       "en": "Maximum precision energy audits, financial quantification of losses and partial discharges in substations."
     },
     "beneficios": [],
@@ -338,11 +338,11 @@ const products = [
       "en": "H-Flex Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -354,7 +354,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Diseño",
+          "es": "DiseÃ±o",
           "en": "Design"
         },
         "valor": {
@@ -364,7 +364,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Monitoreo y diagnóstico en zonas de acceso complejo o estrecho.",
+      "es": "Monitoreo y diagnÃ³stico en zonas de acceso complejo o estrecho.",
       "en": "Monitoring and diagnostics in complex or narrow access areas."
     },
     "beneficios": [],
@@ -379,11 +379,11 @@ const products = [
       "en": "P-MiX Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -400,13 +400,13 @@ const products = [
           "en": "Type"
         },
         "valor": {
-          "es": "Acústica y Térmica (2 en 1)",
+          "es": "AcÃºstica y TÃ©rmica (2 en 1)",
           "en": "Acoustic & Thermal (2-in-1)"
         }
       }
     ],
     "aplicaciones": {
-      "es": "Inspección predictiva integral en subestaciones y plantas críticas (detección simultánea de sobrecalentamientos térmicos y descargas parciales/fugas).",
+      "es": "InspecciÃ³n predictiva integral en subestaciones y plantas crÃ­ticas (detecciÃ³n simultÃ¡nea de sobrecalentamientos tÃ©rmicos y descargas parciales/fugas).",
       "en": "Comprehensive predictive inspection in substations and critical plants (simultaneous detection of thermal overheating and partial discharges/leaks)."
     },
     "beneficios": [],
@@ -421,11 +421,11 @@ const products = [
       "en": "P-MiX Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -442,13 +442,13 @@ const products = [
           "en": "Type"
         },
         "valor": {
-          "es": "Acústica y Térmica (2 en 1)",
+          "es": "AcÃºstica y TÃ©rmica (2 en 1)",
           "en": "Acoustic & Thermal (2-in-1)"
         }
       }
     ],
     "aplicaciones": {
-      "es": "Inspección predictiva integral en subestaciones y plantas críticas (detección simultánea de sobrecalentamientos térmicos y descargas parciales/fugas).",
+      "es": "InspecciÃ³n predictiva integral en subestaciones y plantas crÃ­ticas (detecciÃ³n simultÃ¡nea de sobrecalentamientos tÃ©rmicos y descargas parciales/fugas).",
       "en": "Comprehensive predictive inspection in substations and critical plants (simultaneous detection of thermal overheating and partial discharges/leaks)."
     },
     "beneficios": [],
@@ -463,11 +463,11 @@ const products = [
       "en": "V-MiX Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -484,13 +484,13 @@ const products = [
           "en": "Type"
         },
         "valor": {
-          "es": "Acústica y Térmica (2 en 1)",
+          "es": "AcÃºstica y TÃ©rmica (2 en 1)",
           "en": "Acoustic & Thermal (2-in-1)"
         }
       }
     ],
     "aplicaciones": {
-      "es": "Inspección técnica híbrida en activos de difícil acceso o en altura, combinando termografía infrarroja de precisión con análisis acústico ultrasónico.",
+      "es": "InspecciÃ³n tÃ©cnica hÃ­brida en activos de difÃ­cil acceso o en altura, combinando termografÃ­a infrarroja de precisiÃ³n con anÃ¡lisis acÃºstico ultrasÃ³nico.",
       "en": "Hybrid technical inspection in hard-to-reach or high-altitude assets, combining precision infrared thermography with ultrasonic acoustic analysis."
     },
     "beneficios": [],
@@ -505,11 +505,11 @@ const products = [
       "en": "V-MiX Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
+      "es": "CÃ¡maras AcÃºsticas",
       "en": "Acoustic Cameras"
     },
     "subcategoria": {
-      "es": "Detección de Fugas y Descargas",
+      "es": "DetecciÃ³n de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
@@ -526,13 +526,13 @@ const products = [
           "en": "Type"
         },
         "valor": {
-          "es": "Acústica y Térmica (2 en 1)",
+          "es": "AcÃºstica y TÃ©rmica (2 en 1)",
           "en": "Acoustic & Thermal (2-in-1)"
         }
       }
     ],
     "aplicaciones": {
-      "es": "Inspección técnica híbrida en activos de difícil acceso o en altura, combinando termografía infrarroja de precisión con análisis acústico ultrasónico.",
+      "es": "InspecciÃ³n tÃ©cnica hÃ­brida en activos de difÃ­cil acceso o en altura, combinando termografÃ­a infrarroja de precisiÃ³n con anÃ¡lisis acÃºstico ultrasÃ³nico.",
       "en": "Hybrid technical inspection in hard-to-reach or high-altitude assets, combining precision infrared thermography with ultrasonic acoustic analysis."
     },
     "beneficios": [],
@@ -547,11 +547,11 @@ const products = [
       "en": "TF Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Portátiles y de Uso Ligero",
+      "es": "PortÃ¡tiles y de Uso Ligero",
       "en": "Portable and Light Use"
     },
     "precioUSD": null,
@@ -563,7 +563,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -573,7 +573,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -583,12 +583,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "38°x50°",
-          "en": "38°x50°"
+          "es": "38Â°x50Â°",
+          "en": "38Â°x50Â°"
         }
       },
       {
@@ -607,13 +607,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~450°C",
-          "en": "-20~450°C"
+          "es": "-20~450Â°C",
+          "en": "-20~450Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -633,7 +633,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -643,7 +643,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Mantenimiento preventivo básico, HVAC, tableros eléctricos residenciales/comerciales e inspección rápida en campo.",
+      "es": "Mantenimiento preventivo bÃ¡sico, HVAC, tableros elÃ©ctricos residenciales/comerciales e inspecciÃ³n rÃ¡pida en campo.",
       "en": "Basic preventive maintenance, HVAC, residential/commercial electrical panels and quick field inspection."
     },
     "beneficios": [],
@@ -658,11 +658,11 @@ const products = [
       "en": "C Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Portátiles y de Uso Ligero",
+      "es": "PortÃ¡tiles y de Uso Ligero",
       "en": "Portable and Light Use"
     },
     "precioUSD": null,
@@ -674,7 +674,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -684,7 +684,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -694,12 +694,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "46°x35°",
-          "en": "46°x35°"
+          "es": "46Â°x35Â°",
+          "en": "46Â°x35Â°"
         }
       },
       {
@@ -718,13 +718,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~550°C",
-          "en": "-20~550°C"
+          "es": "-20~550Â°C",
+          "en": "-20~550Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -744,7 +744,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -754,7 +754,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Inspección eléctrica y mecánica liviana, auditorías energéticas, climatización y fontanería.",
+      "es": "InspecciÃ³n elÃ©ctrica y mecÃ¡nica liviana, auditorÃ­as energÃ©ticas, climatizaciÃ³n y fontanerÃ­a.",
       "en": "Light electrical and mechanical inspection, energy audits, HVAC and plumbing."
     },
     "beneficios": [],
@@ -769,11 +769,11 @@ const products = [
       "en": "C Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Portátiles y de Uso Ligero",
+      "es": "PortÃ¡tiles y de Uso Ligero",
       "en": "Portable and Light Use"
     },
     "precioUSD": null,
@@ -785,7 +785,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -795,7 +795,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -805,12 +805,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "49°x37°",
-          "en": "49°x37°"
+          "es": "49Â°x37Â°",
+          "en": "49Â°x37Â°"
         }
       },
       {
@@ -829,13 +829,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -855,7 +855,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -865,7 +865,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Inspección eléctrica y mecánica liviana, auditorías energéticas, climatización y fontanería.",
+      "es": "InspecciÃ³n elÃ©ctrica y mecÃ¡nica liviana, auditorÃ­as energÃ©ticas, climatizaciÃ³n y fontanerÃ­a.",
       "en": "Light electrical and mechanical inspection, energy audits, HVAC and plumbing."
     },
     "beneficios": [],
@@ -880,7 +880,7 @@ const products = [
       "en": "Ti Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
@@ -896,7 +896,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -906,7 +906,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -916,12 +916,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x19°",
-          "en": "25°x19°"
+          "es": "25Â°x19Â°",
+          "en": "25Â°x19Â°"
         }
       },
       {
@@ -940,13 +940,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -966,7 +966,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -976,7 +976,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Mantenimiento predictivo industrial diario en motores, bombas, rodamientos y tableros de distribución.",
+      "es": "Mantenimiento predictivo industrial diario en motores, bombas, rodamientos y tableros de distribuciÃ³n.",
       "en": "Daily industrial predictive maintenance on motors, pumps, bearings and distribution boards."
     },
     "beneficios": [],
@@ -991,7 +991,7 @@ const products = [
       "en": "Ti Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
@@ -1007,7 +1007,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1017,7 +1017,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -1027,12 +1027,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "44°x33°",
-          "en": "44°x33°"
+          "es": "44Â°x33Â°",
+          "en": "44Â°x33Â°"
         }
       },
       {
@@ -1051,13 +1051,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -1077,7 +1077,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -1087,7 +1087,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Mantenimiento predictivo industrial diario en motores, bombas, rodamientos y tableros de distribución.",
+      "es": "Mantenimiento predictivo industrial diario en motores, bombas, rodamientos y tableros de distribuciÃ³n.",
       "en": "Daily industrial predictive maintenance on motors, pumps, bearings and distribution boards."
     },
     "beneficios": [],
@@ -1102,7 +1102,7 @@ const products = [
       "en": "Ti Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
@@ -1118,7 +1118,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1128,7 +1128,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -1138,12 +1138,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x19°",
-          "en": "25°x19°"
+          "es": "25Â°x19Â°",
+          "en": "25Â°x19Â°"
         }
       },
       {
@@ -1162,13 +1162,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -1188,7 +1188,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -1198,7 +1198,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Mantenimiento predictivo industrial diario en motores, bombas, rodamientos y tableros de distribución.",
+      "es": "Mantenimiento predictivo industrial diario en motores, bombas, rodamientos y tableros de distribuciÃ³n.",
       "en": "Daily industrial predictive maintenance on motors, pumps, bearings and distribution boards."
     },
     "beneficios": [],
@@ -1213,7 +1213,7 @@ const products = [
       "en": "Ti Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
@@ -1229,7 +1229,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1239,7 +1239,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -1249,12 +1249,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x19°",
-          "en": "25°x19°"
+          "es": "25Â°x19Â°",
+          "en": "25Â°x19Â°"
         }
       },
       {
@@ -1273,13 +1273,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -1299,7 +1299,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -1309,7 +1309,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Mantenimiento predictivo industrial diario en motores, bombas, rodamientos y tableros de distribución.",
+      "es": "Mantenimiento predictivo industrial diario en motores, bombas, rodamientos y tableros de distribuciÃ³n.",
       "en": "Daily industrial predictive maintenance on motors, pumps, bearings and distribution boards."
     },
     "beneficios": [],
@@ -1324,7 +1324,7 @@ const products = [
       "en": "P Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
@@ -1340,7 +1340,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1350,7 +1350,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -1360,12 +1360,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x19°",
-          "en": "25°x19°"
+          "es": "25Â°x19Â°",
+          "en": "25Â°x19Â°"
         }
       },
       {
@@ -1384,13 +1384,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~1550°C",
-          "en": "-20~1550°C"
+          "es": "-20~1550Â°C",
+          "en": "-20~1550Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -1410,7 +1410,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -1420,7 +1420,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Industria pesada, inspección de refractarios, hornos, fundiciones, subestaciones de alta tensión y distancias largas.",
+      "es": "Industria pesada, inspecciÃ³n de refractarios, hornos, fundiciones, subestaciones de alta tensiÃ³n y distancias largas.",
       "en": "Heavy industry, inspection of refractories, furnaces, foundries, high voltage substations and long distances."
     },
     "beneficios": [],
@@ -1435,7 +1435,7 @@ const products = [
       "en": "P Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
@@ -1451,7 +1451,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1461,7 +1461,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -1471,12 +1471,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x19°",
-          "en": "25°x19°"
+          "es": "25Â°x19Â°",
+          "en": "25Â°x19Â°"
         }
       },
       {
@@ -1495,13 +1495,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~2000°C",
-          "en": "-20~2000°C"
+          "es": "-20~2000Â°C",
+          "en": "-20~2000Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -1521,7 +1521,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -1531,7 +1531,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Industria pesada, inspección de refractarios, hornos, fundiciones, subestaciones de alta tensión y distancias largas.",
+      "es": "Industria pesada, inspecciÃ³n de refractarios, hornos, fundiciones, subestaciones de alta tensiÃ³n y distancias largas.",
       "en": "Heavy industry, inspection of refractories, furnaces, foundries, high voltage substations and long distances."
     },
     "beneficios": [],
@@ -1546,7 +1546,7 @@ const products = [
       "en": "P Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
@@ -1562,7 +1562,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1572,7 +1572,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -1582,12 +1582,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x20°",
-          "en": "25°x20°"
+          "es": "25Â°x20Â°",
+          "en": "25Â°x20Â°"
         }
       },
       {
@@ -1606,13 +1606,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~2000°C",
-          "en": "-20~2000°C"
+          "es": "-20~2000Â°C",
+          "en": "-20~2000Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -1632,7 +1632,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -1642,7 +1642,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Industria pesada, inspección de refractarios, hornos, fundiciones, subestaciones de alta tensión y distancias largas.",
+      "es": "Industria pesada, inspecciÃ³n de refractarios, hornos, fundiciones, subestaciones de alta tensiÃ³n y distancias largas.",
       "en": "Heavy industry, inspection of refractories, furnaces, foundries, high voltage substations and long distances."
     },
     "beneficios": [],
@@ -1657,7 +1657,7 @@ const products = [
       "en": "600 Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
@@ -1673,7 +1673,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1683,7 +1683,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -1693,11 +1693,11 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "Según lente",
+          "es": "SegÃºn lente",
           "en": "Depends on lens"
         }
       },
@@ -1717,13 +1717,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~2000°C",
-          "en": "-20~2000°C"
+          "es": "-20~2000Â°C",
+          "en": "-20~2000Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -1743,7 +1743,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -1753,7 +1753,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Monitoreo térmico continuo 24/7, automatización de procesos, prevención de incendios y subestaciones no atendidas.",
+      "es": "Monitoreo tÃ©rmico continuo 24/7, automatizaciÃ³n de procesos, prevenciÃ³n de incendios y subestaciones no atendidas.",
       "en": "Continuous 24/7 thermal monitoring, process automation, fire prevention and unattended substations."
     },
     "beneficios": [],
@@ -1768,11 +1768,11 @@ const products = [
       "en": "220Pro Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Investigación y Desarrollo",
+      "es": "InvestigaciÃ³n y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
@@ -1784,7 +1784,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1794,7 +1794,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -1804,12 +1804,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x19°",
-          "en": "25°x19°"
+          "es": "25Â°x19Â°",
+          "en": "25Â°x19Â°"
         }
       },
       {
@@ -1828,13 +1828,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -1854,7 +1854,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrónicas (PCB), desarrollo automotriz y ensayos de materiales.",
+      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrÃ³nicas (PCB), desarrollo automotriz y ensayos de materiales.",
       "en": "R&D laboratories, semiconductor and PCB testing, automotive development and materials testing."
     },
     "beneficios": [],
@@ -1869,11 +1869,11 @@ const products = [
       "en": "220Pro Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Investigación y Desarrollo",
+      "es": "InvestigaciÃ³n y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
@@ -1885,7 +1885,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1895,7 +1895,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -1905,12 +1905,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x19°",
-          "en": "25°x19°"
+          "es": "25Â°x19Â°",
+          "en": "25Â°x19Â°"
         }
       },
       {
@@ -1929,13 +1929,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -1955,7 +1955,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrónicas (PCB), desarrollo automotriz y ensayos de materiales.",
+      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrÃ³nicas (PCB), desarrollo automotriz y ensayos de materiales.",
       "en": "R&D laboratories, semiconductor and PCB testing, automotive development and materials testing."
     },
     "beneficios": [],
@@ -1970,11 +1970,11 @@ const products = [
       "en": "220Pro Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Investigación y Desarrollo",
+      "es": "InvestigaciÃ³n y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
@@ -1986,7 +1986,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -1996,7 +1996,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -2006,12 +2006,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x19°",
-          "en": "25°x19°"
+          "es": "25Â°x19Â°",
+          "en": "25Â°x19Â°"
         }
       },
       {
@@ -2030,13 +2030,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -2056,7 +2056,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrónicas (PCB), desarrollo automotriz y ensayos de materiales.",
+      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrÃ³nicas (PCB), desarrollo automotriz y ensayos de materiales.",
       "en": "R&D laboratories, semiconductor and PCB testing, automotive development and materials testing."
     },
     "beneficios": [],
@@ -2071,11 +2071,11 @@ const products = [
       "en": "220Link Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Investigación y Desarrollo",
+      "es": "InvestigaciÃ³n y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
@@ -2087,7 +2087,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -2097,7 +2097,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -2107,12 +2107,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "30°x22°",
-          "en": "30°x22°"
+          "es": "30Â°x22Â°",
+          "en": "30Â°x22Â°"
         }
       },
       {
@@ -2131,13 +2131,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -2157,7 +2157,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -2167,7 +2167,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrónicas (PCB), desarrollo automotriz y ensayos de materiales.",
+      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrÃ³nicas (PCB), desarrollo automotriz y ensayos de materiales.",
       "en": "R&D laboratories, semiconductor and PCB testing, automotive development and materials testing."
     },
     "beneficios": [],
@@ -2182,11 +2182,11 @@ const products = [
       "en": "220Link Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "CÃ¡maras TermogrÃ¡ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Investigación y Desarrollo",
+      "es": "InvestigaciÃ³n y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
@@ -2198,7 +2198,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -2208,7 +2208,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -2218,12 +2218,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "25°x19°",
-          "en": "25°x19°"
+          "es": "25Â°x19Â°",
+          "en": "25Â°x19Â°"
         }
       },
       {
@@ -2242,13 +2242,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20~650°C",
-          "en": "-20~650°C"
+          "es": "-20~650Â°C",
+          "en": "-20~650Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -2268,7 +2268,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
@@ -2278,7 +2278,7 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrónicas (PCB), desarrollo automotriz y ensayos de materiales.",
+      "es": "Laboratorios de I+D, pruebas de semiconductores y tarjetas electrÃ³nicas (PCB), desarrollo automotriz y ensayos de materiales.",
       "en": "R&D laboratories, semiconductor and PCB testing, automotive development and materials testing."
     },
     "beneficios": [],
@@ -2301,7 +2301,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -2311,7 +2311,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -2321,12 +2321,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "60° x 45°",
-          "en": "60° x 45°"
+          "es": "60Â° x 45Â°",
+          "en": "60Â° x 45Â°"
         }
       },
       {
@@ -2345,23 +2345,23 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20 °C a 550 °C",
-          "en": "-20 °C to 550 °C"
+          "es": "-20 Â°C a 550 Â°C",
+          "en": "-20 Â°C to 550 Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Precisión",
+          "es": "PrecisiÃ³n",
           "en": "Accuracy"
         },
         "valor": {
-          "es": "±2 °C o ±2 %",
-          "en": "±2 °C or ±2 %"
+          "es": "Â±2 Â°C o Â±2 %",
+          "en": "Â±2 Â°C or Â±2 %"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": null
@@ -2375,7 +2375,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Batería / autonomía",
+          "es": "BaterÃ­a / autonomÃ­a",
           "en": "Battery / autonomy"
         },
         "valor": {
@@ -2385,12 +2385,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
-          "es": "IP40 · 1 m",
-          "en": "IP40 · 1 m"
+          "es": "IP40 Â· 1 m",
+          "en": "IP40 Â· 1 m"
         }
       },
       {
@@ -2405,12 +2405,12 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Se conecta directo a un smartphone Android (app FOTRIC Genie): inspección industrial, armarios eléctricos, HVAC doméstico, calefacción de suelo radiante y exploración nocturna al aire libre",
+      "es": "Se conecta directo a un smartphone Android (app FOTRIC Genie): inspecciÃ³n industrial, armarios elÃ©ctricos, HVAC domÃ©stico, calefacciÃ³n de suelo radiante y exploraciÃ³n nocturna al aire libre",
       "en": "Connects directly to an Android smartphone (FOTRIC Genie app): industrial inspection, electrical cabinets, domestic HVAC, underfloor heating, and outdoor night exploration."
     },
     "beneficios": [
       {
-        "es": "Plug-and-play, sin batería propia ni tiempo de arranque",
+        "es": "Plug-and-play, sin baterÃ­a propia ni tiempo de arranque",
         "en": "Plug-and-play, no internal battery or boot time"
       },
       {
@@ -2429,61 +2429,61 @@ const products = [
     "faqs": [
       {
         "q": {
-          "es": "¿Cuál es la resolución infrarroja? ¿Admite superresolución?",
+          "es": "Â¿CuÃ¡l es la resoluciÃ³n infrarroja? Â¿Admite superresoluciÃ³n?",
           "en": "What is the infrared resolution? Does it support super resolution?"
         },
         "a": {
-          "es": "La resolución infrarroja es de 320x240. Admite la función Super Resolution, que mejora la imagen a 640x480 para obtener mayor detalle.",
+          "es": "La resoluciÃ³n infrarroja es de 320x240. Admite la funciÃ³n Super Resolution, que mejora la imagen a 640x480 para obtener mayor detalle.",
           "en": "The infrared resolution is 320x240. It supports Super Resolution, which enhances the image to 640x480 for greater detail."
         }
       },
       {
         "q": {
-          "es": "¿Cuál es el rango y la precisión de la medición de temperatura?",
+          "es": "Â¿CuÃ¡l es el rango y la precisiÃ³n de la mediciÃ³n de temperatura?",
           "en": "What is the temperature measurement range and accuracy?"
         },
         "a": {
-          "es": "Rango de temperatura: -20 °C a 550 °C (-4 °F a 1022 °F). Precisión: ±2 °C o ±2 %, lo que sea mayor.",
-          "en": "Temperature range: -20 °C to 550 °C (-4 °F to 1022 °F). Accuracy: ±2 °C or ±2 %, whichever is greater."
+          "es": "Rango de temperatura: -20 Â°C a 550 Â°C (-4 Â°F a 1022 Â°F). PrecisiÃ³n: Â±2 Â°C o Â±2 %, lo que sea mayor.",
+          "en": "Temperature range: -20 Â°C to 550 Â°C (-4 Â°F to 1022 Â°F). Accuracy: Â±2 Â°C or Â±2 %, whichever is greater."
         }
       },
       {
         "q": {
-          "es": "¿Qué smartphones son compatibles con el TP320A? ¿Funciona con iOS/iPhones?",
+          "es": "Â¿QuÃ© smartphones son compatibles con el TP320A? Â¿Funciona con iOS/iPhones?",
           "en": "Which smartphones are compatible with the TP320A? Does it work with iOS/iPhones?"
         },
         "a": {
-          "es": "El TP320A está diseñado exclusivamente para dispositivos Android y no es compatible con iPhones de Apple. Requiere Android 12 o superior y OTG activado.",
+          "es": "El TP320A estÃ¡ diseÃ±ado exclusivamente para dispositivos Android y no es compatible con iPhones de Apple. Requiere Android 12 o superior y OTG activado.",
           "en": "The TP320A is exclusively designed for Android devices and is not compatible with Apple iPhones. It requires Android 12 or higher and OTG enabled."
         }
       },
       {
         "q": {
-          "es": "¿Puedo usar software de PC para analizar imágenes?",
+          "es": "Â¿Puedo usar software de PC para analizar imÃ¡genes?",
           "en": "Can I use PC software to analyze images?"
         },
         "a": {
-          "es": "Sí. El TP320A es compatible con el software Analyz IR Professional.",
+          "es": "SÃ­. El TP320A es compatible con el software Analyz IR Professional.",
           "en": "Yes. The TP320A is compatible with the Analyz IR Professional software."
         }
       },
       {
         "q": {
-          "es": "¿El TP320A tiene su propia batería? ¿Consume mucha batería de mi teléfono?",
+          "es": "Â¿El TP320A tiene su propia baterÃ­a? Â¿Consume mucha baterÃ­a de mi telÃ©fono?",
           "en": "Does the TP320A have its own battery? Does it consume a lot of phone battery?"
         },
         "a": {
-          "es": "El TP320A no tiene batería propia. Se alimenta a través del teléfono mediante USB Tipo-C con un consumo típico de tan solo 0,5 W.",
+          "es": "El TP320A no tiene baterÃ­a propia. Se alimenta a travÃ©s del telÃ©fono mediante USB Tipo-C con un consumo tÃ­pico de tan solo 0,5 W.",
           "en": "The TP320A does not have its own battery. It is powered by the phone via USB Type-C with a typical consumption of only 0.5 W."
         }
       },
       {
         "q": {
-          "es": "¿Para qué se puede utilizar el TP320A?",
+          "es": "Â¿Para quÃ© se puede utilizar el TP320A?",
           "en": "What can the TP320A be used for?"
         },
         "a": {
-          "es": "Inspección de la vivienda, revisión de HVAC, detección de puntos calientes en paneles eléctricos, y observación de animales de noche.",
+          "es": "InspecciÃ³n de la vivienda, revisiÃ³n de HVAC, detecciÃ³n de puntos calientes en paneles elÃ©ctricos, y observaciÃ³n de animales de noche.",
           "en": "Home inspection, HVAC checks, hot spot detection in electrical panels, and nighttime animal observation."
         }
       }
@@ -2491,7 +2491,7 @@ const products = [
     "descargas": [
       {
         "titulo": {
-          "es": "Guía de Inicio Rápido",
+          "es": "GuÃ­a de Inicio RÃ¡pido",
           "en": "Quick Start Guide"
         },
         "url": "img/productos/fotric-tp320a-guia-inicio-rapido.pdf"
@@ -2515,7 +2515,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -2525,7 +2525,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -2535,12 +2535,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "49° x 37°",
-          "en": "49° x 37°"
+          "es": "49Â° x 37Â°",
+          "en": "49Â° x 37Â°"
         }
       },
       {
@@ -2559,23 +2559,23 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20 °C a 450 °C",
-          "en": "-20 °C to 450 °C"
+          "es": "-20 Â°C a 450 Â°C",
+          "en": "-20 Â°C to 450 Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Precisión",
+          "es": "PrecisiÃ³n",
           "en": "Accuracy"
         },
         "valor": {
-          "es": "±2 °C o ±2 %",
-          "en": "±2 °C or ±2 %"
+          "es": "Â±2 Â°C o Â±2 %",
+          "en": "Â±2 Â°C or Â±2 %"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -2589,13 +2589,13 @@ const products = [
           "en": "Display"
         },
         "valor": {
-          "es": "Táctil IPS 3,5\"",
+          "es": "TÃ¡ctil IPS 3,5\"",
           "en": "3.5\" IPS Touchscreen"
         }
       },
       {
         "etiqueta": {
-          "es": "Batería / autonomía",
+          "es": "BaterÃ­a / autonomÃ­a",
           "en": "Battery / autonomy"
         },
         "valor": {
@@ -2605,12 +2605,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
-          "es": "IP54 · 2 m",
-          "en": "IP54 · 2 m"
+          "es": "IP54 Â· 2 m",
+          "en": "IP54 Â· 2 m"
         }
       },
       {
@@ -2625,12 +2625,12 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Mantenimiento eléctrico, climatización (HVAC), detección de humedad en edificios e inspecciones de viviendas",
+      "es": "Mantenimiento elÃ©ctrico, climatizaciÃ³n (HVAC), detecciÃ³n de humedad en edificios e inspecciones de viviendas",
       "en": "Electrical maintenance, HVAC, building moisture detection and home inspections"
     },
     "beneficios": [
       {
-        "es": "Detector cerámico de grado profesional",
+        "es": "Detector cerÃ¡mico de grado profesional",
         "en": "Professional-grade ceramic detector"
       },
       {
@@ -2638,76 +2638,76 @@ const products = [
         "en": "4 image modes (IR, T-DEF, picture-in-picture, digital)"
       },
       {
-        "es": "Tecnología TWB",
+        "es": "TecnologÃ­a TWB",
         "en": "TWB technology"
       },
       {
-        "es": "Resistente al polvo, agua y caídas",
+        "es": "Resistente al polvo, agua y caÃ­das",
         "en": "Dust, water and drop resistant"
       },
       {
-        "es": "Calificación 4,8/5",
+        "es": "CalificaciÃ³n 4,8/5",
         "en": "Rated 4.8/5"
       }
     ],
     "faqs": [
       {
         "q": {
-          "es": "¿Cuál es la resolución infrarroja y el rango de medición de temperatura?",
+          "es": "Â¿CuÃ¡l es la resoluciÃ³n infrarroja y el rango de mediciÃ³n de temperatura?",
           "en": "What is the infrared resolution and temperature measurement range?"
         },
         "a": {
-          "es": "El TK5 cuenta con una resolución infrarroja de 320x240 y mide desde -20 °C hasta 450 °C.",
-          "en": "The TK5 has an infrared resolution of 320x240 and measures from -20 °C to 450 °C."
+          "es": "El TK5 cuenta con una resoluciÃ³n infrarroja de 320x240 y mide desde -20 Â°C hasta 450 Â°C.",
+          "en": "The TK5 has an infrared resolution of 320x240 and measures from -20 Â°C to 450 Â°C."
         }
       },
       {
         "q": {
-          "es": "¿Para qué aplicaciones industriales está diseñado el TK5?",
+          "es": "Â¿Para quÃ© aplicaciones industriales estÃ¡ diseÃ±ado el TK5?",
           "en": "What industrial applications is the TK5 designed for?"
         },
         "a": {
-          "es": "Mantenimiento eléctrico, climatización de edificios y revisiones mecánicas básicas.",
+          "es": "Mantenimiento elÃ©ctrico, climatizaciÃ³n de edificios y revisiones mecÃ¡nicas bÃ¡sicas.",
           "en": "Electrical maintenance, building HVAC, and basic mechanical checks."
         }
       },
       {
         "q": {
-          "es": "¿Qué modos de imagen están disponibles para ayudar a localizar fallos?",
+          "es": "Â¿QuÃ© modos de imagen estÃ¡n disponibles para ayudar a localizar fallos?",
           "en": "What imaging modes are available to help locate faults?"
         },
         "a": {
-          "es": "Infrarrojo completo, luz visible, imagen en imagen (PIP) y nuestro modo de fusión T-DEF patentado.",
+          "es": "Infrarrojo completo, luz visible, imagen en imagen (PIP) y nuestro modo de fusiÃ³n T-DEF patentado.",
           "en": "Full infrared, visible light, picture-in-picture (PIP), and our patented T-DEF fusion mode."
         }
       },
       {
         "q": {
-          "es": "¿Cuánto dura la batería? ¿Se puede reemplazar en el lugar de uso?",
+          "es": "Â¿CuÃ¡nto dura la baterÃ­a? Â¿Se puede reemplazar en el lugar de uso?",
           "en": "How long does the battery last? Can it be replaced in the field?"
         },
         "a": {
-          "es": "La batería de 5000 mAh dura más de 5 horas y es completamente reemplazable.",
+          "es": "La baterÃ­a de 5000 mAh dura mÃ¡s de 5 horas y es completamente reemplazable.",
           "en": "The 5000 mAh battery lasts over 5 hours and is fully replaceable."
         }
       },
       {
         "q": {
-          "es": "¿Puedo analizar imágenes y generar informes profesionales en un PC?",
+          "es": "Â¿Puedo analizar imÃ¡genes y generar informes profesionales en un PC?",
           "en": "Can I analyze images and generate professional reports on a PC?"
         },
         "a": {
-          "es": "Sí, usando el puerto USB o tarjeta TF con el software AnalyzIR Professional.",
+          "es": "SÃ­, usando el puerto USB o tarjeta TF con el software AnalyzIR Professional.",
           "en": "Yes, using the USB port or TF card with AnalyzIR Professional software."
         }
       },
       {
         "q": {
-          "es": "¿Qué tan resistente es el dispositivo en entornos de campo difíciles?",
+          "es": "Â¿QuÃ© tan resistente es el dispositivo en entornos de campo difÃ­ciles?",
           "en": "How rugged is the device in harsh field environments?"
         },
         "a": {
-          "es": "Tiene clasificación IP54 (polvo y salpicaduras) y soporta caídas de hasta 2 metros.",
+          "es": "Tiene clasificaciÃ³n IP54 (polvo y salpicaduras) y soporta caÃ­das de hasta 2 metros.",
           "en": "It has an IP54 rating (dust and splash) and withstands drops of up to 2 meters."
         }
       }
@@ -2715,14 +2715,14 @@ const products = [
     "descargas": [
       {
         "titulo": {
-          "es": "Ficha Técnica (Datasheet)",
+          "es": "Ficha TÃ©cnica (Datasheet)",
           "en": "Datasheet"
         },
         "url": "img/productos/fotric-tk5-datasheet.pdf"
       },
       {
         "titulo": {
-          "es": "Guía de Inicio Rápido",
+          "es": "GuÃ­a de Inicio RÃ¡pido",
           "en": "Quick Start Guide"
         },
         "url": "img/productos/fotric-tk5-guia-inicio-rapido.pdf"
@@ -2753,7 +2753,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -2763,7 +2763,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -2773,12 +2773,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "28° x 21°",
-          "en": "28° x 21°"
+          "es": "28Â° x 21Â°",
+          "en": "28Â° x 21Â°"
         }
       },
       {
@@ -2797,23 +2797,23 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20 °C a 550 °C",
-          "en": "-20 °C to 550 °C"
+          "es": "-20 Â°C a 550 Â°C",
+          "en": "-20 Â°C to 550 Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Precisión",
+          "es": "PrecisiÃ³n",
           "en": "Accuracy"
         },
         "valor": {
-          "es": "±2 °C o ±2 %",
-          "en": "±2 °C or ±2 %"
+          "es": "Â±2 Â°C o Â±2 %",
+          "en": "Â±2 Â°C or Â±2 %"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -2827,13 +2827,13 @@ const products = [
           "en": "Display"
         },
         "valor": {
-          "es": "Táctil IPS 3,5\"",
+          "es": "TÃ¡ctil IPS 3,5\"",
           "en": "3.5\" IPS Touchscreen"
         }
       },
       {
         "etiqueta": {
-          "es": "Batería / autonomía",
+          "es": "BaterÃ­a / autonomÃ­a",
           "en": "Battery / autonomy"
         },
         "valor": {
@@ -2843,12 +2843,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
-          "es": "IP54 · 2 m",
-          "en": "IP54 · 2 m"
+          "es": "IP54 Â· 2 m",
+          "en": "IP54 Â· 2 m"
         }
       },
       {
@@ -2863,20 +2863,20 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Ideal para inspecciones eléctricas donde se necesita mayor resolución y mediciones hasta 550°C",
-      "en": "Ideal for electrical inspections where higher resolution and measurements up to 550°C are needed"
+      "es": "Ideal para inspecciones elÃ©ctricas donde se necesita mayor resoluciÃ³n y mediciones hasta 550Â°C",
+      "en": "Ideal for electrical inspections where higher resolution and measurements up to 550Â°C are needed"
     },
     "beneficios": [
       {
-        "es": "Resolución superior (384x288) respecto al TK5",
+        "es": "ResoluciÃ³n superior (384x288) respecto al TK5",
         "en": "Superior resolution (384x288) compared to the TK5"
       },
       {
-        "es": "Mejor detección de detalles a distancia gracias a su FOV de 28°",
-        "en": "Better detail detection at a distance thanks to its 28° FOV"
+        "es": "Mejor detecciÃ³n de detalles a distancia gracias a su FOV de 28Â°",
+        "en": "Better detail detection at a distance thanks to its 28Â° FOV"
       },
       {
-        "es": "Batería intercambiable",
+        "es": "BaterÃ­a intercambiable",
         "en": "Interchangeable battery"
       },
       {
@@ -2887,61 +2887,61 @@ const products = [
     "faqs": [
       {
         "q": {
-          "es": "¿Cuáles son las especificaciones de resolución infrarroja y medición de temperatura de la TK6?",
+          "es": "Â¿CuÃ¡les son las especificaciones de resoluciÃ³n infrarroja y mediciÃ³n de temperatura de la TK6?",
           "en": "What are the infrared resolution and temperature measurement specs of the TK6?"
         },
         "a": {
-          "es": "La resolución infrarroja es de 384x288. Rango de temperatura: -20 °C a 550 °C. Precisión: ±2 °C o ±2 %.",
-          "en": "The infrared resolution is 384x288. Temperature range: -20 °C to 550 °C. Accuracy: ±2 °C or ±2 %."
+          "es": "La resoluciÃ³n infrarroja es de 384x288. Rango de temperatura: -20 Â°C a 550 Â°C. PrecisiÃ³n: Â±2 Â°C o Â±2 %.",
+          "en": "The infrared resolution is 384x288. Temperature range: -20 Â°C to 550 Â°C. Accuracy: Â±2 Â°C or Â±2 %."
         }
       },
       {
         "q": {
-          "es": "¿En qué industrias se utiliza más comúnmente el TK6?",
+          "es": "Â¿En quÃ© industrias se utiliza mÃ¡s comÃºnmente el TK6?",
           "en": "In which industries is the TK6 most commonly used?"
         },
         "a": {
-          "es": "Sistemas eléctricos, inspección de edificios, mecánica y manufactura.",
+          "es": "Sistemas elÃ©ctricos, inspecciÃ³n de edificios, mecÃ¡nica y manufactura.",
           "en": "Electrical systems, building inspection, mechanical, and manufacturing."
         }
       },
       {
         "q": {
-          "es": "¿El TK6 tiene diferentes modos de imagen?",
+          "es": "Â¿El TK6 tiene diferentes modos de imagen?",
           "en": "Does the TK6 have different imaging modes?"
         },
         "a": {
-          "es": "Sí, incluye imágenes térmicas, luz visible, PIP y fusión térmica patentada (T-DEF).",
+          "es": "SÃ­, incluye imÃ¡genes tÃ©rmicas, luz visible, PIP y fusiÃ³n tÃ©rmica patentada (T-DEF).",
           "en": "Yes, it includes thermal imaging, visible light, PIP, and patented thermal fusion (T-DEF)."
         }
       },
       {
         "q": {
-          "es": "¿Cómo se maneja la autonomía y el reemplazo de la batería?",
+          "es": "Â¿CÃ³mo se maneja la autonomÃ­a y el reemplazo de la baterÃ­a?",
           "en": "How is battery autonomy and replacement handled?"
         },
         "a": {
-          "es": "Tiene una batería de 5000 mAh recargable y fácilmente reemplazable en campo.",
+          "es": "Tiene una baterÃ­a de 5000 mAh recargable y fÃ¡cilmente reemplazable en campo.",
           "en": "It has a 5000 mAh rechargeable battery that is easily field-replaceable."
         }
       },
       {
         "q": {
-          "es": "¿Se puede utilizar el TK6 para el análisis y la elaboración de informes térmicos?",
+          "es": "Â¿Se puede utilizar el TK6 para el anÃ¡lisis y la elaboraciÃ³n de informes tÃ©rmicos?",
           "en": "Can the TK6 be used for thermal analysis and reporting?"
         },
         "a": {
-          "es": "Sí, es totalmente compatible con el software de análisis de imágenes térmicas AnalyzIR Professional.",
+          "es": "SÃ­, es totalmente compatible con el software de anÃ¡lisis de imÃ¡genes tÃ©rmicas AnalyzIR Professional.",
           "en": "Yes, it is fully compatible with AnalyzIR Professional thermal image analysis software."
         }
       },
       {
         "q": {
-          "es": "¿El dispositivo está diseñado para soportar entornos industriales?",
+          "es": "Â¿El dispositivo estÃ¡ diseÃ±ado para soportar entornos industriales?",
           "en": "Is the device designed to withstand industrial environments?"
         },
         "a": {
-          "es": "Sí, cuenta con una clasificación IP54 para resistencia al polvo y al agua.",
+          "es": "SÃ­, cuenta con una clasificaciÃ³n IP54 para resistencia al polvo y al agua.",
           "en": "Yes, it features an IP54 rating for dust and water resistance."
         }
       }
@@ -2949,7 +2949,7 @@ const products = [
     "descargas": [
       {
         "titulo": {
-          "es": "Ficha Técnica (Datasheet)",
+          "es": "Ficha TÃ©cnica (Datasheet)",
           "en": "Datasheet"
         },
         "url": "img/productos/fotric-tk6-datasheet.pdf"
@@ -2980,7 +2980,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -2990,7 +2990,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -3000,12 +3000,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "28° x 21°",
-          "en": "28° x 21°"
+          "es": "28Â° x 21Â°",
+          "en": "28Â° x 21Â°"
         }
       },
       {
@@ -3024,23 +3024,23 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20 °C a 650 °C",
-          "en": "-20 °C to 650 °C"
+          "es": "-20 Â°C a 650 Â°C",
+          "en": "-20 Â°C to 650 Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Precisión",
+          "es": "PrecisiÃ³n",
           "en": "Accuracy"
         },
         "valor": {
-          "es": "±2 °C o ±2 %",
-          "en": "±2 °C or ±2 %"
+          "es": "Â±2 Â°C o Â±2 %",
+          "en": "Â±2 Â°C or Â±2 %"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -3054,13 +3054,13 @@ const products = [
           "en": "Display"
         },
         "valor": {
-          "es": "Táctil IPS 3,5\"",
+          "es": "TÃ¡ctil IPS 3,5\"",
           "en": "3.5\" IPS Touchscreen"
         }
       },
       {
         "etiqueta": {
-          "es": "Batería / autonomía",
+          "es": "BaterÃ­a / autonomÃ­a",
           "en": "Battery / autonomy"
         },
         "valor": {
@@ -3070,12 +3070,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
-          "es": "IP54 · 2 m",
-          "en": "IP54 · 2 m"
+          "es": "IP54 Â· 2 m",
+          "en": "IP54 Â· 2 m"
         }
       },
       {
@@ -3090,20 +3090,20 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Inspecciones de tableros eléctricos, monitoreo de motores industriales, revisión de equipos de alta temperatura y servicios de consultoría termográfica",
+      "es": "Inspecciones de tableros elÃ©ctricos, monitoreo de motores industriales, revisiÃ³n de equipos de alta temperatura y servicios de consultorÃ­a termogrÃ¡fica",
       "en": "Electrical panel inspections, industrial motor monitoring, high-temperature equipment checks, and thermographic consulting services"
     },
     "beneficios": [
       {
-        "es": "Rango extendido de temperatura hasta 650 °C",
-        "en": "Extended temperature range up to 650 °C"
+        "es": "Rango extendido de temperatura hasta 650 Â°C",
+        "en": "Extended temperature range up to 650 Â°C"
       },
       {
         "es": "Enfoque manual para mayor nitidez y control en campo",
         "en": "Manual focus for greater sharpness and field control"
       },
       {
-        "es": "Cámara visual mejorada a 8 MP",
+        "es": "CÃ¡mara visual mejorada a 8 MP",
         "en": "Upgraded 8 MP visual camera"
       },
       {
@@ -3111,58 +3111,58 @@ const products = [
         "en": "Superior AnalyzIR software"
       },
       {
-        "es": "Función de grabación de video radiométrico",
+        "es": "FunciÃ³n de grabaciÃ³n de video radiomÃ©trico",
         "en": "Radiometric video recording feature"
       }
     ],
     "faqs": [
       {
         "q": {
-          "es": "¿Cuál es la resolución y la sensibilidad térmica del TK7?",
+          "es": "Â¿CuÃ¡l es la resoluciÃ³n y la sensibilidad tÃ©rmica del TK7?",
           "en": "What is the resolution and thermal sensitivity of the TK7?"
         },
         "a": {
-          "es": "Tiene una resolución infrarroja de 384x288 y una alta sensibilidad térmica (NETD) de 40 mK.",
+          "es": "Tiene una resoluciÃ³n infrarroja de 384x288 y una alta sensibilidad tÃ©rmica (NETD) de 40 mK.",
           "en": "It has an infrared resolution of 384x288 and a high thermal sensitivity (NETD) of 40 mK."
         }
       },
       {
         "q": {
-          "es": "¿El TK7 es adecuado para inspeccionar equipos de alta temperatura?",
+          "es": "Â¿El TK7 es adecuado para inspeccionar equipos de alta temperatura?",
           "en": "Is the TK7 suitable for inspecting high-temperature equipment?"
         },
         "a": {
-          "es": "Absolutamente. El TK7 mide temperaturas desde -20 °C hasta unos amplios 650 °C.",
-          "en": "Absolutely. The TK7 measures temperatures from -20 °C up to a broad 650 °C."
+          "es": "Absolutamente. El TK7 mide temperaturas desde -20 Â°C hasta unos amplios 650 Â°C.",
+          "en": "Absolutely. The TK7 measures temperatures from -20 Â°C up to a broad 650 Â°C."
         }
       },
       {
         "q": {
-          "es": "¿Cómo me ayuda la cámara de luz visible a localizar fallas?",
+          "es": "Â¿CÃ³mo me ayuda la cÃ¡mara de luz visible a localizar fallas?",
           "en": "How does the visible light camera help me locate faults?"
         },
         "a": {
-          "es": "El TK7 integra una potente cámara de luz visible de 8 MP. Esto permite combinar la imagen IR con lo visual.",
+          "es": "El TK7 integra una potente cÃ¡mara de luz visible de 8 MP. Esto permite combinar la imagen IR con lo visual.",
           "en": "The TK7 integrates a powerful 8 MP visible light camera, allowing IR images to be blended with the visual spectrum."
         }
       },
       {
         "q": {
-          "es": "¿Puede el TK7 grabar videos térmicos, no solo imágenes fijas?",
+          "es": "Â¿Puede el TK7 grabar videos tÃ©rmicos, no solo imÃ¡genes fijas?",
           "en": "Can the TK7 record thermal videos, not just still images?"
         },
         "a": {
-          "es": "Sí, el dispositivo admite la grabación de video térmico en formato MP4 estándar para monitorear tendencias térmicas dinámicas.",
+          "es": "SÃ­, el dispositivo admite la grabaciÃ³n de video tÃ©rmico en formato MP4 estÃ¡ndar para monitorear tendencias tÃ©rmicas dinÃ¡micas.",
           "en": "Yes, the device supports thermal video recording in standard MP4 format to monitor dynamic thermal trends."
         }
       },
       {
         "q": {
-          "es": "¿Es fácil extraer datos e informes del dispositivo?",
+          "es": "Â¿Es fÃ¡cil extraer datos e informes del dispositivo?",
           "en": "Is it easy to extract data and reports from the device?"
         },
         "a": {
-          "es": "Sí. Las transferencias de datos se realizan de manera fluida a través de USB, Wi-Fi o tarjeta SD.",
+          "es": "SÃ­. Las transferencias de datos se realizan de manera fluida a travÃ©s de USB, Wi-Fi o tarjeta SD.",
           "en": "Yes. Data transfers are seamless via USB, Wi-Fi, or SD card."
         }
       }
@@ -3170,7 +3170,7 @@ const products = [
     "descargas": [
       {
         "titulo": {
-          "es": "Ficha Técnica (Datasheet)",
+          "es": "Ficha TÃ©cnica (Datasheet)",
           "en": "Datasheet"
         },
         "url": "img/productos/fotric-tk7-datasheet.pdf"
@@ -3201,7 +3201,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -3211,7 +3211,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -3221,12 +3221,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Campo de visión (FOV)",
+          "es": "Campo de visiÃ³n (FOV)",
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "28° x 21°",
-          "en": "28° x 21°"
+          "es": "28Â° x 21Â°",
+          "en": "28Â° x 21Â°"
         }
       },
       {
@@ -3245,23 +3245,23 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20 °C a 650 °C",
-          "en": "-20 °C to 650 °C"
+          "es": "-20 Â°C a 650 Â°C",
+          "en": "-20 Â°C to 650 Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Precisión",
+          "es": "PrecisiÃ³n",
           "en": "Accuracy"
         },
         "valor": {
-          "es": "±2 °C o ±2 %",
-          "en": "±2 °C or ±2 %"
+          "es": "Â±2 Â°C o Â±2 %",
+          "en": "Â±2 Â°C or Â±2 %"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -3275,13 +3275,13 @@ const products = [
           "en": "Display"
         },
         "valor": {
-          "es": "Táctil IPS 3,5\"",
+          "es": "TÃ¡ctil IPS 3,5\"",
           "en": "3.5\" IPS Touchscreen"
         }
       },
       {
         "etiqueta": {
-          "es": "Batería / autonomía",
+          "es": "BaterÃ­a / autonomÃ­a",
           "en": "Battery / autonomy"
         },
         "valor": {
@@ -3291,12 +3291,12 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Protección / caída",
+          "es": "ProtecciÃ³n / caÃ­da",
           "en": "Protection / drop"
         },
         "valor": {
-          "es": "IP54 · 2 m",
-          "en": "IP54 · 2 m"
+          "es": "IP54 Â· 2 m",
+          "en": "IP54 Â· 2 m"
         }
       },
       {
@@ -3311,20 +3311,20 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Auditorías energéticas avanzadas, investigación y desarrollo (I+D), y entornos críticos donde diferencias mínimas de temperatura son relevantes",
+      "es": "AuditorÃ­as energÃ©ticas avanzadas, investigaciÃ³n y desarrollo (I+D), y entornos crÃ­ticos donde diferencias mÃ­nimas de temperatura son relevantes",
       "en": "Advanced energy audits, research and development (R&D), and critical environments where minimal temperature differences are relevant"
     },
     "beneficios": [
       {
-        "es": "Sensibilidad excepcional de 30 mK (detecta variaciones minúsculas)",
+        "es": "Sensibilidad excepcional de 30 mK (detecta variaciones minÃºsculas)",
         "en": "Exceptional 30 mK sensitivity (detects minute variations)"
       },
       {
-        "es": "Batería de larga duración (hasta 8 horas continuas)",
+        "es": "BaterÃ­a de larga duraciÃ³n (hasta 8 horas continuas)",
         "en": "Long battery life (up to 8 continuous hours)"
       },
       {
-        "es": "Software para análisis radiométrico en vivo",
+        "es": "Software para anÃ¡lisis radiomÃ©trico en vivo",
         "en": "Software for live radiometric analysis"
       },
       {
@@ -3339,51 +3339,51 @@ const products = [
     "faqs": [
       {
         "q": {
-          "es": "¿Qué hace que la TK8 se destaque entre las cámaras de alta precisión?",
+          "es": "Â¿QuÃ© hace que la TK8 se destaque entre las cÃ¡maras de alta precisiÃ³n?",
           "en": "What makes the TK8 stand out among high-precision cameras?"
         },
         "a": {
-          "es": "La TK8 ofrece una sensibilidad térmica (NETD) excepcional de <30 mK, lo que le permite detectar incluso las diferencias de temperatura más pequeñas.",
+          "es": "La TK8 ofrece una sensibilidad tÃ©rmica (NETD) excepcional de <30 mK, lo que le permite detectar incluso las diferencias de temperatura mÃ¡s pequeÃ±as.",
           "en": "The TK8 offers an exceptional thermal sensitivity (NETD) of <30 mK, allowing it to detect even the smallest temperature differences."
         }
       },
       {
         "q": {
-          "es": "¿Las imágenes térmicas del TK8 son lo suficientemente nítidas para la inspección a distancia?",
+          "es": "Â¿Las imÃ¡genes tÃ©rmicas del TK8 son lo suficientemente nÃ­tidas para la inspecciÃ³n a distancia?",
           "en": "Are the TK8 thermal images sharp enough for remote inspection?"
         },
         "a": {
-          "es": "Sí, con una resolución de 384x288 combinada con óptica de precisión de un FOV de 28°, proporciona detalles nítidos.",
-          "en": "Yes, with a 384x288 resolution combined with precision optics of a 28° FOV, it provides crisp detail."
+          "es": "SÃ­, con una resoluciÃ³n de 384x288 combinada con Ã³ptica de precisiÃ³n de un FOV de 28Â°, proporciona detalles nÃ­tidos.",
+          "en": "Yes, with a 384x288 resolution combined with precision optics of a 28Â° FOV, it provides crisp detail."
         }
       },
       {
         "q": {
-          "es": "¿Cuánto dura la batería para jornadas laborales prolongadas?",
+          "es": "Â¿CuÃ¡nto dura la baterÃ­a para jornadas laborales prolongadas?",
           "en": "How long does the battery last for long work days?"
         },
         "a": {
-          "es": "La cámara está optimizada para la eficiencia, ya que ofrece hasta 8 horas de funcionamiento continuo con una sola carga.",
+          "es": "La cÃ¡mara estÃ¡ optimizada para la eficiencia, ya que ofrece hasta 8 horas de funcionamiento continuo con una sola carga.",
           "en": "The camera is optimized for efficiency, offering up to 8 hours of continuous operation on a single charge."
         }
       },
       {
         "q": {
-          "es": "¿Cómo ayuda el TK8 con el análisis y la elaboración de informes in situ?",
+          "es": "Â¿CÃ³mo ayuda el TK8 con el anÃ¡lisis y la elaboraciÃ³n de informes in situ?",
           "en": "How does the TK8 assist with on-site analysis and reporting?"
         },
         "a": {
-          "es": "Permite agregar rápidamente anotaciones de voz y de texto directamente a sus imágenes térmicas antes de exportarlas a AnalyzIR.",
+          "es": "Permite agregar rÃ¡pidamente anotaciones de voz y de texto directamente a sus imÃ¡genes tÃ©rmicas antes de exportarlas a AnalyzIR.",
           "en": "It allows you to quickly add voice and text annotations directly to your thermal images before exporting to AnalyzIR."
         }
       },
       {
         "q": {
-          "es": "¿El TK8 es fácil de integrar en flujos de trabajo profesionales modernos?",
+          "es": "Â¿El TK8 es fÃ¡cil de integrar en flujos de trabajo profesionales modernos?",
           "en": "Is the TK8 easy to integrate into modern professional workflows?"
         },
         "a": {
-          "es": "Por supuesto. Cuenta con amplias opciones de conectividad que incluyen Wi-Fi para transferencias rápidas y Bluetooth para auriculares.",
+          "es": "Por supuesto. Cuenta con amplias opciones de conectividad que incluyen Wi-Fi para transferencias rÃ¡pidas y Bluetooth para auriculares.",
           "en": "Absolutely. It features extensive connectivity options including Wi-Fi for fast transfers and Bluetooth for headsets."
         }
       }
@@ -3391,7 +3391,7 @@ const products = [
     "descargas": [
       {
         "titulo": {
-          "es": "Ficha Técnica (Datasheet)",
+          "es": "Ficha TÃ©cnica (Datasheet)",
           "en": "Datasheet"
         },
         "url": "img/productos/fotric-tk8-datasheet.pdf"
@@ -3405,7 +3405,7 @@ const products = [
       },
       {
         "titulo": {
-          "es": "Certificado de Calibración",
+          "es": "Certificado de CalibraciÃ³n",
           "en": "Calibration Certificate"
         },
         "url": "img/productos/fotric-tk8-calibracion.pdf"
@@ -3428,7 +3428,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -3438,7 +3438,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -3452,13 +3452,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20 °C a 1550 °C",
-          "en": "-20 °C to 1550 °C"
+          "es": "-20 Â°C a 1550 Â°C",
+          "en": "-20 Â°C to 1550 Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -3472,7 +3472,7 @@ const products = [
           "en": "Display"
         },
         "valor": {
-          "es": "5.0 pulgadas HD táctil",
+          "es": "5.0 pulgadas HD tÃ¡ctil",
           "en": "5.0 inch HD touchscreen"
         }
       },
@@ -3488,7 +3488,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Batería / autonomía",
+          "es": "BaterÃ­a / autonomÃ­a",
           "en": "Battery / autonomy"
         },
         "valor": {
@@ -3508,49 +3508,49 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Medición de hornos, calderas, tuberías de vapor y equipos a altísimas temperaturas (hasta 1550 °C). Fundición, metalurgia e industria pesada.",
-      "en": "Measurement of furnaces, boilers, steam pipes and equipment at extremely high temperatures (up to 1550 °C). Foundry, metallurgy and heavy industry."
+      "es": "MediciÃ³n de hornos, calderas, tuberÃ­as de vapor y equipos a altÃ­simas temperaturas (hasta 1550 Â°C). FundiciÃ³n, metalurgia e industria pesada.",
+      "en": "Measurement of furnaces, boilers, steam pipes and equipment at extremely high temperatures (up to 1550 Â°C). Foundry, metallurgy and heavy industry."
     },
     "beneficios": [
       {
-        "es": "Rango de temperatura excepcional hasta 1550 °C",
-        "en": "Exceptional temperature range up to 1550 °C"
+        "es": "Rango de temperatura excepcional hasta 1550 Â°C",
+        "en": "Exceptional temperature range up to 1550 Â°C"
       },
       {
         "es": "Pantalla HD de 5 pulgadas para trabajo en campo",
         "en": "5-inch HD display for fieldwork"
       },
       {
-        "es": "TurboFocus: enfoque automático y manual ultrarrápido",
+        "es": "TurboFocus: enfoque automÃ¡tico y manual ultrarrÃ¡pido",
         "en": "TurboFocus: ultra-fast automatic and manual focus"
       },
       {
-        "es": "Lentes intercambiables para múltiples aplicaciones",
+        "es": "Lentes intercambiables para mÃºltiples aplicaciones",
         "en": "Interchangeable lenses for multiple applications"
       },
       {
-        "es": "Cámara visual de 13 MP integrada",
+        "es": "CÃ¡mara visual de 13 MP integrada",
         "en": "Integrated 13 MP visual camera"
       }
     ],
     "faqs": [
       {
         "q": {
-          "es": "¿Para qué industrias está diseñada la V5?",
+          "es": "Â¿Para quÃ© industrias estÃ¡ diseÃ±ada la V5?",
           "en": "For which industries is the V5 designed?"
         },
         "a": {
-          "es": "Fundición, metalurgia, petroquímica e industria pesada donde se requieren mediciones a temperaturas extremas de hasta 1550 °C.",
-          "en": "Foundry, metallurgy, petrochemical and heavy industry where measurements at extreme temperatures up to 1550 °C are required."
+          "es": "FundiciÃ³n, metalurgia, petroquÃ­mica e industria pesada donde se requieren mediciones a temperaturas extremas de hasta 1550 Â°C.",
+          "en": "Foundry, metallurgy, petrochemical and heavy industry where measurements at extreme temperatures up to 1550 Â°C are required."
         }
       },
       {
         "q": {
-          "es": "¿Qué ventaja ofrece TurboFocus?",
+          "es": "Â¿QuÃ© ventaja ofrece TurboFocus?",
           "en": "What advantage does TurboFocus offer?"
         },
         "a": {
-          "es": "Permite cambiar entre enfoque automático ultrarrápido y manual con precisión, adaptándose a escenas complejas o en movimiento.",
+          "es": "Permite cambiar entre enfoque automÃ¡tico ultrarrÃ¡pido y manual con precisiÃ³n, adaptÃ¡ndose a escenas complejas o en movimiento.",
           "en": "Allows switching between ultra-fast auto focus and precise manual focus, adapting to complex or moving scenes."
         }
       }
@@ -3573,7 +3573,7 @@ const products = [
     "especificaciones": [
       {
         "etiqueta": {
-          "es": "Resolución infrarroja",
+          "es": "ResoluciÃ³n infrarroja",
           "en": "Infrared resolution"
         },
         "valor": {
@@ -3583,7 +3583,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Sensibilidad térmica",
+          "es": "Sensibilidad tÃ©rmica",
           "en": "Thermal sensitivity"
         },
         "valor": {
@@ -3597,13 +3597,13 @@ const products = [
           "en": "Temperature range"
         },
         "valor": {
-          "es": "-20 °C a 1550 °C",
-          "en": "-20 °C to 1550 °C"
+          "es": "-20 Â°C a 1550 Â°C",
+          "en": "-20 Â°C to 1550 Â°C"
         }
       },
       {
         "etiqueta": {
-          "es": "Cámara visual",
+          "es": "CÃ¡mara visual",
           "en": "Visual camera"
         },
         "valor": {
@@ -3617,7 +3617,7 @@ const products = [
           "en": "Display"
         },
         "valor": {
-          "es": "5.0 pulgadas HD táctil",
+          "es": "5.0 pulgadas HD tÃ¡ctil",
           "en": "5.0 inch HD touchscreen"
         }
       },
@@ -3633,7 +3633,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Batería / autonomía",
+          "es": "BaterÃ­a / autonomÃ­a",
           "en": "Battery / autonomy"
         },
         "valor": {
@@ -3653,49 +3653,49 @@ const products = [
       }
     ],
     "aplicaciones": {
-      "es": "Análisis predictivo, inspecciones de alta tensión y reportes de altísima precisión. Para termógrafos certificados (Nivel II/III) e ingenieros de confiabilidad (CBM).",
+      "es": "AnÃ¡lisis predictivo, inspecciones de alta tensiÃ³n y reportes de altÃ­sima precisiÃ³n. Para termÃ³grafos certificados (Nivel II/III) e ingenieros de confiabilidad (CBM).",
       "en": "Predictive analysis, high-voltage inspections and high-precision reports. For certified thermographers (Level II/III) and reliability engineers (CBM)."
     },
     "beneficios": [
       {
-        "es": "Resolución máxima 640x480 — el tope de gama FOTRIC",
-        "en": "Maximum 640x480 resolution — FOTRIC top of the range"
+        "es": "ResoluciÃ³n mÃ¡xima 640x480 â€” el tope de gama FOTRIC",
+        "en": "Maximum 640x480 resolution â€” FOTRIC top of the range"
       },
       {
-        "es": "Sensibilidad <30 mK para detectar diferencias mínimas de temperatura",
+        "es": "Sensibilidad <30 mK para detectar diferencias mÃ­nimas de temperatura",
         "en": "<30 mK sensitivity to detect minimal temperature differences"
       },
       {
-        "es": "Rango hasta 1550 °C para entornos de temperatura extrema",
-        "en": "Range up to 1550 °C for extreme temperature environments"
+        "es": "Rango hasta 1550 Â°C para entornos de temperatura extrema",
+        "en": "Range up to 1550 Â°C for extreme temperature environments"
       },
       {
         "es": "Lentes intercambiables y pantalla HD de 5 pulgadas",
         "en": "Interchangeable lenses and 5-inch HD screen"
       },
       {
-        "es": "Ideal para termógrafos certificados Nivel II/III",
+        "es": "Ideal para termÃ³grafos certificados Nivel II/III",
         "en": "Ideal for Level II/III certified thermographers"
       }
     ],
     "faqs": [
       {
         "q": {
-          "es": "¿En qué se diferencia la V7 de la V5?",
+          "es": "Â¿En quÃ© se diferencia la V7 de la V5?",
           "en": "How does the V7 differ from the V5?"
         },
         "a": {
-          "es": "La V7 es el tope de gama con resolución 640x480 (vs 384x288 de la V5) y mayor sensibilidad (<30 mK vs <40 mK). Para el profesional que no acepta márgenes de error.",
+          "es": "La V7 es el tope de gama con resoluciÃ³n 640x480 (vs 384x288 de la V5) y mayor sensibilidad (<30 mK vs <40 mK). Para el profesional que no acepta mÃ¡rgenes de error.",
           "en": "The V7 is the top of range with 640x480 resolution (vs 384x288 for V5) and greater sensitivity (<30 mK vs <40 mK). For the professional who accepts no margin for error."
         }
       },
       {
         "q": {
-          "es": "¿Para qué perfil profesional es la V7?",
+          "es": "Â¿Para quÃ© perfil profesional es la V7?",
           "en": "For what professional profile is the V7?"
         },
         "a": {
-          "es": "Termógrafos certificados (Nivel II/III), ingenieros de confiabilidad (CBM) e inspectores de redes eléctricas que requieren máxima precisión.",
+          "es": "TermÃ³grafos certificados (Nivel II/III), ingenieros de confiabilidad (CBM) e inspectores de redes elÃ©ctricas que requieren mÃ¡xima precisiÃ³n.",
           "en": "Certified thermographers (Level II/III), reliability engineers (CBM) and power grid inspectors requiring maximum precision."
         }
       }
@@ -3722,7 +3722,7 @@ const products = [
           "en": "Overall dimensions"
         },
         "valor": {
-          "es": "9,1 cm (3,6 pulgadas) de diámetro",
+          "es": "9,1 cm (3,6 pulgadas) de diÃ¡metro",
           "en": "9.1 cm (3.6 inches) diameter"
         }
       },
@@ -3732,7 +3732,7 @@ const products = [
           "en": "Aperture dimensions"
         },
         "valor": {
-          "es": "5,1 cm (2,0 pulgadas) de diámetro",
+          "es": "5,1 cm (2,0 pulgadas) de diÃ¡metro",
           "en": "5.1 cm (2.0 inches) diameter"
         }
       },
@@ -3748,7 +3748,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Calificación ambiental",
+          "es": "CalificaciÃ³n ambiental",
           "en": "Environmental rating"
         },
         "valor": {
@@ -3762,8 +3762,8 @@ const products = [
           "en": "Operating temperature"
         },
         "valor": {
-          "es": "-40 °C a 273 °C",
-          "en": "-40 °C to 273 °C"
+          "es": "-40 Â°C a 273 Â°C",
+          "en": "-40 Â°C to 273 Â°C"
         }
       },
       {
@@ -3788,7 +3788,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Material de ferretería",
+          "es": "Material de ferreterÃ­a",
           "en": "Hardware material"
         },
         "valor": {
@@ -3808,17 +3808,17 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Material Óptico",
+          "es": "Material Ã“ptico",
           "en": "Optic material"
         },
         "valor": {
-          "es": "Poly-View™ Polímero transmisivo",
-          "en": "Poly-View™ Transmissive polymer"
+          "es": "Poly-Viewâ„¢ PolÃ­mero transmisivo",
+          "en": "Poly-Viewâ„¢ Transmissive polymer"
         }
       }
     ],
     "aplicaciones": {
-      "es": "IR de onda media e IR de onda larga; Ultravioleta (UV); Inspección visual; Aplicaciones de Media/Alta Tensión.",
+      "es": "IR de onda media e IR de onda larga; Ultravioleta (UV); InspecciÃ³n visual; Aplicaciones de Media/Alta TensiÃ³n.",
       "en": "Mid-wave and long-wave IR; Ultraviolet (UV); Visual inspection; Medium/High Voltage applications."
     },
     "beneficios": [
@@ -3827,15 +3827,15 @@ const products = [
         "en": "Enables safe infrared and visual inspections"
       },
       {
-        "es": "Puesta a tierra automáticamente",
+        "es": "Puesta a tierra automÃ¡ticamente",
         "en": "Automatically grounded"
       },
       {
-        "es": "Rejilla de refuerzo de aluminio (estándar IP22/IP2x)",
+        "es": "Rejilla de refuerzo de aluminio (estÃ¡ndar IP22/IP2x)",
         "en": "Aluminum reinforcing grill (IP22/IP2x standard)"
       },
       {
-        "es": "Compatible con cualquier cámara termográfica",
+        "es": "Compatible con cualquier cÃ¡mara termogrÃ¡fica",
         "en": "Compatible with any thermal camera"
       },
       {
@@ -3846,7 +3846,7 @@ const products = [
     "faqs": [
       {
         "q": {
-          "es": "¿Qué tipo de inspecciones permite?",
+          "es": "Â¿QuÃ© tipo de inspecciones permite?",
           "en": "What type of inspections does it allow?"
         },
         "a": {
@@ -3856,11 +3856,11 @@ const products = [
       },
       {
         "q": {
-          "es": "¿Es seguro usarlo en aplicaciones de alto voltaje?",
+          "es": "Â¿Es seguro usarlo en aplicaciones de alto voltaje?",
           "en": "Is it safe to use in high voltage applications?"
         },
         "a": {
-          "es": "Sí, cuenta con certificaciones internacionales y cumple con estándares estrictos como IEEE C37 20.2.a.3.6 para resistir arcos eléctricos.",
+          "es": "SÃ­, cuenta con certificaciones internacionales y cumple con estÃ¡ndares estrictos como IEEE C37 20.2.a.3.6 para resistir arcos elÃ©ctricos.",
           "en": "Yes, it has international certifications and meets strict standards like IEEE C37 20.2.a.3.6 to withstand arc flashes."
         }
       }
@@ -3887,7 +3887,7 @@ const products = [
           "en": "Overall dimensions"
         },
         "valor": {
-          "es": "12,1 cm (4,8 pulgadas) de diámetro",
+          "es": "12,1 cm (4,8 pulgadas) de diÃ¡metro",
           "en": "12.1 cm (4.8 inches) diameter"
         }
       },
@@ -3897,7 +3897,7 @@ const products = [
           "en": "Aperture dimensions"
         },
         "valor": {
-          "es": "7,6 cm (3,0 pulgadas) de diámetro",
+          "es": "7,6 cm (3,0 pulgadas) de diÃ¡metro",
           "en": "7.6 cm (3.0 inches) diameter"
         }
       },
@@ -3913,7 +3913,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Calificación ambiental",
+          "es": "CalificaciÃ³n ambiental",
           "en": "Environmental rating"
         },
         "valor": {
@@ -3927,8 +3927,8 @@ const products = [
           "en": "Operating temperature"
         },
         "valor": {
-          "es": "-40 °C a 273 °C",
-          "en": "-40 °C to 273 °C"
+          "es": "-40 Â°C a 273 Â°C",
+          "en": "-40 Â°C to 273 Â°C"
         }
       },
       {
@@ -3953,7 +3953,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Material de ferretería",
+          "es": "Material de ferreterÃ­a",
           "en": "Hardware material"
         },
         "valor": {
@@ -3973,17 +3973,17 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Material Óptico",
+          "es": "Material Ã“ptico",
           "en": "Optic material"
         },
         "valor": {
-          "es": "Poly-View™ Polímero transmisivo",
-          "en": "Poly-View™ Transmissive polymer"
+          "es": "Poly-Viewâ„¢ PolÃ­mero transmisivo",
+          "en": "Poly-Viewâ„¢ Transmissive polymer"
         }
       }
     ],
     "aplicaciones": {
-      "es": "IR de onda media e IR de onda larga; Ultravioleta (UV); Inspección visual; Aplicaciones de Media/Alta Tensión.",
+      "es": "IR de onda media e IR de onda larga; Ultravioleta (UV); InspecciÃ³n visual; Aplicaciones de Media/Alta TensiÃ³n.",
       "en": "Mid-wave and long-wave IR; Ultraviolet (UV); Visual inspection; Medium/High Voltage applications."
     },
     "beneficios": [
@@ -3992,15 +3992,15 @@ const products = [
         "en": "Enables safe infrared and visual inspections"
       },
       {
-        "es": "Puesta a tierra automáticamente",
+        "es": "Puesta a tierra automÃ¡ticamente",
         "en": "Automatically grounded"
       },
       {
-        "es": "Rejilla de refuerzo de aluminio (estándar IP22/IP2x)",
+        "es": "Rejilla de refuerzo de aluminio (estÃ¡ndar IP22/IP2x)",
         "en": "Aluminum reinforcing grill (IP22/IP2x standard)"
       },
       {
-        "es": "Compatible con cualquier cámara termográfica",
+        "es": "Compatible con cualquier cÃ¡mara termogrÃ¡fica",
         "en": "Compatible with any thermal camera"
       },
       {
@@ -4011,7 +4011,7 @@ const products = [
     "faqs": [
       {
         "q": {
-          "es": "¿Qué tipo de inspecciones permite?",
+          "es": "Â¿QuÃ© tipo de inspecciones permite?",
           "en": "What type of inspections does it allow?"
         },
         "a": {
@@ -4021,11 +4021,11 @@ const products = [
       },
       {
         "q": {
-          "es": "¿Es seguro usarlo en aplicaciones de alto voltaje?",
+          "es": "Â¿Es seguro usarlo en aplicaciones de alto voltaje?",
           "en": "Is it safe to use in high voltage applications?"
         },
         "a": {
-          "es": "Sí, cuenta con certificaciones internacionales y cumple con estándares estrictos como IEEE C37 20.2.a.3.6 para resistir arcos eléctricos.",
+          "es": "SÃ­, cuenta con certificaciones internacionales y cumple con estÃ¡ndares estrictos como IEEE C37 20.2.a.3.6 para resistir arcos elÃ©ctricos.",
           "en": "Yes, it has international certifications and meets strict standards like IEEE C37 20.2.a.3.6 to withstand arc flashes."
         }
       }
@@ -4052,7 +4052,7 @@ const products = [
           "en": "Overall dimensions"
         },
         "valor": {
-          "es": "15,1 cm (5,95 pulgadas) de diámetro",
+          "es": "15,1 cm (5,95 pulgadas) de diÃ¡metro",
           "en": "15.1 cm (5.95 inches) diameter"
         }
       },
@@ -4062,7 +4062,7 @@ const products = [
           "en": "Aperture dimensions"
         },
         "valor": {
-          "es": "10,2 cm (4,0 pulgadas) de diámetro",
+          "es": "10,2 cm (4,0 pulgadas) de diÃ¡metro",
           "en": "10.2 cm (4.0 inches) diameter"
         }
       },
@@ -4078,7 +4078,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Calificación ambiental",
+          "es": "CalificaciÃ³n ambiental",
           "en": "Environmental rating"
         },
         "valor": {
@@ -4092,8 +4092,8 @@ const products = [
           "en": "Operating temperature"
         },
         "valor": {
-          "es": "-40 °C a 273 °C",
-          "en": "-40 °C to 273 °C"
+          "es": "-40 Â°C a 273 Â°C",
+          "en": "-40 Â°C to 273 Â°C"
         }
       },
       {
@@ -4118,7 +4118,7 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Material de ferretería",
+          "es": "Material de ferreterÃ­a",
           "en": "Hardware material"
         },
         "valor": {
@@ -4138,17 +4138,17 @@ const products = [
       },
       {
         "etiqueta": {
-          "es": "Material Óptico",
+          "es": "Material Ã“ptico",
           "en": "Optic material"
         },
         "valor": {
-          "es": "Poly-View™ Polímero transmisivo",
-          "en": "Poly-View™ Transmissive polymer"
+          "es": "Poly-Viewâ„¢ PolÃ­mero transmisivo",
+          "en": "Poly-Viewâ„¢ Transmissive polymer"
         }
       }
     ],
     "aplicaciones": {
-      "es": "IR de onda media e IR de onda larga; Ultravioleta (UV); Inspección visual; Aplicaciones de Media/Alta Tensión.",
+      "es": "IR de onda media e IR de onda larga; Ultravioleta (UV); InspecciÃ³n visual; Aplicaciones de Media/Alta TensiÃ³n.",
       "en": "Mid-wave and long-wave IR; Ultraviolet (UV); Visual inspection; Medium/High Voltage applications."
     },
     "beneficios": [
@@ -4157,15 +4157,15 @@ const products = [
         "en": "Enables safe infrared and visual inspections"
       },
       {
-        "es": "Puesta a tierra automáticamente",
+        "es": "Puesta a tierra automÃ¡ticamente",
         "en": "Automatically grounded"
       },
       {
-        "es": "Rejilla de refuerzo de aluminio (estándar IP22/IP2x)",
+        "es": "Rejilla de refuerzo de aluminio (estÃ¡ndar IP22/IP2x)",
         "en": "Aluminum reinforcing grill (IP22/IP2x standard)"
       },
       {
-        "es": "Compatible con cualquier cámara termográfica",
+        "es": "Compatible con cualquier cÃ¡mara termogrÃ¡fica",
         "en": "Compatible with any thermal camera"
       },
       {
@@ -4176,7 +4176,7 @@ const products = [
     "faqs": [
       {
         "q": {
-          "es": "¿Qué tipo de inspecciones permite?",
+          "es": "Â¿QuÃ© tipo de inspecciones permite?",
           "en": "What type of inspections does it allow?"
         },
         "a": {
@@ -4186,11 +4186,11 @@ const products = [
       },
       {
         "q": {
-          "es": "¿Es seguro usarlo en aplicaciones de alto voltaje?",
+          "es": "Â¿Es seguro usarlo en aplicaciones de alto voltaje?",
           "en": "Is it safe to use in high voltage applications?"
         },
         "a": {
-          "es": "Sí, cuenta con certificaciones internacionales y cumple con estándares estrictos como IEEE C37 20.2.a.3.6 para resistir arcos eléctricos.",
+          "es": "SÃ­, cuenta con certificaciones internacionales y cumple con estÃ¡ndares estrictos como IEEE C37 20.2.a.3.6 para resistir arcos elÃ©ctricos.",
           "en": "Yes, it has international certifications and meets strict standards like IEEE C37 20.2.a.3.6 to withstand arc flashes."
         }
       }
