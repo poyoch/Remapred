@@ -2514,6 +2514,14 @@ const products = [
       "es": "Serie TK",
       "en": "TK Series"
     },
+    "categoriaPrincipal": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
+    },
+    "subcategoria": {
+      "es": "Portátiles y de Uso Ligero",
+      "en": "Portable and Light Use"
+    },
     "precioUSD": 709.99,
     "imagen": "img/productos/fotric-tk5.avif",
     "imagenes": [
@@ -2752,6 +2760,14 @@ const products = [
       "es": "Serie TK",
       "en": "TK Series"
     },
+    "categoriaPrincipal": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
+    },
+    "subcategoria": {
+      "es": "Portátiles y de Uso Ligero",
+      "en": "Portable and Light Use"
+    },
     "precioUSD": 829.99,
     "imagen": "img/productos/fotric-tk6.avif",
     "imagenes": [
@@ -2979,6 +2995,14 @@ const products = [
       "es": "Serie TK",
       "en": "TK Series"
     },
+    "categoriaPrincipal": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
+    },
+    "subcategoria": {
+      "es": "Portátiles y de Uso Ligero",
+      "en": "Portable and Light Use"
+    },
     "precioUSD": 1259.99,
     "imagen": "img/productos/fotric-tk7-tk8.avif",
     "imagenes": [
@@ -3199,6 +3223,14 @@ const products = [
     "gama": {
       "es": "Serie TK",
       "en": "TK Series"
+    },
+    "categoriaPrincipal": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
+    },
+    "subcategoria": {
+      "es": "Portátiles y de Uso Ligero",
+      "en": "Portable and Light Use"
     },
     "precioUSD": 1489.99,
     "imagen": "img/productos/fotric-tk7-tk8.avif",
@@ -3427,6 +3459,14 @@ const products = [
       "es": "Serie V",
       "en": "V Series"
     },
+    "categoriaPrincipal": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
+    },
+    "subcategoria": {
+      "es": "Industrial Avanzado y Alta Exigencia",
+      "en": "Advanced Industrial and High Demand"
+    },
     "precioUSD": null,
     "imagen": "img/productos/fotric-v5.avif",
     "imagenes": [
@@ -3571,6 +3611,14 @@ const products = [
     "gama": {
       "es": "Serie V",
       "en": "V Series"
+    },
+    "categoriaPrincipal": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
+    },
+    "subcategoria": {
+      "es": "Industrial Avanzado y Alta Exigencia",
+      "en": "Advanced Industrial and High Demand"
     },
     "precioUSD": null,
     "imagen": "img/productos/fotric-v7.avif",

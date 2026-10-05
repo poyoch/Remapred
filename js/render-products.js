@@ -2,52 +2,29 @@ document.addEventListener("DOMContentLoaded", () => {
   // Current language determined by html lang attribute
   const lang = document.documentElement.lang || 'es';
 
-  let products = window.fotricProducts || [];
-  
-  // Filters from URL if present
+  const container = document.getElementById('products-container');
+  if (!container) return;
+
+  let products = (window.fotricProducts || []).slice();
+  const sidebar = document.getElementById('filters-sidebar');
+
+  // Filters from URL if present (links from the "Productos" menu)
   const urlParams = new URLSearchParams(window.location.search);
-  const marcaFiltro = urlParams.get('marca');
+  const marcaFiltro = (urlParams.get('marca') || '').toLowerCase();
   const catFiltro = urlParams.get('cat');
   const subFiltro = urlParams.get('sub');
 
   if (marcaFiltro) {
-    const marcaUpper = marcaFiltro.toUpperCase();
-    products = products.filter(p => p.nombre.toUpperCase().startsWith(marcaUpper));
-
-    const sidebar = document.getElementById('filters-sidebar');
-    if (sidebar && marcaUpper === 'IRISS') {
-      sidebar.style.display = 'none';
-    }
+    products = products.filter(p => p.nombre.toLowerCase().startsWith(marcaFiltro));
+    if (marcaFiltro === 'iriss' && sidebar) sidebar.style.display = 'none';
   }
 
-  if (catFiltro) {
-    if (catFiltro === 'ventanas') {
-      products = products.filter(p => p.id.includes('iriss') || p.id.includes('ventana'));
-      const sidebar = document.getElementById('filters-sidebar');
-      if (sidebar) sidebar.style.display = 'none';
-    } else if (catFiltro === 'termograficas') {
-      products = products.filter(p => {
-        const id = p.id.toLowerCase();
-        return !id.includes('-td') && !id.includes('-mu') && !id.includes('acustica') && !id.includes('iriss');
-      });
-    } else if (catFiltro === 'acusticas') {
-      products = products.filter(p => p.id.includes('-td') || p.id.includes('-mu') || p.id.includes('acustica'));
-    }
+  if (catFiltro && CATEGORY_TYPES[catFiltro]) {
+    const tipo = CATEGORY_TYPES[catFiltro];
+    products = products.filter(p => getProductType(p) === tipo);
+    if (tipo === 'window' && sidebar) sidebar.style.display = 'none';
   }
 
-  if (subFiltro) {
-    products = products.filter(p => {
-      const sub = (p.subcategoria && p.subcategoria.es) ? p.subcategoria.es.toLowerCase() : '';
-      if (subFiltro === 'portatiles') return sub.includes('portátil') || sub.includes('ligero');
-      if (subFiltro === 'mantenimiento') return sub.includes('mantenimiento');
-      if (subFiltro === 'avanzado') return sub.includes('avanzado');
-      if (subFiltro === 'fijo') return sub.includes('fijo');
-      if (subFiltro === 'id') return sub.includes('investigación') || sub.includes('desarrollo');
-      if (subFiltro === 'fugas') return sub.includes('fugas') || sub.includes('descargas');
-      return true;
-    });
-  }
-  
   // Ensure products are sorted by price ascending, but items without price (null) go at the end
   products.sort((a, b) => {
     if (a.precioUSD === null && b.precioUSD === null) return 0;
@@ -56,132 +33,107 @@ document.addEventListener("DOMContentLoaded", () => {
     return a.precioUSD - b.precioUSD;
   });
 
-  const container = document.getElementById('products-container');
-  const tableContainer = document.getElementById('comparative-table-container');
-
-  if (container) {
-
-
-    renderProductCards(products, container, lang);
-    setupFilters(products, container, lang);
-  // Dynamic Sidebar Filtering
-  const availableTipos = new Set();
-  const availableRes = new Set();
-  const availableGamas = new Set();
-
-  products.forEach(p => {
-      // Tipo
-      const id = p.id.toLowerCase();
-      const isAcoustic = id.includes('-td') || id.includes('-mu') || id.includes('acustica') || id.includes('acoustic');
-      const isWindow = id.includes('iriss') || id.includes('ventana') || id.includes('window');
-      const isThermal = !isAcoustic && !isWindow;
-      
-      if (isAcoustic) availableTipos.add('Acústica');
-      if (isWindow) availableTipos.add('Ventana');
-      if (isThermal) availableTipos.add('Térmica');
-
-      // Resolucion
-      if (p.especificaciones) {
-          const resSpec = p.especificaciones.find(e => e.etiqueta && (e.etiqueta.es.includes('Resoluci') || e.etiqueta.en === 'Infrared resolution'));
-          if (resSpec && resSpec.valor) {
-              const resVal = resSpec.valor.es || resSpec.valor;
-              if (resVal.includes('1280x1024')) availableRes.add('1280x1024');
-              if (resVal.includes('640x480')) availableRes.add('640x480');
-              if (resVal.includes('384x288')) availableRes.add('384x288');
-              if (resVal.includes('320x240')) availableRes.add('320x240');
-              if (resVal.includes('240x320')) availableRes.add('240x320');
-              if (resVal.includes('160x120')) availableRes.add('160x120');
-          }
-      }
-
-      // Gama
-      if (p.gama) {
-          const gamaStr = (p.gama.es || '').toLowerCase();
-          if (gamaStr.includes('tf')) availableGamas.add('Serie TF');
-          else if (gamaStr.includes(' c') || gamaStr === 'serie c') availableGamas.add('Serie C');
-          else if (gamaStr.includes('ti')) availableGamas.add('Serie Ti');
-          else if (gamaStr.includes('tp')) availableGamas.add('Serie TP');
-          else if (gamaStr.includes('tk')) availableGamas.add('Serie TK');
-          else if (gamaStr.includes('mix')) availableGamas.add('MiX');
-          else if (gamaStr.includes('v') && !gamaStr.includes('mix')) availableGamas.add('Serie V');
-          else if (gamaStr.includes('p') && !gamaStr.includes('tp') && !gamaStr.includes('mix')) availableGamas.add('Serie P');
-          else if (gamaStr.includes('600')) availableGamas.add('Serie 600');
-          else if (gamaStr.includes('td')) availableGamas.add('Serie TD');
-          else if (gamaStr.includes('h') || gamaStr.includes('flex')) availableGamas.add('Serie H');
-      }
-  });
-
-  const labels = document.querySelectorAll('#filters-sidebar label');
-  labels.forEach(label => {
-      const input = label.querySelector('input');
-      if (!input) return;
-      const val = input.value;
-      
-      let shouldShow = false;
-      if (input.classList.contains('filter-tipo')) {
-          if (availableTipos.has(val)) shouldShow = true;
-      } else if (input.classList.contains('filter-resolucion')) {
-          if (availableRes.has(val)) shouldShow = true;
-      } else if (input.classList.contains('filter-gama')) {
-          if (availableGamas.has(val)) shouldShow = true;
-      }
-
-      if (!shouldShow) {
-          label.style.display = 'none';
-      }
-  });
-
-  // Hide empty blocks
-  ['.filter-tipo', '.filter-resolucion', '.filter-gama'].forEach(cls => {
-      const inputs = document.querySelectorAll(cls);
-      let anyVisible = false;
-      inputs.forEach(input => {
-          if (input.closest('label').style.display !== 'none') anyVisible = true;
-      });
-      if (!anyVisible && inputs.length > 0) {
-          const block = inputs[0].closest('.mb-8');
-          if (block) block.style.display = 'none';
-      }
-  });
-  // Update sidebar visibility based on category
-  if (catFiltro) {
-      const labels = document.querySelectorAll('#filters-sidebar label');
-      labels.forEach(label => {
-          const input = label.querySelector('input');
-          if (!input) return;
-          const val = input.value;
-          let shouldShow = true;
-          
-          if (catFiltro === 'termograficas') {
-              if (val === 'Acústica' || val === 'Acoustic' || val === 'Ventana' || val === 'Window') shouldShow = false;
-              if (val.includes('TD') || val.includes('H Series') || val === 'Serie H' || val.includes('MiX')) shouldShow = false;
-          } else if (catFiltro === 'acusticas') {
-              if (val === 'Térmica' || val === 'Thermal' || val === 'Ventana' || val === 'Window') shouldShow = false;
-              if (input.classList.contains('filter-resolucion')) shouldShow = false;
-              const thermalSeries = ['Serie TF', 'TF Series', 'Serie C', 'C Series', 'Serie Ti', 'Ti Series', 'Serie TP', 'TP Series', 'Serie TK', 'TK Series', 'Serie P', 'P Series', 'Serie 600', '600 Series', 'Serie V', 'V Series'];
-              if (thermalSeries.includes(val)) shouldShow = false;
-          }
-          
-          if (!shouldShow) {
-              label.style.display = 'none';
-          }
-      });
-      
-      // Also hide empty filter sections
-      if (catFiltro === 'acusticas') {
-          const resBlock = document.querySelector('.filter-resolucion');
-          if (resBlock) {
-             const parentDiv = resBlock.closest('.mb-8');
-             if (parentDiv) parentDiv.style.display = 'none';
-          }
-      }
-  }
-  }
-
-  
+  showCategoryContext(catFiltro, marcaFiltro, lang);
+  renderProductCards(products, container, lang);
+  // Legacy ?sub=... links pre-select the matching "Línea de Producto" checkbox
+  setupFilters(products, container, lang, SUB_PARAM_TO_LINE[subFiltro]);
 });
 
+// ---------------------------------------------------------------------------
+// Product taxonomy helpers
+// ---------------------------------------------------------------------------
 
+// ?cat= values used by the header menu -> internal product type
+const CATEGORY_TYPES = {
+  termograficas: 'thermal',
+  acusticas: 'acoustic',
+  '2en1': 'mix',
+  ventanas: 'window'
+};
+
+const CATEGORY_LABELS = {
+  termograficas: { icon: 'fa-temperature-high text-orange-500', es: 'Cámaras Termográficas', en: 'Thermal Cameras' },
+  acusticas: { icon: 'fa-volume-high text-blue-500', es: 'Cámaras Acústicas', en: 'Acoustic Cameras' },
+  '2en1': { icon: 'fa-layer-group text-purple-500', es: 'Cámaras 2 en 1', en: '2-in-1 Cameras' },
+  fotric: { icon: 'fa-camera text-accent', es: 'Fotric - Cámaras Termográficas y Acústicas', en: 'Fotric - Thermal & Acoustic Cameras' }
+};
+
+// Product lines ("Líneas de Producto") = product.subcategoria.es, in display order
+const LINE_ORDER = [
+  'Portátiles y de Uso Ligero',
+  'Mantenimiento Industrial General',
+  'Industrial Avanzado y Alta Exigencia',
+  'Monitoreo Fijo',
+  'Investigación y Desarrollo',
+  'Detección de Fugas y Descargas'
+];
+
+const SUB_PARAM_TO_LINE = {
+  portatiles: 'Portátiles y de Uso Ligero',
+  mantenimiento: 'Mantenimiento Industrial General',
+  avanzado: 'Industrial Avanzado y Alta Exigencia',
+  fijo: 'Monitoreo Fijo',
+  id: 'Investigación y Desarrollo',
+  fugas: 'Detección de Fugas y Descargas'
+};
+
+const SERIES_ORDER = [
+  'Serie TF', 'Serie C', 'Serie TP', 'Serie TK', 'Serie Ti', 'Serie P', 'Serie V',
+  'Serie 600', 'Serie 220Pro', 'Serie 220Link', 'Serie TD', 'Serie H', 'MiX'
+];
+
+const SERIES_GROUP_LABELS = {
+  'Serie TD': { es: 'Serie TD / TD2', en: 'TD / TD2 Series' },
+  'Serie H': { es: 'Serie H / H-Flex', en: 'H / H-Flex Series' },
+  'MiX': { es: 'Serie MiX (2 en 1)', en: 'MiX Series (2-in-1)' }
+};
+
+function getProductType(p) {
+  const id = (p.id || '').toLowerCase();
+  const gama = ((p.gama && p.gama.es) || '').toLowerCase();
+  if (id.includes('iriss') || id.includes('ventana') || id.includes('window')) return 'window';
+  if (gama.includes('mix')) return 'mix';
+  if (id.includes('acustica') || id.includes('-td') || id.includes('-mu')) return 'acoustic';
+  return 'thermal';
+}
+
+function getLineKeys(p) {
+  return (p.subcategoria && p.subcategoria.es) ? [p.subcategoria.es] : [];
+}
+
+function getSeriesKeys(p) {
+  const g = (p.gama && p.gama.es) || '';
+  if (!g) return [];
+  if (/mix/i.test(g)) return ['MiX'];
+  if (/^Serie TD/i.test(g)) return ['Serie TD'];
+  if (/^Serie H/i.test(g)) return ['Serie H'];
+  return [g];
+}
+
+function getResolutionKeys(p) {
+  const spec = (p.especificaciones || []).find(s => /resoluci/i.test(getText(s.etiqueta, 'es') || ''));
+  const value = spec && spec.valor ? (getText(spec.valor, 'es') || '') : '';
+  const found = value.match(/\d{2,4}\s*x\s*\d{2,4}/gi) || [];
+  return [...new Set(found.map(r => r.replace(/\s+/g, '')))];
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+function showCategoryContext(catFiltro, marcaFiltro, lang) {
+  const el = document.getElementById('filters-context');
+  if (!el) return;
+  const info = CATEGORY_LABELS[catFiltro] || (marcaFiltro === 'fotric' ? CATEGORY_LABELS.fotric : null);
+  if (!info) return;
+  const allUrl = lang === 'en' ? 'productos-en.html' : 'productos.html';
+  el.innerHTML = `
+    <div class="flex items-start justify-between gap-2">
+      <span class="font-semibold text-primary"><i class="fa-solid ${info.icon} mr-1.5"></i>${escapeHtml(info[lang] || info.es)}</span>
+      <a href="${allUrl}" class="text-xs text-slate-400 hover:text-accent whitespace-nowrap" title="${lang === 'en' ? 'View all products' : 'Ver todos los productos'}"><i class="fa-solid fa-xmark"></i></a>
+    </div>`;
+  el.classList.remove('hidden');
+}
 
 function getText(field, lang) {
   if (!field) return null;
@@ -278,71 +230,156 @@ function renderProductCards(products, container, lang) {
   });
 }
 
-function setupFilters(products, container, lang) {
-  const tipoChecks = document.querySelectorAll('.filter-tipo');
-  const resolucionChecks = document.querySelectorAll('.filter-resolucion');
-  const gamaChecks = document.querySelectorAll('.filter-gama');
+// ---------------------------------------------------------------------------
+// Sidebar filters
+//  - "Líneas de Producto" is the main driver: all lines are always visible.
+//  - Resolution and Series options are rebuilt from the products of the
+//    selected lines (all of them when no line is selected) and are also
+//    linked to each other (choosing a resolution only leaves its series, etc).
+// ---------------------------------------------------------------------------
+function setupFilters(products, container, lang, preselectLine) {
+  const searchInput = document.getElementById('search-input');
+  const clearBtn = document.getElementById('clear-filters');
 
-  function getSelectedValues(checkboxes) {
-    return Array.from(checkboxes)
-      .filter(cb => cb.checked)
-      .map(cb => cb.value);
+  const facets = [
+    {
+      key: 'linea',
+      el: document.getElementById('filter-lineas'),
+      values: getLineKeys,
+      label: (k, p) => escapeHtml(getText(p.subcategoria, lang) || k),
+      sort: (a, b) => orderIndex(LINE_ORDER, a) - orderIndex(LINE_ORDER, b)
+    },
+    {
+      key: 'resolucion',
+      el: document.getElementById('filter-resoluciones'),
+      values: getResolutionKeys,
+      label: k => k === '640x480' ? `${k} <span class="text-xs text-orange-500 font-semibold">Pro</span>` : k,
+      sort: (a, b) => {
+        const [aw, ah] = a.split('x').map(Number);
+        const [bw, bh] = b.split('x').map(Number);
+        return (bw * bh - aw * ah) || (bw - aw);
+      }
+    },
+    {
+      key: 'gama',
+      el: document.getElementById('filter-gamas'),
+      values: getSeriesKeys,
+      label: (k, p) => escapeHtml(SERIES_GROUP_LABELS[k] ? SERIES_GROUP_LABELS[k][lang] || SERIES_GROUP_LABELS[k].es : (getText(p.gama, lang) || k)),
+      sort: (a, b) => orderIndex(SERIES_ORDER, a) - orderIndex(SERIES_ORDER, b) || a.localeCompare(b)
+    }
+  ].filter(f => f.el);
+
+  function orderIndex(list, key) {
+    const i = list.indexOf(key);
+    return i === -1 ? list.length : i;
   }
 
-  function applyFilters() {
-    const selectedTipo = getSelectedValues(tipoChecks);
-    const selectedRes = getSelectedValues(resolucionChecks);
-    const selectedGama = getSelectedValues(gamaChecks);
-    const searchInput = document.getElementById('search-input');
-    const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+  // 1. Build the checkboxes from the products of the current page/category
+  facets.forEach(f => {
+    const labels = new Map();
+    products.forEach(p => f.values(p).forEach(v => {
+      if (!labels.has(v)) labels.set(v, f.label(v, p));
+    }));
+    const keys = [...labels.keys()].sort(f.sort);
 
-    const filtered = products.filter(p => {
-      // Filter by tipo (Térmica / Acústica / Ventana)
-      let matchTipo = true;
-      if (selectedTipo.length > 0) {
-        const id = p.id.toLowerCase();
-        
-        // Use ID for robust matching regardless of encoding
-        const isAcoustic = id.includes('-td') || id.includes('-mu') || id.includes('acustica') || id.includes('acoustic');
-        const isWindow = id.includes('iriss') || id.includes('ventana') || id.includes('window');
-        const isThermal = !isAcoustic && !isWindow; 
-        
-        const checkAcoustic = selectedTipo.includes('Acústica') || selectedTipo.includes('Acoustic');
-        const checkThermal = selectedTipo.includes('Térmica') || selectedTipo.includes('Thermal');
-        const checkWindow = selectedTipo.includes('Ventana') || selectedTipo.includes('Window');
+    f.el.innerHTML = keys.map(k => `
+      <label class="filter-option flex items-center space-x-2 cursor-pointer group/opt">
+        <input type="checkbox" value="${escapeHtml(k)}" class="filter-${f.key} rounded border-slate-300 text-accent focus:ring-accent accent-accent">
+        <span class="text-sm text-slate-600 group-hover/opt:text-primary transition-colors">${labels.get(k)}</span>
+        <span class="filter-count ml-auto text-[11px] text-slate-400 tabular-nums"></span>
+      </label>`).join('');
 
-        matchTipo = (checkAcoustic && isAcoustic) || (checkThermal && isThermal) || (checkWindow && isWindow);
-      }
+    f.inputs = Array.from(f.el.querySelectorAll('input'));
+    f.block = f.el.closest('[data-filter-block]') || f.el.parentElement;
+    if (keys.length === 0 && f.block) f.block.style.display = 'none';
 
-      // Filter by resolucion
-      let matchRes = true;
-      if (selectedRes.length > 0) {
-        const resSpec = p.especificaciones.find(s => {
-          const lbl = getText(s.etiqueta, 'es') || '';
-          return lbl.toLowerCase().includes('resoluci') || lbl.toLowerCase().includes('resoluci');
-        });
-        const resValue = resSpec && resSpec.valor ? getText(resSpec.valor, lang) : '';
-        matchRes = selectedRes.some(r => resValue.includes(r));
-      }
+    f.inputs.forEach(cb => cb.addEventListener('change', update));
+  });
 
-      // Filter by gama
-      let matchGama = true;
-      if (selectedGama.length > 0) {
-        const pGama = (getText(p.gama, lang) || '') + ' ' + (getText(p.gama, 'es') || '');
-        matchGama = selectedGama.some(g => pGama.toLowerCase().includes(g.toLowerCase()));
-      }
+  // Pre-select a line coming from a legacy ?sub=... link
+  if (preselectLine) {
+    const lineFacet = facets.find(f => f.key === 'linea');
+    const cb = lineFacet && lineFacet.inputs.find(i => i.value === preselectLine);
+    if (cb) cb.checked = true;
+  }
 
-            // Filter by Search term
-      let matchSearch = true;
-      if (searchTerm) {
-        const pNombre = p.nombre.toLowerCase();
-        const pGama2 = (getText(p.gama, lang) || '') + ' ' + (getText(p.gama, 'es') || '');
-        const pApps = (getText(p.aplicaciones, lang) || '');
-        matchSearch = pNombre.includes(searchTerm) || pGama2.toLowerCase().includes(searchTerm) || pApps.toLowerCase().includes(searchTerm);
-      }
+  function getSelection() {
+    const sel = {};
+    facets.forEach(f => { sel[f.key] = f.inputs.filter(cb => cb.checked).map(cb => cb.value); });
+    return sel;
+  }
 
-      return matchTipo && matchRes && matchGama && matchSearch;
+  // Does product p satisfy the selection of every facet except `skipKeys`?
+  function matches(p, sel, skipKeys) {
+    return facets.every(f => {
+      if (skipKeys.includes(f.key)) return true;
+      const chosen = sel[f.key];
+      if (!chosen || chosen.length === 0) return true;
+      const vals = f.values(p);
+      return chosen.some(v => vals.includes(v));
     });
+  }
+
+  // Products used to decide which options of facet `f` are available
+  function poolFor(f, sel) {
+    // Product lines are the top-level driver: always list every line
+    if (f.key === 'linea') return products;
+    // Resolution / Series depend on the selected lines and on each other
+    return products.filter(p => matches(p, sel, [f.key]));
+  }
+
+  function matchesSearch(p, term) {
+    if (!term) return true;
+    const nombre = p.nombre.toLowerCase();
+    const gama = ((getText(p.gama, lang) || '') + ' ' + (getText(p.gama, 'es') || '')).toLowerCase();
+    const apps = (getText(p.aplicaciones, lang) || '').toLowerCase();
+    return nombre.includes(term) || gama.includes(term) || apps.includes(term);
+  }
+
+  function update() {
+    let sel = getSelection();
+
+    // Uncheck options that are no longer available (e.g. a series that does
+    // not exist in the newly selected line) and recompute until stable.
+    for (let guard = 0; guard < 5; guard++) {
+      let changed = false;
+      facets.forEach(f => {
+        if (f.key === 'linea') return;
+        const available = new Set();
+        poolFor(f, sel).forEach(p => f.values(p).forEach(v => available.add(v)));
+        f.inputs.forEach(cb => {
+          if (cb.checked && !available.has(cb.value)) { cb.checked = false; changed = true; }
+        });
+      });
+      if (!changed) break;
+      sel = getSelection();
+    }
+
+    // Show / hide options and update counters
+    facets.forEach(f => {
+      const counts = new Map();
+      const pool = f.key === 'linea'
+        ? products.filter(p => matches(p, sel, ['linea']))
+        : poolFor(f, sel);
+      pool.forEach(p => f.values(p).forEach(v => counts.set(v, (counts.get(v) || 0) + 1)));
+
+      let visible = 0;
+      f.inputs.forEach(cb => {
+        const label = cb.closest('label');
+        const n = counts.get(cb.value) || 0;
+        const show = f.key === 'linea' ? true : (n > 0 || cb.checked);
+        label.classList.toggle('hidden', !show);
+        label.classList.toggle('opacity-50', f.key === 'linea' && n === 0 && !cb.checked);
+        const countEl = label.querySelector('.filter-count');
+        if (countEl) countEl.textContent = n;
+        if (show) visible++;
+      });
+      if (f.block) f.block.style.display = visible === 0 ? 'none' : '';
+    });
+
+    // Render the products
+    const term = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const filtered = products.filter(p => matches(p, sel, []) && matchesSearch(p, term));
 
     if (filtered.length === 0) {
       const msg = lang === 'en' ? 'No products found with these filters.' : 'No se encontraron productos con estos filtros.';
@@ -350,13 +387,18 @@ function setupFilters(products, container, lang) {
     } else {
       renderProductCards(filtered, container, lang);
     }
+
+    const anySelected = Object.values(sel).some(v => v.length > 0);
+    if (clearBtn) clearBtn.classList.toggle('hidden', !anySelected);
   }
 
-  tipoChecks.forEach(cb => cb.addEventListener('change', applyFilters));
-  resolucionChecks.forEach(cb => cb.addEventListener('change', applyFilters));
-  gamaChecks.forEach(cb => cb.addEventListener('change', applyFilters));
-  const searchInput = document.getElementById('search-input');
-  if (searchInput) searchInput.addEventListener('input', applyFilters);
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      facets.forEach(f => f.inputs.forEach(cb => { cb.checked = false; }));
+      update();
+    });
+  }
+  if (searchInput) searchInput.addEventListener('input', update);
+
+  update();
 }
-
-
