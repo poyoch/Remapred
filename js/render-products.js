@@ -321,9 +321,6 @@ function setupFilters(products, container, lang, preselectLine) {
 
   // Products used to decide which options of facet `f` are available
   function poolFor(f, sel) {
-    // Product lines are the top-level driver: always list every line
-    if (f.key === 'linea') return products;
-    // Resolution / Series depend on the selected lines and on each other
     return products.filter(p => matches(p, sel, [f.key]));
   }
 
@@ -343,7 +340,6 @@ function setupFilters(products, container, lang, preselectLine) {
     for (let guard = 0; guard < 5; guard++) {
       let changed = false;
       facets.forEach(f => {
-        if (f.key === 'linea') return;
         const available = new Set();
         poolFor(f, sel).forEach(p => f.values(p).forEach(v => available.add(v)));
         f.inputs.forEach(cb => {
@@ -357,18 +353,16 @@ function setupFilters(products, container, lang, preselectLine) {
     // Show / hide options and update counters
     facets.forEach(f => {
       const counts = new Map();
-      const pool = f.key === 'linea'
-        ? products.filter(p => matches(p, sel, ['linea']))
-        : poolFor(f, sel);
+      const pool = poolFor(f, sel);
       pool.forEach(p => f.values(p).forEach(v => counts.set(v, (counts.get(v) || 0) + 1)));
 
       let visible = 0;
       f.inputs.forEach(cb => {
         const label = cb.closest('label');
         const n = counts.get(cb.value) || 0;
-        const show = f.key === 'linea' ? true : (n > 0 || cb.checked);
+        const show = (n > 0 || cb.checked);
         label.classList.toggle('hidden', !show);
-        label.classList.toggle('opacity-50', f.key === 'linea' && n === 0 && !cb.checked);
+        
         if (show) visible++;
       });
       if (f.block) f.block.style.display = visible === 0 ? 'none' : '';
