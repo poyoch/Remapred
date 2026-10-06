@@ -31,7 +31,9 @@
         return !id.includes('-td') && !id.includes('-mu') && !id.includes('acustica') && !id.includes('iriss');
       });
     } else if (catFiltro === 'acusticas') {
-      products = products.filter(p => p.id.includes('-td') || p.id.includes('-mu') || p.id.includes('acustica'));
+      products = products.filter(p => (p.id.includes('-td') || p.id.includes('-mu') || p.id.includes('acustica')) && !p.id.includes('mix'));
+    } else if (catFiltro === '2en1') {
+      products = products.filter(p => p.id.includes('mix'));
     }
   }
 
@@ -158,6 +160,8 @@
               if (input.classList.contains('filter-resolucion')) shouldShow = false;
               const thermalSeries = ['Serie TF', 'TF Series', 'Serie C', 'C Series', 'Serie Ti', 'Ti Series', 'Serie TP', 'TP Series', 'Serie TK', 'TK Series', 'Serie P', 'P Series', 'Serie 600', '600 Series', 'Serie V', 'V Series'];
               if (thermalSeries.includes(val)) shouldShow = false;
+          } else if (catFiltro === '2en1') {
+              if (val !== 'MiX') shouldShow = false;
           }
           
           if (!shouldShow) {

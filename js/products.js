@@ -152,11 +152,9 @@ const products = [
     beneficios: [], faqs: [], descargas: []
   },
   {
-    id: "fotric-p5mix-acustica",
-    nombre: "FOTRIC P5MiX",
-    gama: { es: "Serie P-MiX", en: "P-MiX Series" },
+    id: "fotric-p5mix-acustica", nombre: "FOTRIC P5MiX", gama: { es: "Serie P-MiX", en: "P-MiX Series" },
     categoriaPrincipal: { es: "Fotric - Cámaras Termográficas y Acústicas", en: "Fotric - Thermal and Acoustic Cameras" },
-    subcategoria: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Cámaras 2 en 1", en: "2-in-1 Cameras" },
     subcategoriaUso: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
     imagen: "img/productos/image17.png",
@@ -169,11 +167,9 @@ const products = [
     beneficios: [], faqs: [], descargas: []
   },
   {
-    id: "fotric-p7mix-acustica",
-    nombre: "FOTRIC P7MiX",
-    gama: { es: "Serie P-MiX", en: "P-MiX Series" },
+    id: "fotric-p7mix-acustica", nombre: "FOTRIC P7MiX", gama: { es: "Serie P-MiX", en: "P-MiX Series" },
     categoriaPrincipal: { es: "Fotric - Cámaras Termográficas y Acústicas", en: "Fotric - Thermal and Acoustic Cameras" },
-    subcategoria: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Cámaras 2 en 1", en: "2-in-1 Cameras" },
     subcategoriaUso: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
     imagen: "img/productos/image17.png",
@@ -186,11 +182,9 @@ const products = [
     beneficios: [], faqs: [], descargas: []
   },
   {
-    id: "fotric-v5mix-acustica",
-    nombre: "FOTRIC V5MiX",
-    gama: { es: "Serie V-MiX", en: "V-MiX Series" },
+    id: "fotric-v5mix-acustica", nombre: "FOTRIC V5MiX", gama: { es: "Serie V-MiX", en: "V-MiX Series" },
     categoriaPrincipal: { es: "Fotric - Cámaras Termográficas y Acústicas", en: "Fotric - Thermal and Acoustic Cameras" },
-    subcategoria: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Cámaras 2 en 1", en: "2-in-1 Cameras" },
     subcategoriaUso: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
     imagen: "img/productos/image18.jpeg",
@@ -203,11 +197,9 @@ const products = [
     beneficios: [], faqs: [], descargas: []
   },
   {
-    id: "fotric-v7mix-acustica",
-    nombre: "FOTRIC V7MiX",
-    gama: { es: "Serie V-MiX", en: "V-MiX Series" },
+    id: "fotric-v7mix-acustica", nombre: "FOTRIC V7MiX", gama: { es: "Serie V-MiX", en: "V-MiX Series" },
     categoriaPrincipal: { es: "Fotric - Cámaras Termográficas y Acústicas", en: "Fotric - Thermal and Acoustic Cameras" },
-    subcategoria: { es: "Cámaras Acústicas", en: "Acoustic Cameras" },
+    subcategoria: { es: "Cámaras 2 en 1", en: "2-in-1 Cameras" },
     subcategoriaUso: { es: "Detección de Fugas y Descargas", en: "Leak & Discharge Detection" },
     precioUSD: null,
     imagen: "img/productos/image18.jpeg",
