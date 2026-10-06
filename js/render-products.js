@@ -37,7 +37,7 @@
 
   if (subFiltro) {
     products = products.filter(p => {
-      const sub = (p.subcategoria && p.subcategoria.es) ? p.subcategoria.es.toLowerCase() : '';
+      const sub = (p.subcategoriaUso && p.subcategoriaUso.es) ? p.subcategoriaUso.es.toLowerCase() : '';
       if (subFiltro === 'portatiles') return sub.includes('portátil') || sub.includes('ligero');
       if (subFiltro === 'mantenimiento') return sub.includes('mantenimiento');
       if (subFiltro === 'avanzado') return sub.includes('avanzado');
