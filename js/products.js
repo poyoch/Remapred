@@ -22,8 +22,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image14.png",
-    "imagenes": [],
+    "imagen": "img/productos/td2-geek.avif",
+    "imagenes": [
+      "img/productos/td2-geek.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -65,8 +67,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image14.png",
-    "imagenes": [],
+    "imagen": "img/productos/fotric-td2-sense.avif",
+    "imagenes": [
+      "img/productos/fotric-td2-sense.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -108,8 +112,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image13.png",
-    "imagenes": [],
+    "imagen": "img/productos/fotric-td2e.avif",
+    "imagenes": [
+      "img/productos/fotric-td2e.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -151,8 +157,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image13.png",
-    "imagenes": [],
+    "imagen": "img/productos/h4mini.avif",
+    "imagenes": [
+      "img/productos/h4mini.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -194,8 +202,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image12.png",
-    "imagenes": [],
+    "imagen": "img/productos/h4-h6-h6plus-h7.avif",
+    "imagenes": [
+      "img/productos/h4-h6-h6plus-h7.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -237,8 +247,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image12.png",
-    "imagenes": [],
+    "imagen": "img/productos/h4-h6-h6plus-h7.avif",
+    "imagenes": [
+      "img/productos/h4-h6-h6plus-h7.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -280,8 +292,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image12.png",
-    "imagenes": [],
+    "imagen": "img/productos/h4-h6-h6plus-h7.avif",
+    "imagenes": [
+      "img/productos/h4-h6-h6plus-h7.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -323,8 +337,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image15.png",
-    "imagenes": [],
+    "imagen": "img/productos/h4-h6-h6plus-h7.avif",
+    "imagenes": [
+      "img/productos/h4-h6-h6plus-h7.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -366,8 +382,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image15.png",
-    "imagenes": [],
+    "imagen": "img/productos/hflex.avif",
+    "imagenes": [
+      "img/productos/hflex.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -409,8 +427,11 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image17.png",
-    "imagenes": [],
+    "imagen": "img/productos/pmix.avif",
+    "imagenes": [
+      "img/productos/pmix.avif",
+      "img/productos/pmix-v2.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -452,8 +473,11 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image17.png",
-    "imagenes": [],
+    "imagen": "img/productos/pmix.avif",
+    "imagenes": [
+      "img/productos/pmix.avif",
+      "img/productos/pmix-v2.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -495,8 +519,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image18.jpeg",
-    "imagenes": [],
+    "imagen": "img/productos/v5mix.avif",
+    "imagenes": [
+      "img/productos/v5mix.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -538,8 +564,10 @@ const products = [
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image18.jpeg",
-    "imagenes": [],
+    "imagen": "img/productos/v7mix.avif",
+    "imagenes": [
+      "img/productos/v7mix.avif"
+    ],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -581,9 +609,9 @@ const products = [
       "en": "Portable and Light Use"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image1.png",
+    "imagen": "img/productos/tf3.avif",
     "imagenes": [
-      "img/productos/image1.png"
+      "img/productos/tf3.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -696,9 +724,10 @@ const products = [
       "en": "Portable and Light Use"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image2.png",
+    "imagen": "img/productos/c2-y-c5.avif",
     "imagenes": [
-      "img/productos/image2.png"
+      "img/productos/c2-y-c5.avif",
+      "img/productos/c2-y-c5-2.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -811,9 +840,10 @@ const products = [
       "en": "Portable and Light Use"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image3.png",
+    "imagen": "img/productos/c2-y-c5.avif",
     "imagenes": [
-      "img/productos/image3.png"
+      "img/productos/c2-y-c5.avif",
+      "img/productos/c2-y-c5-2.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -926,9 +956,11 @@ const products = [
       "en": "General Industrial Maintenance"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image4.png",
+    "imagen": "img/productos/ti3-4-5-7.avif",
     "imagenes": [
-      "img/productos/image4.png"
+      "img/productos/ti3-4-5-7.avif",
+      "img/productos/ti3-4-5-7-v2.avif",
+      "img/productos/ti3-4-5-7-v3.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1041,9 +1073,11 @@ const products = [
       "en": "General Industrial Maintenance"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image5.png",
+    "imagen": "img/productos/ti3-4-5-7.avif",
     "imagenes": [
-      "img/productos/image5.png"
+      "img/productos/ti3-4-5-7.avif",
+      "img/productos/ti3-4-5-7-v2.avif",
+      "img/productos/ti3-4-5-7-v3.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1156,9 +1190,11 @@ const products = [
       "en": "General Industrial Maintenance"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image6.png",
+    "imagen": "img/productos/ti3-4-5-7.avif",
     "imagenes": [
-      "img/productos/image6.png"
+      "img/productos/ti3-4-5-7.avif",
+      "img/productos/ti3-4-5-7-v2.avif",
+      "img/productos/ti3-4-5-7-v3.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1271,9 +1307,11 @@ const products = [
       "en": "General Industrial Maintenance"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image7.png",
+    "imagen": "img/productos/ti3-4-5-7.avif",
     "imagenes": [
-      "img/productos/image7.png"
+      "img/productos/ti3-4-5-7.avif",
+      "img/productos/ti3-4-5-7-v2.avif",
+      "img/productos/ti3-4-5-7-v3.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1386,9 +1424,12 @@ const products = [
       "en": "Advanced Industrial and High Demand"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image8.png",
+    "imagen": "img/productos/p5.avif",
     "imagenes": [
-      "img/productos/image8.png"
+      "img/productos/p5.avif",
+      "img/productos/p5-p7-p9-1.avif",
+      "img/productos/p5-p7-p9-2.avif",
+      "img/productos/p5-p7-p9-3.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1501,9 +1542,12 @@ const products = [
       "en": "Advanced Industrial and High Demand"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image9.png",
+    "imagen": "img/productos/p7.avif",
     "imagenes": [
-      "img/productos/image9.png"
+      "img/productos/p7.avif",
+      "img/productos/p5-p7-p9-1.avif",
+      "img/productos/p5-p7-p9-2.avif",
+      "img/productos/p5-p7-p9-3.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1616,9 +1660,12 @@ const products = [
       "en": "Advanced Industrial and High Demand"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image10.png",
+    "imagen": "img/productos/p9.avif",
     "imagenes": [
-      "img/productos/image10.png"
+      "img/productos/p9.avif",
+      "img/productos/p5-p7-p9-1.avif",
+      "img/productos/p5-p7-p9-2.avif",
+      "img/productos/p5-p7-p9-3.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1731,9 +1778,9 @@ const products = [
       "en": "Fixed Monitoring"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image11.jpeg",
+    "imagen": "img/productos/fotric-628ch.avif",
     "imagenes": [
-      "img/productos/image11.jpeg"
+      "img/productos/fotric-628ch.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1846,9 +1893,10 @@ const products = [
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image12.png",
+    "imagen": "img/productos/226-228-229-pro.avif",
     "imagenes": [
-      "img/productos/image12.png"
+      "img/productos/226-228-229-pro.avif",
+      "img/productos/226-228-229-pro-v1.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1951,9 +1999,10 @@ const products = [
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image13.png",
+    "imagen": "img/productos/226-228-229-pro.avif",
     "imagenes": [
-      "img/productos/image13.png"
+      "img/productos/226-228-229-pro.avif",
+      "img/productos/226-228-229-pro-v1.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2056,9 +2105,10 @@ const products = [
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image14.png",
+    "imagen": "img/productos/226-228-229-pro.avif",
     "imagenes": [
-      "img/productos/image14.png"
+      "img/productos/226-228-229-pro.avif",
+      "img/productos/226-228-229-pro-v1.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2161,9 +2211,9 @@ const products = [
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image15.png",
+    "imagen": "img/productos/226-link.avif",
     "imagenes": [
-      "img/productos/image15.png"
+      "img/productos/226-link.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2276,9 +2326,9 @@ const products = [
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/image16.png",
+    "imagen": "img/productos/226-link.avif",
     "imagenes": [
-      "img/productos/image16.png"
+      "img/productos/226-link.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2391,11 +2441,9 @@ const products = [
       "en": "Portable and Light Use"
     },
     "precioUSD": 359.99,
-    "imagen": "img/productos/fotric-tp320a-dispositivo.png",
+    "imagen": "img/productos/tp320a.avif",
     "imagenes": [
-      "img/productos/fotric-tp320a-dispositivo.png",
-      "img/productos/fotric-tp320a-android.png",
-      "img/productos/fotric-tp320a-kit.png"
+      "img/productos/tp320a.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2619,9 +2667,9 @@ const products = [
       "en": "General Industrial Maintenance"
     },
     "precioUSD": 709.99,
-    "imagen": "img/productos/fotric-tk5-frontal.png",
+    "imagen": "img/productos/tk5.avif",
     "imagenes": [
-      "img/productos/fotric-tk5-frontal.png"
+      "img/productos/tk5.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2869,10 +2917,9 @@ const products = [
       "en": "General Industrial Maintenance"
     },
     "precioUSD": 829.99,
-    "imagen": "img/productos/fotric-tk6-dos-camaras.png",
+    "imagen": "img/productos/tk6.avif",
     "imagenes": [
-      "img/productos/fotric-tk6-dos-camaras.png",
-      "img/productos/fotric-tk6-lado.png"
+      "img/productos/tk6.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -3109,9 +3156,9 @@ const products = [
       "en": "General Industrial Maintenance"
     },
     "precioUSD": 1259.99,
-    "imagen": "img/productos/fotric-tk7-frontal.png",
+    "imagen": "img/productos/tk7-y-tk-8.avif",
     "imagenes": [
-      "img/productos/fotric-tk7-frontal.png"
+      "img/productos/tk7-y-tk-8.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -3342,9 +3389,9 @@ const products = [
       "en": "General Industrial Maintenance"
     },
     "precioUSD": 1489.99,
-    "imagen": "img/productos/fotric-tk8-frontal.png",
+    "imagen": "img/productos/tk7-y-tk-8.avif",
     "imagenes": [
-      "img/productos/fotric-tk8-frontal.png"
+      "img/productos/tk7-y-tk-8.avif"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -3581,9 +3628,9 @@ const products = [
       "en": "Advanced Industrial and High Demand"
     },
     "precioUSD": null,
-    "imagen": "https://static.wixstatic.com/media/571718_e0d9d2c0b45249108634fd7144c7e08d~mv2.png",
+    "imagen": "img/productos/v5.avif",
     "imagenes": [
-      "https://static.wixstatic.com/media/571718_e0d9d2c0b45249108634fd7144c7e08d~mv2.png"
+      "img/productos/v5.avif"
     ],
     "urlFabricante": "https://www.fotric.com/products/v5/",
     "especificaciones": [
@@ -3738,9 +3785,9 @@ const products = [
       "en": "Advanced Industrial and High Demand"
     },
     "precioUSD": null,
-    "imagen": "https://static.wixstatic.com/media/571718_84994c3e1aee4f859a04b4ec670cc6e5~mv2.png",
+    "imagen": "img/productos/v7.avif",
     "imagenes": [
-      "https://static.wixstatic.com/media/571718_84994c3e1aee4f859a04b4ec670cc6e5~mv2.png"
+      "img/productos/v7.avif"
     ],
     "urlFabricante": "https://www.fotric.com/products/v7/",
     "especificaciones": [
