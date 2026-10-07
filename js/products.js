@@ -1,4 +1,4 @@
-// Capa de datos para productos FOTRIC
+﻿// Capa de datos para productos FOTRIC
 // Usamos { es: "...", en: "..." } para soportar i18n más adelante.
 
 const products = [
@@ -6,22 +6,24 @@ const products = [
     "id": "fotric-td2-geek-acustica",
     "nombre": "FOTRIC TD2 Geek",
     "gama": {
-      "es": "Serie TD2",
-      "en": "TD2 Series"
+      "es": "Serie TD2 Geek",
+      "en": "TD2 Geek Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Acústicas",
       "en": "Acoustic Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-td2geek.avif",
-    "imagenes": [
-      "img/productos/fotric-td2geek.avif"
-    ],
+    "imagen": "img/productos/image14.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -47,22 +49,24 @@ const products = [
     "id": "fotric-td2-sense-acustica",
     "nombre": "FOTRIC TD2 Sense",
     "gama": {
-      "es": "Serie TD2",
-      "en": "TD2 Series"
+      "es": "Serie TD2 Sense",
+      "en": "TD2 Sense Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Acústicas",
       "en": "Acoustic Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-td2sense.avif",
-    "imagenes": [
-      "img/productos/fotric-td2sense.avif"
-    ],
+    "imagen": "img/productos/image14.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -92,18 +96,20 @@ const products = [
       "en": "TD Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Acústicas",
       "en": "Acoustic Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-td2e.avif",
-    "imagenes": [
-      "img/productos/fotric-td2e.avif"
-    ],
+    "imagen": "img/productos/image13.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -133,18 +139,20 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Acústicas",
       "en": "Acoustic Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-h4mini.avif",
-    "imagenes": [
-      "img/productos/fotric-h4mini.avif"
-    ],
+    "imagen": "img/productos/image13.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -174,18 +182,20 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Acústicas",
       "en": "Acoustic Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-h4-h6-h7.avif",
-    "imagenes": [
-      "img/productos/fotric-h4-h6-h7.avif"
-    ],
+    "imagen": "img/productos/image12.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -215,18 +225,20 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Acústicas",
       "en": "Acoustic Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-h4-h6-h7.avif",
-    "imagenes": [
-      "img/productos/fotric-h4-h6-h7.avif"
-    ],
+    "imagen": "img/productos/image12.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -256,18 +268,20 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Acústicas",
       "en": "Acoustic Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-h4-h6-h7.avif",
-    "imagenes": [
-      "img/productos/fotric-h4-h6-h7.avif"
-    ],
+    "imagen": "img/productos/image12.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -297,18 +311,20 @@ const products = [
       "en": "H Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Acústicas",
       "en": "Acoustic Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-h4-h6-h7.avif",
-    "imagenes": [
-      "img/productos/fotric-h4-h6-h7.avif"
-    ],
+    "imagen": "img/productos/image15.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -338,18 +354,20 @@ const products = [
       "en": "H-Flex Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Acústicas",
       "en": "Acoustic Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-hflex.avif",
-    "imagenes": [
-      "img/productos/fotric-hflex.avif"
-    ],
+    "imagen": "img/productos/image15.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -379,19 +397,20 @@ const products = [
       "en": "P-MiX Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
-      "en": "Acoustic Cameras"
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
     },
     "subcategoria": {
+      "es": "Cámaras 2 en 1",
+      "en": "2-in-1 Cameras"
+    },
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-pmix.avif",
-    "imagenes": [
-      "img/productos/fotric-pmix.avif",
-      "img/productos/fotric-pmix-v2.avif"
-    ],
+    "imagen": "img/productos/image17.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -421,19 +440,20 @@ const products = [
       "en": "P-MiX Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
-      "en": "Acoustic Cameras"
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
     },
     "subcategoria": {
+      "es": "Cámaras 2 en 1",
+      "en": "2-in-1 Cameras"
+    },
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-pmix.avif",
-    "imagenes": [
-      "img/productos/fotric-pmix.avif",
-      "img/productos/fotric-pmix-v2.avif"
-    ],
+    "imagen": "img/productos/image17.png",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -463,19 +483,20 @@ const products = [
       "en": "V-MiX Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
-      "en": "Acoustic Cameras"
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
     },
     "subcategoria": {
+      "es": "Cámaras 2 en 1",
+      "en": "2-in-1 Cameras"
+    },
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-v5mix.avif",
-    "imagenes": [
-      "img/productos/fotric-pmix.avif",
-      "img/productos/fotric-pmix-v2.avif"
-    ],
+    "imagen": "img/productos/image18.jpeg",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -505,19 +526,20 @@ const products = [
       "en": "V-MiX Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Acústicas",
-      "en": "Acoustic Cameras"
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
     },
     "subcategoria": {
+      "es": "Cámaras 2 en 1",
+      "en": "2-in-1 Cameras"
+    },
+    "subcategoriaUso": {
       "es": "Detección de Fugas y Descargas",
       "en": "Leak & Discharge Detection"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-v7mix.avif",
-    "imagenes": [
-      "img/productos/fotric-pmix.avif",
-      "img/productos/fotric-pmix-v2.avif"
-    ],
+    "imagen": "img/productos/image18.jpeg",
+    "imagenes": [],
     "urlFabricante": "#",
     "especificaciones": [
       {
@@ -547,17 +569,21 @@ const products = [
       "en": "TF Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Portátiles y de Uso Ligero",
       "en": "Portable and Light Use"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-tf3.avif",
+    "imagen": "img/productos/image1.png",
     "imagenes": [
-      "img/productos/fotric-tf3.avif"
+      "img/productos/image1.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -658,17 +684,21 @@ const products = [
       "en": "C Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Portátiles y de Uso Ligero",
       "en": "Portable and Light Use"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-c2.avif",
+    "imagen": "img/productos/image2.png",
     "imagenes": [
-      "img/productos/fotric-c2.avif"
+      "img/productos/image2.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -769,17 +799,21 @@ const products = [
       "en": "C Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Portátiles y de Uso Ligero",
       "en": "Portable and Light Use"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-c5.avif",
+    "imagen": "img/productos/image3.png",
     "imagenes": [
-      "img/productos/fotric-c5.avif"
+      "img/productos/image3.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -880,17 +914,21 @@ const products = [
       "en": "Ti Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Mantenimiento Industrial General",
       "en": "General Industrial Maintenance"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-ti3-ti7.avif",
+    "imagen": "img/productos/image4.png",
     "imagenes": [
-      "img/productos/fotric-ti3-ti7.avif"
+      "img/productos/image4.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -991,17 +1029,21 @@ const products = [
       "en": "Ti Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Mantenimiento Industrial General",
       "en": "General Industrial Maintenance"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-ti4.avif",
+    "imagen": "img/productos/image5.png",
     "imagenes": [
-      "img/productos/fotric-ti4.avif"
+      "img/productos/image5.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1102,17 +1144,21 @@ const products = [
       "en": "Ti Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Mantenimiento Industrial General",
       "en": "General Industrial Maintenance"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-ti5.avif",
+    "imagen": "img/productos/image6.png",
     "imagenes": [
-      "img/productos/fotric-ti5.avif"
+      "img/productos/image6.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1213,17 +1259,21 @@ const products = [
       "en": "Ti Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Mantenimiento Industrial General",
       "en": "General Industrial Maintenance"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-ti3-ti7.avif",
+    "imagen": "img/productos/image7.png",
     "imagenes": [
-      "img/productos/fotric-ti3-ti7.avif"
+      "img/productos/image7.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1324,17 +1374,21 @@ const products = [
       "en": "P Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Industrial Avanzado y Alta Exigencia",
       "en": "Advanced Industrial and High Demand"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-p5.avif",
+    "imagen": "img/productos/image8.png",
     "imagenes": [
-      "img/productos/fotric-p5.avif"
+      "img/productos/image8.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1435,17 +1489,21 @@ const products = [
       "en": "P Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Industrial Avanzado y Alta Exigencia",
       "en": "Advanced Industrial and High Demand"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-p7.avif",
+    "imagen": "img/productos/image9.png",
     "imagenes": [
-      "img/productos/fotric-p7.avif"
+      "img/productos/image9.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1546,17 +1604,21 @@ const products = [
       "en": "P Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Industrial Avanzado y Alta Exigencia",
       "en": "Advanced Industrial and High Demand"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-p9.avif",
+    "imagen": "img/productos/image10.png",
     "imagenes": [
-      "img/productos/fotric-p9.avif"
+      "img/productos/image10.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1657,17 +1719,21 @@ const products = [
       "en": "600 Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Monitoreo Fijo",
       "en": "Fixed Monitoring"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-628ch.avif",
+    "imagen": "img/productos/image11.jpeg",
     "imagenes": [
-      "img/productos/fotric-628ch.avif"
+      "img/productos/image11.jpeg"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1768,17 +1834,21 @@ const products = [
       "en": "220Pro Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Investigación y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-226-229pro.avif",
+    "imagen": "img/productos/image12.png",
     "imagenes": [
-      "img/productos/fotric-226-229pro.avif"
+      "img/productos/image12.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1869,17 +1939,21 @@ const products = [
       "en": "220Pro Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Investigación y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-228pro.avif",
+    "imagen": "img/productos/image13.png",
     "imagenes": [
-      "img/productos/fotric-228pro.avif"
+      "img/productos/image13.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -1970,17 +2044,21 @@ const products = [
       "en": "220Pro Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Investigación y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-226-229pro.avif",
+    "imagen": "img/productos/image14.png",
     "imagenes": [
-      "img/productos/fotric-226-229pro.avif"
+      "img/productos/image14.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2071,17 +2149,21 @@ const products = [
       "en": "220Link Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Investigación y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-226-228enlace.avif",
+    "imagen": "img/productos/image15.png",
     "imagenes": [
-      "img/productos/fotric-226-228enlace.avif"
+      "img/productos/image15.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2182,17 +2264,21 @@ const products = [
       "en": "220Link Series"
     },
     "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
       "es": "Cámaras Termográficas",
       "en": "Thermal Cameras"
     },
-    "subcategoria": {
+    "subcategoriaUso": {
       "es": "Investigación y Desarrollo",
       "en": "Research & Development"
     },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-226-228enlace.avif",
+    "imagen": "img/productos/image16.png",
     "imagenes": [
-      "img/productos/fotric-226-228enlace.avif"
+      "img/productos/image16.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2293,17 +2379,23 @@ const products = [
       "en": "TP Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "C�maras Termogr�ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
+      "es": "Port�tiles y de Uso Ligero",
+      "en": "Portable and Light Use"
+    },
+    "subcategoriaUso": {
       "es": "Portátiles y de Uso Ligero",
       "en": "Portable and Light Use"
     },
     "precioUSD": 359.99,
-    "imagen": "img/productos/fotric-tp320a.avif",
+    "imagen": "img/productos/fotric-tp320a-dispositivo.png",
     "imagenes": [
-      "img/productos/fotric-tp320a.avif"
+      "img/productos/fotric-tp320a-dispositivo.png",
+      "img/productos/fotric-tp320a-android.png",
+      "img/productos/fotric-tp320a-kit.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2515,17 +2607,21 @@ const products = [
       "en": "TK Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "C�maras Termogr�ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
       "es": "Mantenimiento Industrial General",
       "en": "General Industrial Maintenance"
     },
+    "subcategoriaUso": {
+      "es": "Mantenimiento Industrial General",
+      "en": "General Industrial Maintenance"
+    },
     "precioUSD": 709.99,
-    "imagen": "img/productos/fotric-tk5.avif",
+    "imagen": "img/productos/fotric-tk5-frontal.png",
     "imagenes": [
-      "img/productos/fotric-tk5.avif"
+      "img/productos/fotric-tk5-frontal.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2761,17 +2857,22 @@ const products = [
       "en": "TK Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "C�maras Termogr�ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
       "es": "Mantenimiento Industrial General",
       "en": "General Industrial Maintenance"
     },
+    "subcategoriaUso": {
+      "es": "Mantenimiento Industrial General",
+      "en": "General Industrial Maintenance"
+    },
     "precioUSD": 829.99,
-    "imagen": "img/productos/fotric-tk6.avif",
+    "imagen": "img/productos/fotric-tk6-dos-camaras.png",
     "imagenes": [
-      "img/productos/fotric-tk6.avif"
+      "img/productos/fotric-tk6-dos-camaras.png",
+      "img/productos/fotric-tk6-lado.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -2996,17 +3097,21 @@ const products = [
       "en": "TK Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "C�maras Termogr�ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
       "es": "Mantenimiento Industrial General",
       "en": "General Industrial Maintenance"
     },
+    "subcategoriaUso": {
+      "es": "Mantenimiento Industrial General",
+      "en": "General Industrial Maintenance"
+    },
     "precioUSD": 1259.99,
-    "imagen": "img/productos/fotric-tk7-tk8.avif",
+    "imagen": "img/productos/fotric-tk7-frontal.png",
     "imagenes": [
-      "img/productos/fotric-tk7-tk8.avif"
+      "img/productos/fotric-tk7-frontal.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -3225,17 +3330,21 @@ const products = [
       "en": "TK Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "C�maras Termogr�ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
       "es": "Mantenimiento Industrial General",
       "en": "General Industrial Maintenance"
     },
+    "subcategoriaUso": {
+      "es": "Mantenimiento Industrial General",
+      "en": "General Industrial Maintenance"
+    },
     "precioUSD": 1489.99,
-    "imagen": "img/productos/fotric-tk7-tk8.avif",
+    "imagen": "img/productos/fotric-tk8-frontal.png",
     "imagenes": [
-      "img/productos/fotric-tk7-tk8.avif"
+      "img/productos/fotric-tk8-frontal.png"
     ],
     "urlFabricante": "#",
     "especificaciones": [
@@ -3460,17 +3569,21 @@ const products = [
       "en": "V Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "C�maras Termogr�ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
       "es": "Industrial Avanzado y Alta Exigencia",
       "en": "Advanced Industrial and High Demand"
     },
+    "subcategoriaUso": {
+      "es": "Industrial Avanzado y Alta Exigencia",
+      "en": "Advanced Industrial and High Demand"
+    },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-v5.avif",
+    "imagen": "https://static.wixstatic.com/media/571718_e0d9d2c0b45249108634fd7144c7e08d~mv2.png",
     "imagenes": [
-      "img/productos/fotric-v5.avif"
+      "https://static.wixstatic.com/media/571718_e0d9d2c0b45249108634fd7144c7e08d~mv2.png"
     ],
     "urlFabricante": "https://www.fotric.com/products/v5/",
     "especificaciones": [
@@ -3540,8 +3653,8 @@ const products = [
           "en": "Battery / autonomy"
         },
         "valor": {
-          "es": "= 4 horas",
-          "en": "= 4 hours"
+          "es": "≥ 4 horas",
+          "en": "≥ 4 hours"
         }
       },
       {
@@ -3613,17 +3726,21 @@ const products = [
       "en": "V Series"
     },
     "categoriaPrincipal": {
-      "es": "Cámaras Termográficas",
+      "es": "C�maras Termogr�ficas",
       "en": "Thermal Cameras"
     },
     "subcategoria": {
       "es": "Industrial Avanzado y Alta Exigencia",
       "en": "Advanced Industrial and High Demand"
     },
+    "subcategoriaUso": {
+      "es": "Industrial Avanzado y Alta Exigencia",
+      "en": "Advanced Industrial and High Demand"
+    },
     "precioUSD": null,
-    "imagen": "img/productos/fotric-v7.avif",
+    "imagen": "https://static.wixstatic.com/media/571718_84994c3e1aee4f859a04b4ec670cc6e5~mv2.png",
     "imagenes": [
-      "img/productos/fotric-v7.avif"
+      "https://static.wixstatic.com/media/571718_84994c3e1aee4f859a04b4ec670cc6e5~mv2.png"
     ],
     "urlFabricante": "https://www.fotric.com/products/v7/",
     "especificaciones": [
@@ -3693,8 +3810,8 @@ const products = [
           "en": "Battery / autonomy"
         },
         "valor": {
-          "es": "= 4 horas",
-          "en": "= 4 hours"
+          "es": "≥ 4 horas",
+          "en": "≥ 4 hours"
         }
       },
       {
@@ -3764,6 +3881,14 @@ const products = [
     "gama": {
       "es": "Serie Platinum VPT",
       "en": "Platinum VPT Series"
+    },
+    "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
     },
     "precioUSD": null,
     "imagen": "img/productos/iriss-vpt-50.jpg",
@@ -3930,6 +4055,14 @@ const products = [
       "es": "Serie Platinum VPT",
       "en": "Platinum VPT Series"
     },
+    "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
+    },
     "precioUSD": null,
     "imagen": "img/productos/iriss-vpt-75.jpg",
     "imagenes": [
@@ -4095,6 +4228,14 @@ const products = [
       "es": "Serie Platinum VPT",
       "en": "Platinum VPT Series"
     },
+    "categoriaPrincipal": {
+      "es": "Fotric - Cámaras Termográficas y Acústicas",
+      "en": "Fotric - Thermal and Acoustic Cameras"
+    },
+    "subcategoria": {
+      "es": "Cámaras Termográficas",
+      "en": "Thermal Cameras"
+    },
     "precioUSD": null,
     "imagen": "img/productos/iriss-vpt-100.jpg",
     "imagenes": [
@@ -4256,4 +4397,3 @@ const products = [
 ];
 
 window.fotricProducts = products;
-
