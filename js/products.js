@@ -1043,6 +1043,16 @@ const products = [
           "es": "IP54",
           "en": "IP54"
         }
+      },
+      {
+        "etiqueta": {
+          "es": "Opciones de lente",
+          "en": "Lens options"
+        },
+        "valor": {
+          "es": "Lentes intercambiables",
+          "en": "Interchangeable lenses"
+        }
       }
     ],
     "aplicaciones": {
@@ -1159,6 +1169,16 @@ const products = [
         "valor": {
           "es": "IP54",
           "en": "IP54"
+        }
+      },
+      {
+        "etiqueta": {
+          "es": "Opciones de lente",
+          "en": "Lens options"
+        },
+        "valor": {
+          "es": "Lentes intercambiables",
+          "en": "Interchangeable lenses"
         }
       }
     ],
@@ -1277,6 +1297,16 @@ const products = [
           "es": "IP54",
           "en": "IP54"
         }
+      },
+      {
+        "etiqueta": {
+          "es": "Opciones de lente",
+          "en": "Lens options"
+        },
+        "valor": {
+          "es": "Lentes intercambiables",
+          "en": "Interchangeable lenses"
+        }
       }
     ],
     "aplicaciones": {
@@ -1393,6 +1423,16 @@ const products = [
         "valor": {
           "es": "IP54",
           "en": "IP54"
+        }
+      },
+      {
+        "etiqueta": {
+          "es": "Opciones de lente",
+          "en": "Lens options"
+        },
+        "valor": {
+          "es": "Lentes intercambiables",
+          "en": "Interchangeable lenses"
         }
       }
     ],
@@ -2949,8 +2989,8 @@ const products = [
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "28° x 21°",
-          "en": "28° x 21°"
+          "es": "25� x 19�",
+          "en": "25� x 19�"
         }
       },
       {
@@ -3188,8 +3228,8 @@ const products = [
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "28° x 21°",
-          "en": "28° x 21°"
+          "es": "49� x 37�",
+          "en": "49� x 37�"
         }
       },
       {
@@ -3421,8 +3461,8 @@ const products = [
           "en": "Field of view (FOV)"
         },
         "valor": {
-          "es": "28° x 21°",
-          "en": "28° x 21°"
+          "es": "25� x 19�",
+          "en": "25� x 19�"
         }
       },
       {
