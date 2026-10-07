@@ -2519,8 +2519,8 @@ const products = [
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Portátiles y de Uso Ligero",
-      "en": "Portable and Light Use"
+      "es": "Mantenimiento Industrial General",
+      "en": "General Industrial Maintenance"
     },
     "precioUSD": 709.99,
     "imagen": "img/productos/fotric-tk5.avif",
@@ -2765,8 +2765,8 @@ const products = [
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Portátiles y de Uso Ligero",
-      "en": "Portable and Light Use"
+      "es": "Mantenimiento Industrial General",
+      "en": "General Industrial Maintenance"
     },
     "precioUSD": 829.99,
     "imagen": "img/productos/fotric-tk6.avif",
@@ -3000,8 +3000,8 @@ const products = [
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Portátiles y de Uso Ligero",
-      "en": "Portable and Light Use"
+      "es": "Mantenimiento Industrial General",
+      "en": "General Industrial Maintenance"
     },
     "precioUSD": 1259.99,
     "imagen": "img/productos/fotric-tk7-tk8.avif",
@@ -3229,8 +3229,8 @@ const products = [
       "en": "Thermal Cameras"
     },
     "subcategoria": {
-      "es": "Portátiles y de Uso Ligero",
-      "en": "Portable and Light Use"
+      "es": "Mantenimiento Industrial General",
+      "en": "General Industrial Maintenance"
     },
     "precioUSD": 1489.99,
     "imagen": "img/productos/fotric-tk7-tk8.avif",
